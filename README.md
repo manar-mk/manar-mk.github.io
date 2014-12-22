@@ -1,4 +1,4 @@
-manar-mk.github.io
+Manar Kurmanov
 ==================
 
-manar-mk.github.io
+welcome to my personal page
