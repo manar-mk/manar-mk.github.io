@@ -8,7 +8,6 @@ $(document).ready(function() {
         dotColor: '#aaaaaa',
         lineColor: '#aaaaaa'
     });
-    console.log($(document).height());
     $('.intro').css({
     	'left':	(($(window).width()-$('.intro').width())/2)/$(window).width()*100+"%",
     	'top':	(($(document).height()-$('.intro').height())/2)/$(document).height()*150+"%"
