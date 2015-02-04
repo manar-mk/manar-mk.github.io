@@ -92,12 +92,13 @@ p {
   font-size: 24px;
 }
 .btn {
+  margin: 1em;
   display: inline-block;
   padding: 15px 30px;
   border: 2px solid #fff;
   text-transform: uppercase;
   letter-spacing: 0.015em;
-  font-size: 18px;
+  font-size: 1.8em;
   font-weight: 700;
   line-height: 1;
   color: #fff;
@@ -108,10 +109,12 @@ p {
           transition: all 0.4s;
 }
 .btn:hover {
-  color: #005544;
-  border-color: #005544;
+  color: rgb(136, 255, 151);
+  border-color: rgb(136, 255, 151);
 }
-
+.btn-wrap{
+  text-align: center;
+}
 @media only screen and (max-width: 1000px) {
   h1 {
     font-size: 70px;
