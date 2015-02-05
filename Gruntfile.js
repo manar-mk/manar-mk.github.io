@@ -4,7 +4,8 @@ module.exports = function(grunt) {
             combine: {
                 files: {
                     'bin/styles.min.css': [
-                        'css/style.css'
+                        'css/style.css',
+                        'css/jquery.fullPage.css'
                     ]
                 }
             }
@@ -23,7 +24,7 @@ module.exports = function(grunt) {
                     collapseWhitespace: true
                 },
                 files: {
-                    'index.html': 'index-dev.html',
+                    'index.html': 'index-dev.html'
                 }
             }
         },
@@ -37,6 +38,9 @@ module.exports = function(grunt) {
                         'js/parallax.js',
                         'js/jquery-1.11.1.min.js',
                         'js/jquery.particleground.min.js',
+                        'js/jquery.easings.min.js',
+                        'js/jquery.slimscroll.min.js',
+                        'js/jquery.fullPage.min.js',
                         'js/demo.js',
                     ]
                 }
