@@ -46,11 +46,22 @@ module.exports = function(grunt) {
                 }
             }
         },
+        imagemin: { // Task
+            dynamic: { // Another target
+                files: [{
+                    expand: true, // Enable dynamic expansion
+                    cwd: 'img/', // Src matches are relative to this path
+                    src: ['**/*.{png,jpg,gif}'], // Actual patterns to match
+                    dest: 'images/' // Destination path prefix
+                }]
+            }
+        },
         watch: {
             styles: {
                 files: ['style.css'],
-                tasks: ['cssmin', 'autoprefixer', 'uglify', 'htmlmin', 'watch']
+                tasks: ['imagemin','cssmin', 'autoprefixer', 'uglify', 'htmlmin', 'watch']
             }
+            
         }
     });
     grunt.loadNpmTasks('grunt-contrib-cssmin');
@@ -58,6 +69,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-imagemin');
 
-    grunt.registerTask('default', ['cssmin', 'autoprefixer', 'uglify', 'htmlmin']);
+    grunt.registerTask('default', ['imagemin','cssmin', 'autoprefixer', 'uglify', 'htmlmin']);
 };

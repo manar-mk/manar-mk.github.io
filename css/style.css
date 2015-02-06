@@ -83,7 +83,7 @@ body {
 .list{
   top: 0;
   width: 100%;
-  padding: 2em;
+  padding: 2.5em 2em 1em 2em;
 }
 .items-list{
   list-style-type: none;
@@ -97,13 +97,32 @@ body {
 }
 .preview{
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
   height: 70%;
   background-size: cover;
   position: relative;
 }
 .preview_banana{
   background-position: center;
+}
+.email{
+  margin: 0.5em;
+}
+.link{
+  font-size: 1.8em;
+color: #fff;
+text-decoration: none;
+-webkit-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+}
+.link .icon{
+  font-size: 1.5em;
+margin-right: 0.2em;
+}
+.link:hover{
+        color: rgb(219, 52, 52);     
+
 }
 .overlay{
   display: block;
@@ -150,6 +169,23 @@ p {
   margin: 0 0 30px 0;
   font-size: 24px;
 }
+.arrow-wrap{
+  position: absolute;
+  top: 1em;
+  width: 100%;
+  text-align: center;
+}
+.arrowTop{
+  display: inline-block;
+  position: relative;
+z-index: 4;
+cursor: pointer;
+width: 0;
+height: 0;
+border-style: solid;
+border-width:  0 38.5px 38.5px 34px;
+border-color: transparent transparent #fff transparent ;
+}
 .btn {
   margin: 1em;
   display: inline-block;
@@ -168,8 +204,8 @@ p {
           transition: all 0.4s;
 }
 .btn:hover {
-  color: rgb(68, 184, 255);
-  border-color: rgb(68, 184, 255);
+  color: rgb(89, 215, 105);
+  border-color: rgb(89, 215, 105);
 }
 .btn-wrap{
   text-align: center;
