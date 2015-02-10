@@ -41,6 +41,7 @@ module.exports = function(grunt) {
                         'js/jquery.easings.min.js',
                         'js/jquery.slimscroll.min.js',
                         'js/jquery.fullPage.min.js',
+                        'js/loader.js',
                         'js/demo.js',
                     ]
                 }

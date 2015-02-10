@@ -101,9 +101,8 @@ body {
   height: 70%;
   background-size: cover;
   position: relative;
-}
-.preview_banana{
-  background-position: center;
+  max-width: 1200px;
+  max-height: 680px;
 }
 .email{
   margin: 0.5em;
@@ -124,30 +123,34 @@ margin-right: 0.2em;
         color: rgb(219, 52, 52);     
 
 }
+.title{
+
+}
 .overlay{
+  text-align: left;
   display: block;
   position: absolute;
   left: 0;
-  top: 0;
+  height: auto;
+  padding: 2em 4em;
   right: 0;
   bottom: 0;
-  line-height: 100%;
   background-color: rgba(0,0,0,0.8);
   -webkit-transition: all 0.8s ease-in-out;
   -o-transition: all 0.8s ease-in-out;
   transition: all 0.8s ease-in-out;
 }
+.overlay .btn{
+  float: right;
+}
 .overlay span{
   font-family: 'Open Sans Condensed', sans-serif;
-  top: 50%;
   display: block;
-  text-align: center;
-  position: absolute;
-  width: 100%;
-  font-size: 3em;
+  font-size: 2em;
 }
-.preview:hover .overlay{
-  opacity: 0;
+.overlay h4{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 3em;
 }
 .item{
   display: block;
@@ -204,8 +207,8 @@ border-color: transparent transparent #fff transparent ;
           transition: all 0.4s;
 }
 .btn:hover {
-  color: rgb(89, 215, 105);
-  border-color: rgb(89, 215, 105);
+  background-color: #fff;
+  color: #000;
 }
 .btn-wrap{
   text-align: center;
