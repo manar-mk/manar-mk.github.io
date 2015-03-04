@@ -1,10 +1,7 @@
+
 $(document).ready(function() {
     $('#fullpage').fullpage({});
-    $("body").queryLoader2({
-        minimumTime: 5,
-        backgroundColor: '#000',
-        barHeight: 5
-    });
+    alert('loaded');
     for (var i = 0; i < $('.js-particles').length; i++) {
         $('.js-particles').eq(i).particleground({
             dotColor: $('.js-particles').eq(i).data('color'),
