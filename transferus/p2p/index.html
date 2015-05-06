@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+
+<head>
+    <title>test</title>
+</head>
+
+<body>
+    <form id="form" name="SendOrder" method="post" action="https://3dsecure.kkb.kz/jsp/transfer/logon.jsp">
+        <input type="text" name="Signed_Order_B64" value="PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPGRvY3VtZW50PjxtZXJjaGFudCBjZXJ0X2lkPSIwMEMxODJCMTg5IiBuYW1lPSJEZW1vIEhvbWVCYW5rIj48b3JkZXIgb3JkZXJfaWQ9IjA1MDYxMjUwMjgiIGFtb3VudD0iMTAiIGN1cnJlbmN5PSIzOTgiPjxkZXBhcnRtZW50IG1lcmNoYW50X2lkPSI5MjA2MTEwMSIvPjwvb3JkZXI+PC9tZXJjaGFudD48bWVyY2hhbnRfc2lnbiB0eXBlPSJSU0EiPnlRTHk4NENpa09aZCtjQmxjZkwzMU5UdmFUT2FpMEpscngzeXNQYm5ubzJ2cGoybVAvb05CL1M4LzhZR3c1bGNzdUc1aWZCOHFBTlR4Rm4vK2pxN0pBPT08L21lcmNoYW50X3NpZ24+PC9kb2N1bWVudD4=">
+        <input type="text" name="email" size="50" maxlength="50" value="Ytanikin@kkb.kz">
+        <input type="text" name="Language" value="rus">
+        <input type="text" name="BackLink" value="http://3dsecure.kkb.kz/jsp/transfer/pay_p2p.jsp">
+        <input type="text" name="PostLink" value="http://3dsecure.kkb.kz/jsp/hbpay/pl.jsp">
+        <input type="text" name="template" value="default_transfer.xsl">
+        <input type="submit" name="GotoPay" value="SEND">
+    </form>
+    <a href="#" onclick="sendPost()">POST</a>
+    <script src="js/jquery.min.js" /></script>
+    <script type="text/javascript">
+    //$('#form').submit();
+    function sendPost() {
+        // $.ajax({
+        //     type: "POST",
+        //      headers: {
+        //         Accept : "text/plain; charset=utf-8",
+        //         "Content-Type": "text/plain; charset=utf-8"
+        //     },
+        //     url: 'https://3dsecure.kkb.kz/jsp/transfer/logon.jsp',
+        //     data: {
+        //         Signed_Order_B64: $('[name="Signed_Order_B64"]').val(),
+        //         email: 'Ytanikin@kkb.kz',
+        //         Language: 'rus',
+        //         BackLink: 'http://3dsecure.kkb.kz/jsp/transfer/pay_p2p.jsp',
+        //         PostLink: 'http://3dsecure.kkb.kz/jsp/hbpay/pl.jsp',
+        //         template: 'default_transfer.xsl'
+        //     },
+        // }).done(function(data) {
+        //     console.log(data);
+        // });
+
+
+        var getXMLRequest = $.ajax({
+            type: "POST",
+             url: "https://3dsecure.kkb.kz/jsp/transfer/logon.jsp",
+             contentType: "text/xml",
+             data: {
+                Signed_Order_B64: $('[name="Signed_Order_B64"]').val(),
+                email: 'Ytanikin@kkb.kz',
+                Language: 'rus',
+                BackLink: 'http://3dsecure.kkb.kz/jsp/transfer/pay_p2p.jsp',
+                PostLink: 'http://3dsecure.kkb.kz/jsp/hbpay/pl.jsp',
+                template: 'default_transfer.xsl'
+            },
+        });
+         
+        getXMLRequest.done(function(data)
+        {
+            console.log(data);
+            var xml;
+            if (typeof data == "string")
+            {
+                xml = new ActiveXObject("Microsoft.XMLDOM");
+                xml.async = false;
+                xml.loadXML(data);
+            }
+            else
+            {
+                xml = data;
+            }
+            // Returned data available in object "xml"
+        });
+         
+        getXMLRequest.fail(function(jqXHR, textStatus)
+        {
+             console.log(jqXHR.responseText);
+        });
+    }
+    </script>
+</body>
+
+</html>
