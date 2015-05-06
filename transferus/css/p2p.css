@@ -17,7 +17,7 @@
 }
 .cardnum input{
 	max-width: 20%;
-	margin-right: 6.5%;	
+	margin-right: 5.9%;	
 	text-align: center;
 }
 .cardnum input:last-child{
@@ -27,7 +27,7 @@
 	margin-bottom: 20px;
 }
 .cvv input{
-	max-width: 50px;
+	max-width: 47px;
 	text-align: center;
 }
 .text{
