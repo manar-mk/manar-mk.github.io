@@ -1,7 +1,5 @@
 $(document).ready(function() {
-    $("img").lazyload({
-        effect : "fadeIn"
-    });
+    $('#loading').fadeOut('slow');
     $('#fullpage').fullpage({});
 
     particlesJS.load('particles-top', 'js/particles.json', function() {
