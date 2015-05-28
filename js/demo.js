@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    $("body").queryLoader2();
+    
     $('#fullpage').fullpage({});
 
     particlesJS.load('particles-top', 'js/particles.json', function() {
@@ -23,7 +25,6 @@ $(document).ready(function() {
     });
     $('.intro').css({
         'left': (($('.js-intro-wrap').width() - $('.intro').width()) / 2) / $(window).width() * 100 + "%",
-        //'top':  (($('#particles').height()-$('.intro').height())/2)/$(document).height()*100+"%"
     });
 
     var parallax = new Parallax(scene);
