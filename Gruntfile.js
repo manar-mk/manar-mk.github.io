@@ -37,7 +37,7 @@ module.exports = function(grunt) {
                     'bin/scripts.min.js': [
                         'js/parallax.js',
                         'js/jquery-1.11.1.min.js',
-                        'js/jquery.particleground.min.js',
+                        'js/particles.min.js',
                         'js/jquery.easings.min.js',
                         'js/jquery.slimscroll.min.js',
                         'js/jquery.fullPage.min.js',

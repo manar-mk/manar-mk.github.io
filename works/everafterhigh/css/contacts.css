@@ -1,0 +1,127 @@
+.b-contacts-page{
+    background-image: url('../img/contacts__bg.jpg');
+}
+.b-contacts {
+	height: 500px;
+	margin-bottom: 200px;
+	padding-top: 30px;
+	position: relative;
+}
+
+.b-contacts__article {
+	width: 345px;
+	position: absolute;
+	right: 140px;
+	text-align: center;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	        padding: 0 5px;
+}
+
+.b-contacts__article > h4 {
+}
+
+.b-contacts__article > p {
+	font-size: 1.4em;
+	line-height: 1.5em;
+}
+
+.b-contacts__article > p > strong {
+}
+
+.b-contacts__article > form {
+}
+
+.contacts__link {
+	color: #2458db;
+	text-decoration: none;
+}
+.contacts__link:hover {
+	text-decoration: underline;
+}
+.contacts__textarea {
+	margin: 10px auto;
+	width: 300px;
+	height: 200px;
+	background-repeat: no-repeat;
+	background-image: url('../img/contacts__textarea.png');
+	background-color:transparent;
+	background-size: 100% 100%;
+	display: block;
+	font-family: 'Avdira';
+	border: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	   padding: 10px;
+	        box-sizing: border-box;
+	        resize:none;
+}
+
+.contacts__submit  {
+	margin-top: 15px;
+	text-decoration: none;
+	font-family: 'victoriana';
+	display: block;
+	width: 145px;
+	height: 50px;
+	font-size: 2.4em;
+	margin: auto;
+	color: #fff;
+	text-align: center;
+	background-image: url('../img/books__read.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	position: relative;
+	background-color: transparent;
+}
+.contacts__submit:hover {
+			-webkit-transform: scale(1.1);
+	   -moz-transform: scale(1.1);
+	    -ms-transform: scale(1.1);
+	     -o-transform: scale(1.1);
+	        transform: scale(1.1);
+}
+
+
+.contacts__write-button {
+	text-decoration: none;
+	font-family: 'victoriana';
+	display: inline-block;
+	width: 220px;
+	line-height: 30px;
+	height: 65px;
+	padding-top: 15px;
+	font-size: 3em;
+	color: #fff;
+	text-align: center;
+	background-image: url('../img/books__write.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+		-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	position: absolute;
+	bottom: 35px;
+	right: 38%;
+}
+.contacts__write-button:hover{
+		-webkit-transform: scale(1.1);
+	   -moz-transform: scale(1.1);
+	    -ms-transform: scale(1.1);
+	     -o-transform: scale(1.1);
+	        transform: scale(1.1);
+}

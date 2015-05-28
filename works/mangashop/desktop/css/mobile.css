@@ -1,0 +1,26 @@
+body{
+	width: 100%;
+	font-size: 5px;
+}
+.g-wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+.b-slider li{
+	background-position: 50%;
+}
+.page__heading {
+	text-align: center;
+}
+.m-hide{
+	display: none;
+}
+.m-flex-center{
+	justify-content:center;
+}
+.b-special__wrap{
+	height: 320px;
+}
+.b-slider {
+	height: 320px;
+}

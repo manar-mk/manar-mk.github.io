@@ -1,0 +1,301 @@
+/*
+    slider -----------------------------------------------------------------------------------------
+*/
+
+.b-slider__wrap, .b-special {
+    width: 100%;
+    margin: 0 auto;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.b-special {
+    height: 450px;
+    border-top: 3px solid #e74c3c;
+    border-bottom: 3px solid #e74c3c;
+    margin-bottom: 0;
+}
+.b-appstore {
+    height: 430px;
+    background-image: url('../img/appstore-bg.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    background-position: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 60px;
+}
+.b-appstore a {
+    opacity: .5;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-right: 30px;
+}
+.b-appstore a:hover {
+    opacity: 1;
+}
+.b-appstore h3 {
+    font-size: 3em;
+    text-transform: uppercase;
+}
+.b-appstore p {
+    padding: 30px 0;
+    font-size: 1.6em;
+    width: 450px;
+    max-width: 100%;
+}
+.b-slider {
+    position: relative;
+    left: 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    height: 500px;
+    min-width: 100%;
+}
+.b-slider li {
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.b-special__wrap {
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.b-slider li article, .b-special article {
+    width: 575px;
+    max-width: 100%;
+    padding-top: 75px;
+    color: #fff;
+}
+.b-slider li article h3, .b-special article h3 {
+    font-size: 3.5em;
+    text-transform: uppercase;
+}
+.b-slider li article p, .b-special article p {
+    padding: 15px 0 25px;
+    font-size: 1.8em;
+    width: 560px;
+    max-width: 100%;
+}
+.b-slider__control {
+    z-index: 5;
+    bottom: 55px;
+    position: relative;
+}
+.b-slider__control li {
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    position: relative;
+    display: inline-block;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-right: 20px;
+}
+.b-slider__control li.current {
+    background-color: #fff;
+}
+.b-slider__control li.current::after {
+    content: '';
+    display: block;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: #e74c3c;
+    top: 2px;
+    left: 2px;
+    position: absolute;
+}
+.b-slider__control li:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+.slider__button, .special__button {
+    width: 200px;
+    height: 45px;
+    font-size: 2em;
+}
+.slider__old-price, .special__old-price {
+    display: inline-block;
+    color: #505050;
+    font-weight: 700;
+    font-size: 1.6em;
+    padding: 0 30px;
+    text-decoration: line-through;
+    vertical-align: middle;
+}
+.special__old-price {
+    color: #fff;
+}
+.slider__price, .special__price {
+    font-weight: 700;
+    font-size: 3em;
+    vertical-align: middle;
+}
+.b-popular {
+    padding: 15px 0;
+}
+.popular__button {
+    width: 275px;
+    height: 45px;
+    color: #fff;
+    background-color: #0ba6e1;
+    margin: 40px auto;
+    display: block;
+    font-size: 2em;
+}
+.b-carousel__control {
+    height: 50px;
+    padding: 10px 0;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-bottom: 20px;
+}
+.carousel__button {
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #dadada;
+    cursor: pointer;
+    top: 12px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    background-repeat: no-repeat;
+}
+.carousel__button[data-action="prev"] {
+    background-image: url('../img/icon-arrow-left.png');
+    left: -60px;
+    background-position: 45%;
+}
+.carousel__button[data-action="next"] {
+    background-image: url('../img/icon-arrow-right.png');
+    right: -60px;
+    background-position: 55%;
+}
+.carousel__button:hover {
+    background-color: #e74c3c;
+}
+.carousel__button::before {
+    content: '';
+    border-radius: 50%;
+    border: 1px solid #fff;
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    top: 2px;
+    left: 2px;
+}
+.carousel__page {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #dadada;
+    margin: 15px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    display: inline-block;
+}
+.carousel__page_state_current, .carousel__page:hover {
+    background-color: #e74c3c;
+}
+.b-carousel {
+    margin-top: 30px;
+}
+.b-carousel__wrap {
+    overflow: hidden;
+}
+.b-advantages {
+    padding: 50px 0;
+    text-align: center;
+    background-image: url('../img/advantages-bg.jpg');
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.advantages__item {
+    position: relative;
+    height: 360px;
+}
+.b-advantages h4 {
+    color: #fff;
+    display: block;
+    width: 100%;
+    font-size: 3.5em;
+    position: absolute;
+    top: 0;
+}
+.advantages__img {
+    height: 290px;
+    line-height: 260px;
+}
+.b-advantages h3 {
+    color: #484848;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 290px;
+}
+.b-subscribe {
+    border-top: 1px solid #444349;
+    padding: 25px 0;
+}
+.b-subscribe h4 {
+    text-transform: uppercase;
+    font-size: 1.6em;
+    font-weight: 600;
+}
+.b-subscribe input[type="text"] {
+    width: 260px;
+    border-radius: 2px 0 0 2px;
+    border: 1px solid #a0a0a0;
+    font-size: 1.4em;
+    padding-left:15px;
+    height: 40px;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.b-subscribe fieldset {
+    position: relative;
+}
+.b-subscribe input[type="submit"] {
+    border: 1px solid #3ba71a;
+    border-radius: 0px 2px 2px 0px;
+    background-color: #4cc626;
+    width: 65px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    right: 0;
+    background-image: url('../img/icon-submit-arrow.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.b-subscribe input[type="submit"]:hover {
+    background-color: #3ba71a;
+}

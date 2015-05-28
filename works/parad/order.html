@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Parad</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300italic,300,400italic,500,500italic,700,700italic&subset=latin,cyrillic,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/modals.css">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/jquery.nouislider.css">
+    <link rel="stylesheet" href="css/catalog.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/cabinet.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/hr.css">
+    <link rel="stylesheet" href="css/thanks.css">
+    <link rel="stylesheet" href="css/address.css">
+    <link rel="stylesheet" href="css/actions.css">
+    
+</head>
+
+<body>
+    <div class="header">
+        <div class="head">
+            <div class="container">
+                <a href="#modalCall" class="head__button js-fancybox">
+                    <i class="call"></i>
+                    <span>Заказать обратный звонок</span>
+                </a>
+                <span class="head__label">
+                    Мы работаем с 9:00 до 24:00
+                </span>
+                <a href="#modalRegister" class="head__button js-fancybox">
+                    <i class="register"></i>
+                    <span>Регистрация</span>
+                </a>
+                <a href="#modalLogin" class="head__button js-fancybox">
+                    <i class="login"></i>
+                    <span>Логин</span>
+                </a>
+            </div>
+        </div>
+         <div class="header__middle container">
+            <form id="headerSearchForm" class="header__search">
+                <input type="text" placeholder="Введите слово для поиска">
+                <input type="submit" value="">
+            </form>
+
+            <a href="index.html" class="header__logo">
+                <img src="img/logo.png" alt="">
+            </a>
+            <div class="header__info-wrap">
+                <div class="header__info header__info_city">
+                    <i class="city"></i>
+                    <div class="header__label">
+                        <span>Выберите Ваш город:</span>
+                        <div class="header__select">
+                            <select name="" id="" class="js-city-select">
+                                <option value="1">Алматы</option>
+                                <option value="2">Астана</option>
+                            </select>
+                            <a href="#" class="header__select-trigger js-select-button">
+                                <i class="header-select"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__info header__info_contacts">
+                    <i class="contacts"></i>
+                    <div class="header__label">
+                        <big class="js-tel">+7 727 290 10 10</big>
+                        <a href="mailto:parad.market@mail.ru" class="header__mailto">
+                            <small>parad.market@mail.ru</small>
+                        </a>
+                    </div>
+                </div>
+                <div class="header__info header__info_shipping">
+                    <i class="shipping"></i>
+                    <div class="header__label">
+                        <a href="address.html" class="header__link">
+                            Доставка и оплата
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav__wrap js-nav">
+            <div class="container">
+                <div class="nav">
+                    <div class="nav__cell">
+                        <div class="nav__button nav01 nav__dropdown-trigger">
+                            Наше производство
+                            <i class="nav-arrow"></i>
+                            <div class="nav__dropdown nav__dropdown_first">
+                                <a href="catalog.html" class="nav__link">
+                                    <i class="nav11"></i>
+                                    <span>Кулинарные изделия</span>
+                                </a>
+                                <a href="catalog.html" class="nav__link">
+                                    <i class="nav12"></i>
+                                    <span>Кондитерские изделия</span>
+                                </a>
+                                <a href="catalog.html" class="nav__link">
+                                    <i class="nav13"></i>
+                                    <span>Хлебобулочные изделия</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav__cell">
+                        <div class="nav__button nav02 nav__dropdown-trigger">
+                            Продукты
+                            <i class="nav-arrow"></i>
+                            <div class="nav__dropdown nav__dropdown_second">
+                                <div class="nav__column nav__column_short">
+                                    <a href="catalog.html" class="nav__link">
+                                        <i class="nav21"></i>
+                                        <span>Молочные продукты</span>
+                                    </a>
+                                    <a href="catalog.html" class="nav__link">
+                                        <i class="nav22"></i>
+                                        <span>Бакалея</span>
+                                    </a>
+                                    <a href="catalog.html" class="nav__link">
+                                        <i class="nav23"></i>
+                                        <span>Растительные масла</span>
+                                    </a>
+                                    <a href="catalog.html" class="nav__link">
+                                        <i class="nav24"></i>
+                                        <span>Чай, кофе, какао</span>
+                                    </a>
+                                    <a href="catalog.html" class="nav__link">
+                                        <i class="nav25"></i>
+                                        <span>Чипсы, снэки </span>
+                                    </a>
+                                    <a href="catalog.html" class="nav__link">
+                                        <i class="nav26"></i>
+                                        <span>Детское питание</span>
+                                    </a>
+                                </div>
+                                <div class="nav__column ">
+                                    <a href="catalog.html" class="nav__link">
+                                        <i class="nav31"></i>
+                                        <span>Здоровое питание</span>
+                                    </a>
+                                    <a href="catalog.html" class="nav__link">
+                                        <i class="nav32"></i>
+                                        <span>Замороженные продукты</span>
+                                    </a>
+                                    <a href="catalog.html" class="nav__link">
+                                        <i class="nav33"></i>
+                                        <span>Мясные изделия, колбасы</span>
+                                    </a>
+                                    <a href="catalog.html" class="nav__link">
+                                        <i class="nav34"></i>
+                                        <span>Сыры</span>
+                                    </a>
+                                    <a href="catalog.html" class="nav__link">
+                                        <i class="nav35"></i>
+                                        <span>Овощи, фрукты, зелень </span>
+                                    </a>
+                                    <a href="catalog.html" class="nav__link">
+                                        <i class="nav36"></i>
+                                        <span>Морепродукты, икра</span>
+                                    </a>
+                                </div>
+                                <div class="nav__column nav__column_long">
+                                    <a href="catalog.html" class="nav__link">
+                                        <i class="nav41"></i>
+                                        <span>Безалкогольные напитки, соки</span>
+                                    </a>
+                                    <a href="catalog.html" class="nav__link">
+                                        <i class="nav42"></i>
+                                        <span>Пиво, слабоалкогольные напитки</span>
+                                    </a>
+                                    <a href="catalog.html" class="nav__link">
+                                        <i class="nav43"></i>
+                                        <span>Алкогольные напитки </span>
+                                    </a>
+                                    <a href="catalog.html" class="nav__link">
+                                        <i class="nav44"></i>
+                                        <span>Табачные изделия, зажигалки</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav__cell">
+                        <a href="catalog.html" class="nav__button nav03">
+                            Для дома
+                        </a>
+                    </div>
+                    <div class="nav__cell">
+                        <a href="catalog.html" class="nav__button nav04">
+                            Для детей
+                        </a>
+                    </div>
+                    <div class="nav__cell">
+                        <a href="catalog.html" class="nav__button nav05">
+                            Для животных
+                        </a>
+                    </div>
+                    <div class="nav__cell">
+                        <a href="catalog.html" class="nav__button nav06">
+                            Бытовая химия
+                        </a>
+                    </div>
+                    <div class="nav__cell">
+                        <div class="nav__button nav__dropdown-trigger nav07">
+                            Другие товары
+                            <i class="nav-arrow"></i>
+                            <div class="nav__dropdown nav__dropdown_last">
+                                <a href="catalog.html" class="nav__button nav08 nav__button_first">
+                                    Косметика
+                                </a>
+                                <a href="catalog.html" class="nav__button nav09">
+                                    Автотовары
+                                </a>
+                                <a href="catalog.html" class="nav__button nav010">
+                                    Для ванны и туалета
+                                </a>
+                                <a href="catalog.html" class="nav__button nav011">
+                                    Цветы
+                                </a>
+                                <a href="catalog.html" class="nav__button nav012">
+                                    Концелярские товары
+                                </a>
+                                <a href="catalog.html" class="nav__button nav013 nav__button_last">
+                                    Текстиль
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav__cell">
+                        <a href="cart.html" class="nav__button js-cart">
+                            <i class="cart"></i>
+                            <span>
+                                5 товаров 
+                                19 870 тг.</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- breadcrumbs -->
+    <div class="container">
+        <div class="breadcrumbs">
+            <a href="" class="button button_small breadcrumbs__button">
+                <i class="breadcrumbs-back"></i>
+                <span>Назад</span>
+            </a>
+            <a href="index.html" class="breadcrumbs__link breadcrumbs__link_first">Главная</a>
+            <a href="cabinet.html" class="breadcrumbs__link">Личный кабинет</a>
+        </div>
+    </div>
+    <!-- /breadcrumbs -->
+
+    <!-- order -->
+    <div class="container">
+        <form id="orderForm" class="order__left">
+            <div class="order__contacts">
+                <div class="heading">
+                    <h2>Контактные данные</h2>
+                </div>
+                <div class="order__form">
+                    <div class="cabinet__fieldset">
+                        <div class="cabinet__left">
+                            <label for="phone">Телефон:</label>
+                        </div>
+                        <div class="cabinet__right">
+                            <input id="phone" type="text" placeholder="+7 777 678 87 87">
+                        </div>
+                    </div>
+                    <div class="cabinet__fieldset">
+                        <div class="cabinet__left">
+                            <label for="name">Ф.И.О.:</label>
+                        </div>
+                        <div class="cabinet__right">
+                            <input id="name" type="text" placeholder="Смагулова Карина">
+                        </div>
+                    </div>
+                    <div class="cabinet__fieldset">
+                        <div class="cabinet__left">
+                            <label for="email">e-mail:</label>
+                        </div>
+                        <div class="cabinet__right">
+                            <input id="email" type="email" placeholder="karina@mail.ru">
+                        </div>
+                    </div>
+                    <div class="cabinet__fieldset">
+                        <div class="cabinet__left"></div>
+                        <div class="cabinet__right">
+                            <input id="register" type="checkbox">
+                            <label for="register"><span>Зарегистрироваться в системе</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="order__shipping">
+                <div class="heading">
+                    <h2>Доставка</h2>
+                </div>
+                <div class="order__form">
+                    <div class="order__navigation">
+                        <a href="#shipping" class="order__nav js-order-nav order__nav_active">Доставка</a>
+                        <a href="#takeaway" class="order__nav js-order-nav">Самовывоз</a>
+                    </div>
+                    <div class="order__tabs">
+                        <div class="order__tab js-order-tab order__tab_active" id="shipping">
+                            <div class="cabinet__fieldset">
+                                <div class="cabinet__left">
+                                    <label for="address">Адрес: </label>
+                                </div>
+                                <div class="cabinet__right">
+                                    <input id="address" type="text" placeholder="ул. Ауэзова д 16 кв 34">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order__tab js-order-tab" id="takeaway">
+                            <div class="cabinet__fieldset">
+                                <input id="shippingAddress" type="radio" name="shippingAddress">
+                                <label for="shippingAddress"><span>ТРЦ «Прайм Плаза» пр. Саина (угол пр. Райымбека)</span>
+                                </label>
+                                <div class="order__map">
+                                    <script type="text/javascript" charset="utf-8" src="http://api-maps.yandex.ru/services/constructor/1.0/js/?sid=NQdnSlJMPW-kKIHfrNtYSkasxKzwOg2u&width=535&height=275"></script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="order__payment">
+                <div class="heading">
+                    <h2>Способ оплаты</h2>
+                </div>
+                <div class="order__form">
+                    <div class="cabinet__fieldset cabinet__fieldset_payment">
+                        <input id="cash" type="radio" name="paymentType">
+                        <label for="cash"><span>Наличными курьеру</span>
+                        </label>
+                        <input id="visa" type="radio" name="paymentType">
+                        <label for="visa"><span>Оплата карточкой</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="cabinet__fieldset cabinet__fieldset_right">
+                    <input type="submit" class="button button_bigger button_inverse" value="Оплатить">
+                </div>
+            </div>
+        </form>
+        <div class="order__right">
+            <div class="heading">
+                <h2>Мой заказ</h2>
+            </div>
+            <ul class="order__list">
+                <li class="order__item">
+                    <span class="order__name">Лук репчатый (1кг)</span>
+                    <span class="order__price">14</span>
+                </li>
+                <li class="order__item">
+                    <span class="order__name">Куринные ножки (1кг)</span>
+                    <span class="order__price">6</span>
+                </li>
+                <li class="order__item">
+                    <span class="order__name">Лук репчатый (1кг)</span>
+                    <span class="order__price">3</span>
+                </li>
+                <li class="order__item order__item_total">
+                    <span class="order__total">Доставка:</span>
+                    <span class="order__price">Бесплатно</span>
+                </li>
+                <li class="order__item order__item_total">
+                    <span class="order__total">Итого:</span>
+                    <span class="order__price">19 500 тг.</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /order -->
+
+    <!-- subscribe -->
+    <div class="subscribe">
+        <div action="" class="container">
+            <h4 class="subscribe__heading">Автоматическое оповещение об акциях и скидках! Просто оставь свой e-mail</h4>
+            <form class="subscribe__form" action="subscribeForm">
+                <input type="text" placeholder="Введите ваш e-mail">
+                <input type="submit" value="">
+            </form>
+        </div>
+    </div>
+    <!-- /subscribe -->
+        <!-- footer -->
+    <div class="footer">
+        <div class="footer__top">
+            <div class="container">
+                <span class="footer__heading footer__about">О компании</span>
+                <span class="footer__heading footer__info">Информация</span>
+                <span class="footer__heading footer__help">Помощь</span>
+                <span class="footer__heading footer__profile">Профиль</span>
+                <span class="footer__heading footer__social">Мы в соц. сетях</span>
+            </div>
+        </div>
+        <div class="footer__middle">
+            <div class="container">
+                <div class="footer__column footer__about">
+                    <a href="#" class="footer__logo"><img src="img/footer-logo.png" alt="">
+                    </a>
+                    <p class="footer__small">"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system,</p>
+                </div>
+                <div class="footer__column footer__info">
+                    <a href="actions.html" class="footer__link">Акции</a>
+                    <a href="address.html" class="footer__link">Оплата и доставка</a>
+                    <a href="address.html" class="footer__link">О компании</a>
+                    <a href="hr.html" class="footer__link">Вакансии</a>
+                    <a href="address.html" class="footer__link">Публичная оферта</a>
+                </div>
+                <div class="footer__column footer__help">
+                    <a href="address.html" class="footer__link">Справка</a>
+                    <a href="address.html" class="footer__link">Как заказать?</a>
+                    <a href="address.html" class="footer__link">Юридическая информация</a>
+                    <a href="address.html" class="footer__link">Контакты и проезд</a>
+                </div>
+                <div class="footer__column footer__profile">
+                    <a href="#modalLogin" class="js-fancybox footer__link">Вход</a>
+                    <a href="#modalRegister" class="js-fancybox footer__link">Регистрация</a>
+                    <a href="cabinet.html" class="footer__link">История заказа</a>
+                </div>
+                <div class="footer__column footer__social">
+                    <a href="" class="footer__button"><i class="facebook"></i></a>
+                    <a href="" class="footer__button"><i class="gplus"></i></a>
+                    <a href="" class="footer__button"><i class="twitter"></i></a>
+                    <a href="" class="footer__button"><i class="instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <p class="footer__left">2014 © Parad.kz | Все права защищены </p>
+                <p class="footer__right">Created by ZMOT</p>
+            </div>
+        </div>
+    </div>
+    <!-- /footer -->
+    <!-- modals -->
+    <div class="modals">
+        <div id="modalCall" class="modal">
+            <h2 class="modal__heading">Заказать обратный звонок</h2>
+            <form id="modalCallForm">
+                <div class="modal__fieldset">
+                    <span class="modal__label">
+                        Как вас зовут?
+                    </span>
+                    <input type="text" placeholder="Андрей">
+                </div>
+                <div class="modal__fieldset">
+                    <span class="modal__label">
+                        Мобильный телефон:
+                    </span>
+                    <input type="text" placeholder="+7 777 876 78 78">
+                </div>
+                <div class="modal__fieldset">
+                    <span class="modal__label">
+                        Вопрос или обращение:
+                    </span>
+                    <textarea placeholder="Ваш текст"></textarea>
+                </div>
+                <div class="modal__fieldset">
+                    <input type="submit" value="Отправить" class="button">
+                </div>
+            </form>
+        </div>
+        <div id="modalEmailUs" class="modal">
+            <h2 class="modal__heading">Оставить отзыв или коментарий</h2>
+            <form id="modalEmailUsForm">
+                <div class="modal__fieldset">
+                    <span class="modal__label">
+                        E-mail:
+                    </span>
+                    <input type="email" placeholder="example@mail.com">
+                </div>
+                <div class="modal__fieldset">
+                    <span class="modal__label">
+                       Телефон:
+                    </span>
+                    <input type="text" placeholder="+7 777 876 78 78">
+                </div>
+                <div class="modal__fieldset">
+                    <span class="modal__label">
+                        Текст отзыва:
+                    </span>
+                    <textarea placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim"></textarea>
+                </div>
+                <div class="modal__fieldset">
+                    <input type="submit" value="Отправить" class="button">
+                </div>
+            </form>
+        </div>
+        <a href="#modalError" id="modalErrorLink" class="js-fancybox"></a>
+        <div id="modalError" class="modal modal_message">
+            <img class="modal__icon" src="img/modal-error.png" alt="">
+            <p class="modal__message">
+                Ой!
+                <br> Кажется проблемы с сервером. Попробуйте еще раз через пару минут.
+                <br> Спасибо!
+            </p>
+        </div>
+        <a href="#modalThanks" id="modalThanksLink" class="js-fancybox"></a>
+        <div id="modalThanks" class="modal modal_message">
+            <img class="modal__icon" src="img/modal-thanks.png" alt="">
+            <p class="modal__message modal__message_orange">
+                Спасибо!
+                <br> Наш оператор свяжется с вами в течении 15 минут.
+            </p>
+        </div>
+        <div id="modalLogin" class="modal">
+            <h2 class="modal__heading">Логин</h2>
+            <form id="modalLoginForm">
+                <div class="modal__fieldset modal__fieldset_error">
+                    <span class="modal__label">
+                       Ваш e-mail:
+                    </span>
+                    <span class="modal__error">
+                        недопустимые символы
+                    </span>
+                    <input type="email" placeholder="example@mail.com">
+                </div>
+                <div class="modal__fieldset">
+                    <span class="modal__label">
+                        Пароль:
+                    </span>
+                    <input type="password" placeholder="•••••••••">
+                </div>
+                <div class="modal__fieldset">
+                    <input type="submit" value="Отправить" class="button">
+                </div>
+            </form>
+            <a href="#modalRegister" class="link modal__link js-fancybox">Нет аккаунта? Зарегистрируйтесь!</a>
+            <a href="#modalForgot" class="link link_gray modal__link js-fancybox">Забыли пароль?</a>
+        </div>
+        <div id="modalRegister" class="modal">
+            <h2 class="modal__heading modal__heading_violet">Регистрация</h2>
+            <form id="modalRegisterForm" action="">
+                <div class="modal__fieldset">
+                    <span class="modal__label">
+                       Ваш e-mail:
+                    </span>
+                    <span class="modal__error">
+                        недопустимые символы
+                    </span>
+                    <input type="email" placeholder="example@mail.com">
+                </div>
+                <div class="modal__fieldset">
+                    <span class="modal__label">
+                        Пароль:
+                    </span>
+                    <input type="password" placeholder="•••••••••">
+                </div>
+                <div class="modal__fieldset">
+                    <input type="submit" value="Отправить" class="button button_inverse">
+                </div>
+            </form>
+            <a href="#modalLogin" class="link modal__link js-fancybox">Есть аккаунт? Войдите</a>
+        </div>
+        <div id="modalForgot" class="modal">
+            <h2 class="modal__heading">Восстановление пароля</h2>
+            <form id="modalForgotForm" action="">
+                <div class="modal__fieldset">
+                    <span class="modal__label">
+                       Ваш e-mail:
+                    </span>
+                    <span class="modal__error">
+                        недопустимые символы
+                    </span>
+                    <input type="email" placeholder="example@mail.com">
+                </div>
+                <div class="modal__fieldset">
+                    <input type="submit" value="Отправить" class="button">
+                </div>
+            </form>
+            <a href="#modalLogin" class="link modal__link js-fancybox">Есть аккаунт? Войдите</a>
+        </div>
+        <div id="modalOneClick" class="modal">
+            <h2 class="modal__heading modal__heading_violet">Оставьте свой номер, мы вам перезвоним</h2>
+            <form id="modalOneClickForm" action="">
+                <div class="modal__fieldset">
+                    <input type="text" placeholder="+7 777 678 87 87">
+                </div>
+                <div class="modal__fieldset">
+                    <input type="submit" value="Отправить" class="button button_inverse">
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /modals -->
+    <script type="text/javascript" src="js/libs/jquery.min.js"></script>
+    <script type="text/javascript" src="js/libs/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="js/libs/jquery.nouislider.all.min.js"></script>
+    <script type="text/javascript" src="js/scripts/main.js"></script>
+    <script type="text/javascript" src="js/scripts/slider.js"></script>
+    <!--[if IE]>
+        <script type="text/javascript" src="pie/PIE.js"></script>
+        <script type="text/javascript" src="js/scripts/ie.js"></script>
+    <![endif]-->
+</body>
+
+</html>

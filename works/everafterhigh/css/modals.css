@@ -1,0 +1,76 @@
+.b-modals{
+	display: none;
+}
+.b-modal {
+	width: 700px;
+	height: 600px;
+	background-image: url('../img/badges/modal__bg.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	        padding: 155px 165px 115px 200px;
+	        text-align: center;
+}
+
+.b-modal > img {
+	max-height: 160px;
+	margin-bottom: 10px;
+}
+
+.modal__heading {
+}
+
+.modal__text {
+	font-size: 1.4em;
+	display: block;
+	line-height: 27px;
+}
+
+.modal__text > strong {
+	font-weight: 600;
+}
+
+.b-modal__share {
+	        margin-left: 10px;
+}
+
+.modal__share-button {
+	text-decoration: none;
+	display: inline-block;
+	margin-right: 2px;
+}
+
+.modal__share-button > img {
+}
+
+.modal__button {
+	text-decoration: none;
+		width: 165px;
+	height: 50px;
+	font-size: 1.4em;
+	color: #fff;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url('../img/badges/modal__button.png');
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	        padding-top: 14px;
+	        -webkit-transition: all 0.3s;
+	        -o-transition: all 0.3s;
+	        transition: all 0.3s;
+}
+.modal__button:hover{
+				-webkit-transform: scale(1.1);
+	   -moz-transform: scale(1.1);
+	    -ms-transform: scale(1.1);
+	     -o-transform: scale(1.1);
+	        transform: scale(1.1);
+}
+.modal__button--red {
+	background-image: url('../img/badges/modal__button--red.png');
+
+
+}

@@ -1,0 +1,189 @@
+.b-shipping {} .shipping__left {
+    width: 575px;
+}
+.shipping__right {
+    width: 400px;
+}
+.shipping__content {
+    margin: 10px 0;
+}
+.shipping__bordered {
+    border-radius: 2px;
+    padding: 10px 0px 0px;
+    margin: 10px 0 10px;
+}
+.shipping__bordered_contacts {
+}
+.shipping__map{
+    display: inline-block;
+}
+.shipping__fieldset {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.shipping__label {
+    font-size: 1.6em;
+    display: block;
+    color: #292929;
+    font-weight: 600;
+    vertical-align: middle;
+}
+.shipping__form-left {
+    position: relative;
+}
+.shipping__form-right {
+    position: relative;
+    margin: 10px 0;
+}
+.shipping__form-right_input{
+    width: 70%;
+}
+.b-shipping input[type="text"], .b-shipping input[type="email"], .b-shipping .select {
+    height: 35px;
+    border-radius: 2px;
+    border: 1px solid #c6c6c6;
+    padding: 10px;
+    font-size: 1.4em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    vertical-align: middle;
+    width: 100%;
+}
+.b-shipping .select {
+    overflow: hidden;
+    padding: 0 !important;
+    background-image: url('../img/shipping-dropdown.png');
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    width: 100%;
+}
+.b-shipping .select > select {
+    width: 110%;
+    padding: 7px 5px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #292929;
+}
+.b-shipping .select > select > option {
+    background-color: rgba(0, 0, 0, 0);
+    color: #292929;
+}
+.shipping__button {
+    padding: 10px 15px;
+    display: inline-block;
+    color: #80c7e2;
+    border: 1px solid #80c7e2;
+    border-radius: 2px;
+    font-size: 1.6em;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    margin: 0 10px;
+}
+.shipping__button:hover, .shipping__button_active {
+    background-color: #80c7e2;
+    color: #fff;
+}
+.b-shipping input[type="radio"] {
+    display: none;
+}
+.b-shipping input[type="radio"]+label {
+    font-size: 1.4em;
+    font-weight: 400;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 15px;
+    margin-bottom: 8px;
+}
+.b-shipping input[type="radio"]+label small {
+    display: block;
+    padding-left: 25px;
+}
+.b-shipping input[type="radio"]:disabled+label {
+    opacity: .5;
+}
+.b-shipping input[type="radio"]+label::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    background-image: url('../img/radio.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.b-shipping input[type="radio"]:checked+label::before {
+    background-image: url('../img/radio-active.png');
+}
+.shipping__submit {
+    display: block;
+    margin: 20px auto;
+}
+.shipping__type {
+    display: none;
+    opacity: 0;
+    -webkit-animation: opacity 0.5s linear;
+    -moz-animation: opacity 0.5s linear;
+    -ms-animation: opacity 0.5s linear;
+    -o-animation: opacity 0.5s linear;
+    animation: opacity 0.5s linear;
+}
+.shipping__type_show {
+    display: block;
+    opacity: 1;
+}
+.shipping__description {
+    border-top: 1px solid #e3e3e3;
+    padding: 20px 0 10px;
+    margin-top: 20px;
+}
+.shipping__description p {
+    padding: 4px 0;
+}
+.shipping__cart {
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+.shipping__cart-item {
+    padding: 15px 0;
+    display: block;
+    border-bottom: 1px solid #dadada;
+}
+.shipping__cart-item:last-child {
+    border-bottom: none;
+}
+.shipping__cart-title {
+    font-size: 1.8em;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.shipping__cart-left {
+    width: 200px;
+    margin: 15px 0;
+}
+.shipping__cart-label {
+    font-size: 1.6em;
+    font-weight: 400;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.shipping__cart-label > strong {
+    font-weight: 600;
+}
+.shipping__cart-right {
+    width: 150px;
+}
+.shipping__cart-price {
+    display: inline-block;
+    font-size: 1.6em;
+    color: #e74c3c;
+    font-weight: 600;
+    vertical-align: middle;
+}

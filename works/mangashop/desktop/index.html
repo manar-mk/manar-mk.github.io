@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Manga Sushi</title>
+    
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700&subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/jquery.nouislider.css">
+    <link rel="stylesheet" href="css/fancybox.css">
+    
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/effects.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/filter.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/modals.css">
+    <link rel="stylesheet" href="css/footer.css">
+    
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/cabinet.css">
+    <link rel="stylesheet" href="css/catalog.css">
+    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/item.css">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/shipping.css">
+    <link rel="stylesheet" href="css/thanks.css">
+
+    <script src="http://vk.com/js/api/openapi.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <script>
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!--header-->
+    <header>
+        <section class="b-head">
+            <section class="g-wrapper g-flex">
+                <div class="head__left">
+                    <a href="#modal-call" class="js-fancybox">Заказать обратный звонок</a>
+                    <a href="#">Оплата и доставка</a>
+                    <a href="#">Бонусная система</a>
+                </div>
+                <div class="head__right">
+                    <a href="#modal-login" class="js-fancybox">Логин</a>
+                    <a href="#modal-login" class="js-fancybox">Регистрация</a>
+                </div>
+            </section>
+        </section>
+        <section class="header__center g-wrapper g-flex">
+            <a href="index.html" class="b-logo">
+                <img src="img/logo.png" alt="">
+            </a>
+            <section class="b-phones">
+                <div class="phones__top">
+                    <label>Доставка:</label>
+                    <a href="#" class="active js-phone-nav" data-city="almaty">Алматы</a>
+                    <a href="#" class="js-phone-nav" data-city="astana">Астана</a>
+                </div>
+                <div class="phones__bottom">
+                    <div id="almaty" class="js-phone-content show">
+                        <tel>+7 (701) 950-50-70;</tel>
+                        <tel>+7 (727) 350-50-70</tel>
+                    </div>
+                    <div id="astana" class="js-phone-content">
+                        <tel>+7 (701) 950-50-70;</tel>
+                        <tel>+7 (727) 350-50-70</tel>
+                    </div>
+                </div>
+            </section>
+            <section class="b-search-form">
+                <p>
+                    <em>Работаем: Пн - Вскр с 8:00 - 23:00</em>
+                </p>
+                <form action="">
+                    <input type="text" placeholder="Какую еду ищем?">
+                    <input type="submit" value="">
+                </form>
+            </section>
+                        
+            <a href="#modal-register" class="g-button header__button g-button_color_red js-fancybox">
+                <i class="icon-register"></i>
+                <span>Регистрация</span>
+            </a>
+            <!--
+            <a href="cabinet.html" class="g-button header__button g-button_color_blue">
+                <i class="icon-profile"></i>
+                <span>Личный кабинет</span>
+            </a>
+            -->
+        </section>
+        <nav>
+            <section class="g-wrapper">
+                <a class="nav__link" href="catalog.html">Суши</a>
+                <a class="nav__link" href="catalog.html">Пицца</a>
+                <a class="nav__link" href="catalog.html">Супы</a>
+                <a class="nav__link" href="catalog.html">Салаты</a>
+                <a class="nav__link" href="catalog.html">Десерты</a>
+                <a class="nav__link" href="catalog.html">Разное</a>
+                <a href="cart.html" class="b-nav__cart">
+                    <div class="nav__cart-button">
+                        <p>Корзина:
+                            <strong>2</strong>товар(ов)</p>
+                        <p>На сумму:
+                            <strong>16 567</strong>тг.</p>
+                    </div>
+                </a>
+            </section>
+        </nav>
+    </header>
+    <!--/header-->
+    <!--content-->
+    <section class="b-main">
+        <!--slider-->
+        <section class="b-slider__wrap">
+            <ul class="b-slider js-slider">
+                <li class="js-background-img" data-img="img/slider.jpg">
+                    <section class="g-wrapper">
+                        <article>
+                            <h3>40% скидка на</h3>
+                            <h3>Суши сет “Wong Piece”</h3>
+                            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio</p>
+                            <div>
+                                <a href="product.html" class="g-button g-button_color_red slider__button">Купить</a>
+                                <span class="slider__old-price">7 200тг</span>
+                                <span class="slider__price">3 650тг</span>
+                            </div>
+                        </article>
+                    </section>
+                </li>
+                <li class="js-background-img" data-img="img/slider.jpg">
+                    <section class="g-wrapper">
+                        <article>
+                            <h3>40% скидка на</h3>
+                            <h3>Суши сет “Wong Piece”</h3>
+                            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio</p>
+                            <div>
+                                <a href="product.html" class="g-button g-button_color_red slider__button">Купить</a>
+                                <span class="slider__old-price">7 200тг</span>
+                                <span class="slider__price">3 650тг</span>
+                            </div>
+                        </article>
+                    </section>
+                </li>
+                <li class="js-background-img" data-img="img/slider.jpg">
+                    <section class="g-wrapper">
+                        <article>
+                            <h3>40% скидка на</h3>
+                            <h3>Суши сет “Wong Piece”</h3>
+                            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio</p>
+                            <div>
+                                <a href="product.html" class="g-button g-button_color_red slider__button">Купить</a>
+                                <span class="slider__old-price">7 200тг</span>
+                                <span class="slider__price">3 650тг</span>
+                            </div>
+                        </article>
+                    </section>
+                </li>
+                <li class="js-background-img" data-img="img/slider.jpg">
+                    <section class="g-wrapper">
+                        <article>
+                            <h3>40% скидка на</h3>
+                            <h3>Суши сет “Wong Piece”</h3>
+                            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio</p>
+                            <div>
+                                <a href="product.html" class="g-button g-button_color_red slider__button">Купить</a>
+                                <span class="slider__old-price">7 200тг</span>
+                                <span class="slider__price">3 650тг</span>
+                            </div>
+                        </article>
+                    </section>
+                </li>
+            </ul>
+            <div class="g-wrapper">
+                <ul class="b-slider__control">
+                    <li data-button="0" class="js-slider-button current"></li>
+                    <li data-button="1" class="js-slider-button"></li>
+                    <li data-button="2" class="js-slider-button"></li>
+                    <li data-button="3" class="js-slider-button"></li>
+                </ul>
+            </div>
+        </section>
+        <!--/slider-->
+
+        <!--popular-->
+        <section class="b-popular g-wrapper">
+            <div class="g-flex">
+                <h2 class="page__heading page__heading_color_red">Лучшие предложения</h2>
+                <a href="#" class="page__link">Показать все</a>
+            </div>
+            <section class="b-carousel">
+                <div class="b-carousel__wrap">
+                    <ul class="js-carousel-1 b-item__list">
+                        <li class="b-item">
+                            <div class="item__top">
+                                <a href="search.html" class="item__title">Юка</a>
+                                <a href="search.html" class="item__category">Суши</a>
+                            </div>
+                            <a href="product.html" class="item__img">
+                                <img src="img/item1.jpg" alt="">
+                            </a>
+                            <div class="item__bottom">
+                                <div class="g-flex">
+                                    <span class="item__prices">
+                                        <span class="item__price">1300тг.</span>
+                                    </span>
+                                    <a href="product.html" class="g-button item__button">
+                                        <i class="icon-cart-small"></i>В корзину</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="b-item">
+                            <div class="item__top">
+                                <a href="search.html" class="item__title">Лосось темпура</a>
+                                <a href="search.html" class="item__category">Сашими</a>
+                            </div>
+                            <a href="product.html" class="item__img">
+                                <img src="img/item2.jpg" alt="">
+                            </a>
+                            <div class="item__bottom">
+                                <div class="g-flex">
+                                    <span class="item__prices">
+                                        <span class="item__price">1300тг.</span>
+                                    </span>
+                                    <a href="product.html" class="g-button item__button">
+                                        <i class="icon-cart-small"></i>В корзину</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="b-item">
+                            <div class="item__top">
+                                <a href="search.html" class="item__title">Mushrooms note</a>
+                                <a href="search.html" class="item__category">Пицца</a>
+                            </div>
+                            <a href="product.html" class="item__img">
+                                <img src="img/item3.jpg" alt="">
+                            </a>
+                            <div class="item__bottom">
+                                <div class="g-flex">
+                                    <span class="item__prices">
+                                        <span class="item__price">1300тг.</span>
+                                    </span>
+                                    <a href="product.html" class="g-button item__button">
+                                        <i class="icon-cart-small"></i>В корзину</a>
+                                </div>
+                            </div>
+                        </li>
+                       
+                    </ul>
+                </div>
+                <div class="b-carousel__control">
+                    <span data-action="prev" class="carousel__button js-carousel-button"></span>
+                    <ul class="g-flex g-flex_justify_center js-carousel-pages-list"></ul>
+                    <span data-action="next" class="carousel__button js-carousel-button"></span>
+                </div>
+                <div class="b-carousel__wrap">
+                    <ul class="js-carousel-2 b-item__list">
+                        <li class="b-item">
+                            <div class="item__top">
+                                <a href="search.html" class="item__title">Юка</a>
+                                <a href="search.html" class="item__category">Суши</a>
+                            </div>
+                            <a href="product.html" class="item__img">
+                                <img src="img/item1.jpg" alt="">
+                            </a>
+                            <div class="item__bottom">
+                                <div class="g-flex">
+                                    <span class="item__prices">
+                                        <span class="item__price">1300тг.</span>
+                                    </span>
+                                    <a href="product.html" class="g-button item__button">
+                                        <i class="icon-cart-small"></i>В корзину</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="b-item">
+                            <div class="item__top">
+                                <a href="search.html" class="item__title">Лосось темпура</a>
+                                <a href="search.html" class="item__category">Сашими</a>
+                            </div>
+                            <a href="product.html" class="item__img">
+                                <img src="img/item2.jpg" alt="">
+                            </a>
+                            <div class="item__bottom">
+                                <div class="g-flex">
+                                    <span class="item__prices">
+                                        <span class="item__price">1300тг.</span>
+                                    </span>
+                                    <a href="product.html" class="g-button item__button">
+                                        <i class="icon-cart-small"></i>В корзину</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="b-item">
+                            <div class="item__top">
+                                <a href="search.html" class="item__title">Лосось темпура</a>
+                                <a href="search.html" class="item__category">Сашими</a>
+                            </div>
+                            <a href="product.html" class="item__img">
+                                <img src="img/item2.jpg" alt="">
+                            </a>
+                            <div class="item__bottom">
+                                <div class="g-flex">
+                                    <span class="item__prices">
+                                        <span class="item__price">1300тг.</span>
+                                    </span>
+                                    <a href="product.html" class="g-button item__button">
+                                        <i class="icon-cart-small"></i>В корзину</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="b-item">
+                            <div class="item__top">
+                                <a href="search.html" class="item__title">Лосось темпура</a>
+                                <a href="search.html" class="item__category">Сашими</a>
+                            </div>
+                            <a href="product.html" class="item__img">
+                                <img src="img/item2.jpg" alt="">
+                            </a>
+                            <div class="item__bottom">
+                                <div class="g-flex">
+                                    <span class="item__prices">
+                                        <span class="item__price">1300тг.</span>
+                                    </span>
+                                    <a href="product.html" class="g-button item__button">
+                                        <i class="icon-cart-small"></i>В корзину</a>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+            <a href="catalog.html" class="g-button g-button_color_blue popular__button">Хочу посмотреть всю еду!</a>
+        </section>
+        <!--/popular-->
+        <!--special-->
+        <section class="b-special">
+            <section class="b-special__wrap js-background-img" data-img="img/special.jpg">
+                <section class="g-wrapper">
+                    <article>
+                        <h3>40% скидка на</h3>
+                        <h3>Суши сет “Wong Piece”</h3>
+                        <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio</p>
+                        <div>
+                            <a href="product.html" class="g-button g-button_color_red special__button">Купить</a>
+                            <span class="special__old-price">7 200тг</span>
+                            <span class="special__price">3 650тг</span>
+                        </div>
+                    </article>
+                </section>
+            </section>
+        </section>
+        <!--/special-->
+        <!--advantages-->
+        <section class="b-advantages g-wrapper g-flex">
+            <div class="advantages__item">
+                <div class="advantages__img">
+                    <img src="img/advantage1.png" alt="">
+                    <h4>13 567</h4>
+                </div>
+                <div class="advantages__title">
+                    <h3>Заказов</h3>
+                    <h3>доставлено</h3>
+                </div>
+            </div>
+            <div class="advantages__item">
+                <div class="advantages__img">
+                    <img src="img/advantage2.png" alt="">
+                    <h4>47min</h4>
+                </div>
+                <div class="advantages__title">
+                    <h3>доставка</h3>
+                    <h3>последнего заказа</h3>
+                </div>
+            </div>
+            <div class="advantages__item">
+                <div class="advantages__img">
+                    <img src="img/advantage3.png" alt="">
+                    <h4>986</h4>
+                </div>
+                <div class="advantages__title">
+                    <h3>хороших</h3>
+                    <h3>отзывов</h3>
+                </div>
+            </div>
+        </section>
+        <!--/advantages-->
+        <!--appstore-->
+        <section class="b-appstore">
+            <section class="g-wrapper">
+                <article>
+                    <h3>MANGA SUSHI В ТВОЕМ ТЕЛЕФОНЕ!</h3>
+                    <p>Первая заповедь Техника - ничего не принимать близко к сердцу. Совершаемое им Изменение Реальности может отразиться на судьбах пятидесяти миллиардов человек. Миллион или более могут измениться настолько, что их придется рассматривать как совершенно новые личности.</p>
+                    <div>
+                        <a href="#">
+                            <img src="img/appstore.png" alt="">
+                        </a>
+                    </div>
+                </article>
+            </section>
+        </section>
+        <!--/appstore-->
+        <!--news-->
+        <section class="b-news__wrap g-wrapper g-flex g-flex_align_top">
+            <section class="b-news">
+                <h2 class="news__heading page__heading page__heading_color_blue">Последние новости</h2>
+                <ul class="b-news__list">
+                    <li class="b-news__item">
+                        <div class="news__img">
+                            <img src="img/news1.jpg" alt="">
+                        </div>
+                        <article class="news__article">
+                            <h4 class="news__title">Заголовок новости в 1 или в 2 текстовые строки</h4>
+                            <small>05.08.2014</small>
+                            <p>
+                                Техник Эндрю Харлан вошел в капсулу. Капсула находилась внутри колодца, образованного редкими вертикальными прутьями. Прутья плотно облегали круглые стенки капсулы и, уходя вверх....<a href="news.html">Читать далее</a>
+                            </p>
+                        </article>
+                    </li>
+                    <li class="b-news__item">
+                        <div class="news__img">
+                            <img src="img/news2.jpg" alt="">
+                        </div>
+                        <article class="news__article">
+                            <h4 class="news__title">Заголовок новости в 1 или в 2 текстовые строки</h4>
+                            <small>05.08.2014</small>
+                            <p>
+                                Техник Эндрю Харлан вошел в капсулу. Капсула находилась внутри колодца, образованного редкими вертикальными прутьями. Прутья плотно облегали круглые стенки капсулы и, уходя вверх....<a href="news.html">Читать далее</a>
+                            </p>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+            <section class="b-social">
+                <h2 class="news__heading page__heading page__heading_color_blue">МЫ В СОЦИАЛЬНЫХ СЕТЯх</h2>
+                <div class="g-flex">
+                    <a href="#" data-page="vk-almaty" class="js-social-nav social__nav social__nav_state_active">ВК Алматы</a>
+                    <a href="#" data-page="vk-astana" class="js-social-nav social__nav">ВК Астана</a>
+                    <a href="#" data-page="facebook" class="js-social-nav social__nav">Facebook</a>
+                </div>
+                <div class="social__wrap">
+                    <div id="vk-almaty" class="social__item js-social-item social__item_state_show">
+                        <div id="vk_groups1"></div>
+                        <script type="text/javascript">
+                        VK.Widgets.Group("vk_groups1", {
+                            mode: 0,
+                            width: "320",
+                            height: "400",
+                            color1: 'FFFFFF',
+                            color2: '2b5d7e',
+                            color3: '55c2e1'
+                        }, 7838668);
+                        </script>
+                    </div>
+                    <div id="vk-astana" class="social__item js-social-item">
+                        <div id="vk_groups2"></div>
+                        <script type="text/javascript">
+                        VK.Widgets.Group("vk_groups2", {
+                            mode: 0,
+                            width: "320",
+                            height: "400",
+                            color1: 'FFFFFF',
+                            color2: '2b5d7e',
+                            color3: '55c2e1'
+                        }, 53689517);
+                        </script>
+                    </div>
+                    <div id="facebook" class="social__item js-social-item">
+                        <div class="fb-like-box" data-href="https://www.facebook.com/mangakz" data-width="320" data-height="400" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="false"></div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!--/news-->
+        <!--subscribe-->
+        <section action="" class="b-subscribe">
+            <form action="" class="g-wrapper g-flex">
+                <h4>ПОДПИШИСЬ НА РАССЫЛКУ - ПОЛУЧАЙ НОВОСТИ ОБ АКЦИЯХ И СКИДКАХ ЧЕРЕЗ E-MAIL!</h4>
+                <fieldset>
+                    <input type="text" placeholder="Введите ваш e-mail">
+                    <input type="submit" value="">
+                </fieldset>
+            </form>
+        </section>
+        <!--/subscribe-->
+
+    </section>
+    <!--/content-->
+    <!--footer-->
+    <footer>
+        <section class="b-footer__title">
+            <div class="g-wrapper g-flex">
+                <h4 class="footer__item">О магазине</h4>
+                <h4 class="footer__item">Доставка и оплата</h4>
+                <h4 class="footer__item">Полезное</h4>
+                <h4 class="footer__item">Контакты</h4>
+                <h4 class="footer__item">Мы в соц. сетях</h4>
+            </div>
+        </section>
+        <section class="g-wrapper b-footer g-flex g-flex_align_top">
+            <div class="footer__item">
+                <a href="typical.html">История</a>
+                <a href="typical.html">Фотографии</a>
+                <a href="typical.html">Вакансии</a>
+                <a href="typical.html">Публичная оферта</a>
+                <a href="typical.html">Карьера в Manga Sushi</a>
+            </div>
+            <div class="footer__item">
+                <a href="typical.html">Способы доставки</a>
+                <a href="typical.html">Способы оплаты</a>
+            </div>
+            <div class="footer__item">
+                <a href="news.html">Новости</a>
+                <a href="news.html">Акции</a>
+                <a href="news.html">Статьи</a>
+            </div>
+            <div class="footer__item">
+                <a href="contacts.html">Адреса ресторанов</a>
+                <a href="#modal-help" class="js-fancybox">Обратная связь</a>
+                <a href="contacts.html">Контакты</a>
+            </div>
+            <div class="footer__item">
+                <a class="footer__social footer__social_color_vk" href=""><i class="icon-vk"></i></a>
+                <a class="footer__social footer__social_color_fb" href=""><i class="icon-fb"></i></a>
+                <a class="footer__social footer__social_color_insta" href=""><i class="icon-insta"></i></a>
+            </div>
+        </section>
+        <section class="b-footer__copy">
+            <div class="g-wrapper g-flex">
+                <p>2014 © Manga Sushi | Все права защищены</p>
+                <p>Created by <a href="http://zmot.kz">ZMOT</a>
+                </p>
+            </div>
+        </section>
+    </footer>
+    <!--/footer-->
+<!--modals-->
+    <section class="b-modals">
+        <section id="modal-product" class="b-modal">
+            <h4 class="modal__heading">ТОВАР УСПЕШНО ДОБАВЛЕН В КОРЗИНУ</h4>
+            <div class="g-flex">
+                <a href="" class="g-button modal__button g-button_color_green">Продолжить покупки</a>
+                <a href="" class="g-button modal__button g-button_color_red">Оплатить покупки</a>
+            </div>
+        </section>
+        <section id="modal-login" class="b-modal b-modal_size_small">
+            <h4 class="modal__heading">Вход</h4>
+            <form action="" class="b-modal__form">
+                <span>
+                    <input type="email" id="email" placeholder="e-mail" />
+                    <label for="email"><i class="icon-email"></i>
+                    </label>
+                </span>
+                <span>
+                    <input type="password" id="password" placeholder="*****" />
+                    <label for="password"><i class="icon-password"></i>
+                    </label>
+                </span>
+                <input class="g-button g-button_color_blue modal__submit" type="submit" value="Войти" />
+            </form>
+            <a href="#modal-register" class="modal__link js-fancybox">Нет аккаунта? Зарегистрируйся</a>
+        </section>
+        <section id="modal-register" class="b-modal b-modal_size_small">
+            <h4 class="modal__heading">Регистрация</h4>
+            <form action="" class="b-modal__form">
+                <span>
+                    <input type="email" id="email" placeholder="e-mail" />
+                    <label for="email"><i class="icon-email"></i>
+                    </label>
+                </span>
+                <span>
+                    <input type="password" id="password" placeholder="*****" />
+                    <label for="password"><i class="icon-password"></i>
+                    </label>
+                </span>
+                <input class="g-button g-button_color_green modal__submit" type="submit" value="Отправить" />
+            </form>
+            <a href="#modal-login" class="modal__link modal__link_color_blue js-fancybox">Есть аккаунт? Войдите</a>
+        </section>        
+        <section id="modal-help" class="b-modal b-modal_size_small">
+            <h4 class="modal__heading modal__heading_color_blue">Оставить отзыв или комментарий</h4>
+            <form id="form-help" action="" class="b-modal__form">
+                <span>
+                    <input type="text" id="username" placeholder="Имя" />
+                    <label for="username"><i class="icon-username"></i>
+                    </label>
+                </span>
+                <span>
+                    <input type="text" id="phone" placeholder="+7(___)___-__-__" />
+                    <label for="phone"><i class="icon-phone"></i>
+                    </label>
+                </span>
+                <span>
+                    <input type="email" id="email" placeholder="e-mail" />
+                    <label for="email"><i class="icon-email"></i>
+                    </label>
+                </span>
+                <span>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Ваш отзыв или комментарий"></textarea>
+                </span>
+                <input class="g-button g-button_color_blue modal__submit" type="submit" value="Отправить" />
+            </form>
+        </section>
+        <section id="modal-help-success" class="b-modal b-modal_size_small">
+            <a id="modal-help-success-link" href="#modal-help-success" class="js-fancybox modal__hidden"></a>
+            <h4 class="modal__heading modal__heading_color_blue">Спасибо</h4>
+            <p class="modal__text">Наш менеджер по качеству ответит вам в ближайшее время</p>
+        </section>
+        <section id="modal-call" class="b-modal b-modal_size_small">
+            <h4 class="modal__heading modal__heading_color_red">Обратный звонок</h4>
+            <form id="form-call" action="" class="b-modal__form">
+                <span>
+                    <input type="text" id="username" placeholder="Имя" />
+                    <label for="username"><i class="icon-username"></i>
+                    </label>
+                </span>
+                <span>
+                    <input type="text" id="phone" placeholder="+7(___)___-__-__" />
+                    <label for="phone"><i class="icon-phone"></i>
+                    </label>
+                </span>
+                <input class="g-button g-button_color_red modal__submit" type="submit" value="Позвоните мне" />
+                <p class="modal__text">Оставьте свой номер и мы перезвоним!</p>
+
+            </form>
+        </section>
+        <section id="modal-call-success" class="b-modal b-modal_size_small">
+            <a id="modal-call-success-link" href="#modal-call-success" class="js-fancybox modal__hidden"></a>
+            <h4 class="modal__heading modal__heading_color_red">Спасибо</h4>
+            <p class="modal__text">Наш оператор свяжется с вами в течении 15-20 минут.</p>
+        </section>
+    </section>
+    <!--/modals-->
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/libs/jquery.nouislider.all.min.js"></script>
+    <script src="js/libs/share42.js"></script>
+    <script src="js/libs/jquery.fancybox.pack.js"></script>
+    <script src="js/scripts/main.js"></script>
+    <script src="js/scripts/slider.js"></script>
+    <script src="js/scripts/carousel.js"></script>
+</body>
+
+</html>
