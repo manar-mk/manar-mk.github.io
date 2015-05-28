@@ -35,13 +35,13 @@ module.exports = function(grunt) {
             my_target: {
                 files: {
                     'bin/scripts.min.js': [
-                        'js/parallax.js',
                         'js/jquery-1.11.1.min.js',
+                        'js/jquery.lazyload.js',
+                        'js/parallax.js',
                         'js/particles.min.js',
                         'js/jquery.easings.min.js',
                         'js/jquery.slimscroll.min.js',
                         'js/jquery.fullPage.min.js',
-                        'js/loader.js',
                         'js/demo.js',
                     ]
                 }

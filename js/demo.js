@@ -1,6 +1,7 @@
 $(document).ready(function() {
-    $("body").queryLoader2();
-    
+    $("img").lazyload({
+        effect : "fadeIn"
+    });
     $('#fullpage').fullpage({});
 
     particlesJS.load('particles-top', 'js/particles.json', function() {
