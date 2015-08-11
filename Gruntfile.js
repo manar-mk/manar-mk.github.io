@@ -4,6 +4,8 @@ module.exports = function(grunt) {
             combine: {
                 files: {
                     'bin/styles.min.css': [
+                        'css/demo.css',
+                        'css/component.css',
                         'css/style.css',
                         'css/jquery.fullPage.css'
                     ]
@@ -37,11 +39,13 @@ module.exports = function(grunt) {
                     'bin/scripts.min.js': [
                         'js/jquery-1.11.1.min.js',
                         'js/parallax.js',
-                        'js/particles.min.js',
                         'js/jquery.easings.min.js',
                         'js/jquery.slimscroll.min.js',
                         'js/jquery.fullPage.min.js',
                         'js/demo.js',
+                        'js/TweenLite.min.js',
+                        'js/EasePack.min.js',
+                        'js/ahb.js',
                     ]
                 }
             }
