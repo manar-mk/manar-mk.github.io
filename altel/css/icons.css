@@ -1,0 +1,18 @@
+i{
+	display: inline-block;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+i.arrow{
+	width: 15px;
+	height: 15px;
+	background-image: url('../img/arrow.png');
+	
+}
+i.zoom{
+	width: 40px;
+	height: 40px;
+	background-image: url('../img/zoom.png');
+	
+}
