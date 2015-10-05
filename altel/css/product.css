@@ -101,6 +101,7 @@
 .product__top h5 {
     font-family: 'Roman', sans-serif;
     font-size: 2.2em;
+        line-height: 1.2;
     margin: 15px 0;
 }
 

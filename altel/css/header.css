@@ -87,8 +87,11 @@ footer{
 @media (max-width: 1680px) {
 	.header__logo,.header__button{
 		position: relative;
-		top: auto;
+		top: 0;
 	}
+	.header__button:active{
+		top: 1px;
+	}	
 	header nav a,.header__phone,.select select,.header__label{
 		font-size: 1.4em;
 	}

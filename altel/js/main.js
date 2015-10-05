@@ -17,7 +17,11 @@ $(document).ready(function() {
         event.preventDefault();
         $($(this).attr('href')).removeClass('product_active');
     });
-
+    $('.js-form').submit(function(event) {
+        swal("Спасибо!", "Ваша заявка принята, мы скоро с вами свяжемся", "success");
+        //ошибка
+        //swal("Ошибка!", "Что-то пошло не так, попробуйте еще раз", "error");
+    });
     function scrollPage(section) {
         $("html, body").animate({
             scrollTop: $(section).offset().top - 130
