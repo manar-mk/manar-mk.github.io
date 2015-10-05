@@ -15,6 +15,9 @@ header{
 .header__logo{
 	left: 0;
 }
+.header__logo img{
+	max-width: 100%;
+}
 .header__button{
 	right: 0;
 	width: 200px;
@@ -40,6 +43,7 @@ header{
 .header__contacts{
 }
 .select select{
+	width: 100%;
 	border-bottom: 1px dashed #2b97dc;
 	font-size: 1.8em;
 	cursor: pointer;
@@ -57,6 +61,7 @@ header{
 	cursor: pointer;
 	position: relative;
 	overflow: hidden;
+	min-width: 140px
 }
 header nav{
 	width: 555px;
@@ -81,6 +86,24 @@ footer{
 }
 @media (max-width: 1680px) {
 	.header__logo,.header__button{
-		display: none;
+		position: relative;
+		top: auto;
+	}
+	header nav a,.header__phone,.select select,.header__label{
+		font-size: 1.4em;
+	}
+	header nav{
+		width: 480px;
+	}
+	.header__label{
+		width: 80px;
+	}
+	.header__logo{
+		width: 165px;
+	}
+	.header__button{
+		margin-right: 0;
+		width: 165px;
+		font-size: 1.4em;
 	}
 }
