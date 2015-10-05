@@ -44,7 +44,7 @@
                 <a href="#sims" class="js-scroll">SIM-карты </a>
             </nav>
         </section>
-        <a href="#modal" class="button header__button">Заказать звонок</a>
+        <a href="#modal" class="button header__button js-fancybox">Заказать звонок</a>
     </header>
     <section class="container">
         <div class="shadow hero flex flex_top flex_stretch">
@@ -1079,6 +1079,24 @@
         <p>Altel 2013-2015 © Все права защищены</p>
         <a href=""><img src="img/partner.png" alt=""></a>
     </footer>
+    </section>
+    <section class="modals">
+        <div id="modal">
+            <form action="" class="hero__form modal">
+                <h3>Закажите звонок <br> и мы вам перезвоним!</h3>
+                <fieldset>
+                    <label for="modalName">Введите ваше имя:</label>
+                    <input id="modalName" type="text" placeholder="Ваше имя">
+                </fieldset>
+                <fieldset>
+                    <label for="modalPhone">Введите ваш телефон:</label>
+                    <input id="modalPhone" class="js-phone" type="text" placeholder="+7 (_ _ _) _ _ _ - _ _ - _ _">
+                </fieldset>
+                <fieldset>
+                    <input class="button" type="submit" value="Заказать звонок">
+                </fieldset>
+            </form>
+        </div>
     </section>
     <script src="js/jquery.min.js"></script>
     <script src="js/fancybox.js"></script>
