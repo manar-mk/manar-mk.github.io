@@ -26,11 +26,11 @@ body {
     align-items: center;
 }
 .flex_column{
-	-webkit-flex-direction: column;
-	-moz-flex-direction: column;
-	-ms-flex-direction: column;
-	-o-flex-direction: column;
-	flex-direction: column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
 }
 
 .flex_wrap {
@@ -68,7 +68,7 @@ body {
     align-items: flex-end;
 }
 .shadow{
-	background-color: #fff;
+  background-color: #fff;
   box-shadow: 0px 3px 6px 0px rgba( 0, 0, 0, 0.3 );
 }
 .button{
@@ -137,6 +137,9 @@ p{
 }
 .block{
   padding-bottom: 50px;
+}
+.modals{
+  display: none;
 }
 ::-moz-selection { background: #ed0088; color: #fff; }
 ::selection { background: #ed0088; color: #fff; }
