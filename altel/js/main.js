@@ -18,6 +18,9 @@ $(document).ready(function() {
         $($(this).attr('href')).removeClass('product_active');
     });
     $('.js-form').submit(function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        $.fancybox.close();
         swal("Спасибо!", "Ваша заявка принята, мы скоро с вами свяжемся", "success");
         //ошибка
         //swal("Ошибка!", "Что-то пошло не так, попробуйте еще раз", "error");

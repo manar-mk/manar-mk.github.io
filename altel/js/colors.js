@@ -3,7 +3,6 @@ $(document).ready(function() {
 	var colorControlItem = colorControl.children('.js-colors-button');
 	var colorZoom = $('.js-zoom');
 
-	console.log(colorControl,colorControlItem);
 	colorControlItem.each(function(index, el) {
         $(el).css('background', $(el).data('color'));
 	});
