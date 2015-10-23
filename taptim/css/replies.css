@@ -1,0 +1,65 @@
+.replies{
+	height: 400px;
+	background-image: url('../img/replies.png');
+	background-repeat: no-repeat;
+	background-position: top center;
+	padding-top: 60px;
+}
+.reply__list{
+	list-style: none;
+}
+.reply__item{
+	height: 200px;
+	width: 555px;
+	background-color: #fff;
+}
+.reply__img{
+	width: 175px;
+	text-align: center;
+}
+.reply__img img{	
+}
+.reply__info h4{
+	font-weight: 500;
+	color: #494949;
+}
+.reply__info h6{
+	margin-top: 5px;
+	font-size: 1.6em;
+	font-weight: 500;
+	color: #999999;
+	margin-bottom: 20px;
+}
+.reply__info p{
+	font-size: 1.6em;
+	line-height: 1.4;
+}
+.reply__info{
+	width: 380px;
+	padding-right: 40px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.carousel__control{
+	margin-top: 50px;
+}
+.carousel__button{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: #fff;
+	margin: 0 5px;
+	cursor: pointer;
+	opacity: 0.34;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	
+}
+.carousel__button.active,.carousel__button:hover{
+	opacity: 1;
+}
