@@ -1,0 +1,193 @@
+.functions{
+	background-repeat: no-repeat;
+	background-position: top center;
+	padding: 50px 0 100px;
+}
+.functions_green{
+	background-image: url('../img/functions_green.jpg');
+}
+.functions_red{
+}
+.functions_violet{
+}
+.functions_orange{
+}
+.tabs__nav{
+	cursor: pointer;
+	width: 25%;
+	height: 90px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #e0e0e0;
+	border-right: 0;
+	background-color: #f5f5f5;
+	    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.tabs__nav:hover,
+.tabs__nav_active{
+	background-color: #fff;
+}
+.tabs__nav:last-child{
+	border-right: 1px solid #e0e0e0;
+}
+.tabs__icon{
+	width: 100px;
+	height: 60px;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: inline-block;
+		    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.tabs__text{
+	width: 180px;
+	line-height: 1.2;
+	font-size: 1.8em;
+	padding-right: 70px;
+}
+.tabs__nav:nth-child(1) .tabs__icon{
+	background-image: url('../img/tab1.png');
+}
+.tabs__nav:nth-child(2) .tabs__icon{
+	background-image: url('../img/tab2.png');
+}
+.tabs__nav:nth-child(3) .tabs__icon{
+	background-image: url('../img/tab3.png');
+}
+.tabs__nav:nth-child(4) .tabs__icon{
+	background-image: url('../img/tab4.png');
+}
+.tabs__nav_active:nth-child(1) .tabs__icon,
+.tabs__nav:nth-child(1):hover .tabs__icon
+{
+	background-image: url('../img/tab1-active.png');
+}
+.tabs__nav_active:nth-child(2) .tabs__icon,
+.tabs__nav:nth-child(2):hover .tabs__icon
+{
+	background-image: url('../img/tab2-active.png');
+}
+.tabs__nav_active:nth-child(3) .tabs__icon,
+.tabs__nav:nth-child(3):hover .tabs__icon
+{
+	background-image: url('../img/tab3-active.png');
+}
+.tabs__nav_active:nth-child(4) .tabs__icon,
+.tabs__nav:nth-child(4):hover .tabs__icon
+{
+	background-image: url('../img/tab4-active.png');
+}
+.tabs__wrap{
+	overflow: hidden;
+	background-color: #fff;
+}
+.tabs__item{
+	display: none;
+	opacity: 0;
+	-webkit-animation: opacity 0.4s ease-in-out;
+    -moz-animation: opacity 0.4s ease-in-out;
+    -ms-animation: opacity 0.4s ease-in-out;
+    -o-animation: opacity 0.4s ease-in-out;
+    animation: opacity 0.4s ease-in-out;
+}
+.tabs__item_active{
+	display: block;
+	opacity: 1;
+}
+.instruction__wrap{
+	padding: 40px 30px;
+}
+.instruction{
+	list-style: none;
+}
+.instruction__item{
+	width: 270px;
+}
+.instruction__item img{
+	max-width: 100%;
+	border: 1px solid #e0e0e0;
+}
+.instruction__heading{
+	margin: 20px 0 10px;
+}
+.instruction__text{
+	font-style: italic;
+}
+.description{
+	overflow: hidden;
+	padding: 30px;
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
+	background-color: #fafafa;
+}
+.description img{
+	float: left;
+	margin-right: 50px;
+	margin-bottom: 50px;
+}
+.description p{
+	margin-bottom: 30px;
+}
+.buy{
+	padding: 40px 0 80px 0; 
+}
+.buy__list{
+	width: 960px;
+	margin: 0 auto;
+	list-style: none;
+}
+.buy__item{
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	width: 220px;
+	border-radius: 5px;
+	border: 1px solid #e0e0e0;
+}
+.buy__item_choosen{
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.buy__label{
+	top: 85px;
+	padding: 5px 15px;
+	right: 0;
+	font-size: 1.4em;
+	position: absolute;
+	background-color: #ff8e01;
+}
+.buy__price{
+	background-color: #fafafa;
+	font-size: 3.6em;
+	padding: 30px 0;
+}
+.buy__period{
+	font-weight: 300;
+	padding: 30px 0;
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
+}
+.buy__num{
+	display: block;
+	font-size: 6em;
+	margin-bottom: 10px;
+}
+.buy__month{
+	font-size: 3.6em;
+}
+.buy__bottom{
+	background-color: #fafafa;
+	padding: 25px 0;
+}

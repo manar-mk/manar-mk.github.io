@@ -93,7 +93,7 @@ body{
     color: #7b1fa2;
 }
 .color_orange{
-    color: #ff8e01;
+    color: #ff9800;
 }
 
 
@@ -141,7 +141,7 @@ body{
     background-color: #7b1fa2;
 }
 .button_orange{
-    background-color: #ff8e01;
+    background-color: #ff9800;
 }
 .button_red:hover{
     background-color: #af0909;
@@ -153,7 +153,7 @@ body{
     background-color: #3b0467;
 }
 .button_orange:hover{
-    background-color: #FF5722;
+    background-color: #ff5b00;
 }
 h1,h2,h3,h4,h5,h6{
 	font-weight: 400;
@@ -178,10 +178,71 @@ h4{
     font-size: 2em;
     font-weight: 400;
 }
+h5{
+    font-size: 1.6em;
+    font-weight: 500;
+}
 p{
     font-size: 1.4em;
     line-height: 1.6;
 }
 strong{
     font-weight: 500;
+}
+::-moz-selection { background: #0072bc; color: #fff; }
+::selection { background: #0072bc; color: #fff; }
+@keyframes"opacity" {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 50%;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-moz-keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 50%;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes"opacity" {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 50%;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-ms-keyframes"opacity" {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 50%;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-o-keyframes"opacity" {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 50%;
+    }
+    100% {
+        opacity: 1;
+    }
 }

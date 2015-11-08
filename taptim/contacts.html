@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/download.css">
     <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/functions.css">
+    <link rel="stylesheet" href="css/agreement.css">
 </head>
 
 <body>
@@ -24,7 +27,8 @@
             <nav class="flex flex_stretch flex_end">
                 <a href="index.html">Главная</a>
                 <a href="download.html">Скачать</a>
-                <a href="features.html">Функции</a>
+                <a href="functions.html">Функции</a>
+                <a href="agreement.html">Оферта</a>
                 <a href="faq.html">FAQ</a>
                 <a class="active" href="contacts.html">Контакты</a>
             </nav>
@@ -68,8 +72,8 @@
         <section class="container flex flex_center">
             <form class="contacts__form" action="">
                 <h2 class="color_white">Обратная связь</h2>
-                <p>Оставьте свой отзыв или комментарий. <br>
-                Мы будем вам очень признательны.</p>
+                <p>Оставьте свой отзыв или комментарий.
+                    <br> Мы будем вам очень признательны.</p>
                 <div class="contacts__fieldset flex flex_top flex_column-reverse">
                     <input id="name" type="text" required placeholder="Имя Фамилия">
                     <label for="name">Ваше имя:</label>
@@ -88,34 +92,90 @@
             </form>
         </section>
     </section>
-     <section class="replies shadow_big">
+    <section class="replies shadow_big">
         <div class="container">
             <h2 class="color_white">Отзывы пользователей</h2>
             <div class="carousel__wrap">
-                <ul class="reply__list flex carousel">
-                    <li class="shadow reply__item flex">
-                        <div class="reply__img"><img src="img/reply1.png" alt=""></div>
-                        <article class="reply__info">
-                            <h4>Aygerim Uspangalieva</h4>
-                            <h6>9 апреля 2015</h6>
-                            <p>Спасибо разработчикам очень удобное приложение отправила всем родным знакомым. Они еще не в понятке)))</p>
-                        </article>
+                <ul class="reply__list flex carousel js-carousel">
+                    <li class="js-carousel-item flex">
+                        <div class="shadow reply__item flex">
+                            <div class="reply__img"><img src="img/reply1.png" alt=""></div>
+                            <article class="reply__info">
+                                <h4>Aygerim Uspangalieva</h4>
+                                <h6>9 апреля 2015</h6>
+                                <p>Спасибо разработчикам очень удобное приложение отправила всем родным знакомым. Они еще не в понятке)))</p>
+                            </article>
+                        </div>
+                        <div class="shadow reply__item flex">
+                            <div class="reply__img"><img src="img/reply2.png" alt=""></div>
+                            <article class="reply__info">
+                                <h4>Александр Королев</h4>
+                                <h6>20 марта 2015</h6>
+                                <p>Отличная прога, установил всем своим друзьям и теперь в любое время в курсе где они, от меня никто не скроется!</p>
+                            </article>
+                        </div>
                     </li>
-                    <li class="shadow reply__item flex">
-                        <div class="reply__img"><img src="img/reply2.png" alt=""></div>
-                        <article class="reply__info">
-                            <h4>Александр Королев</h4>
-                            <h6>20 марта 2015</h6>
-                            <p>Отличная прога, установил всем своим друзьям и теперь в любое время в курсе где они, от меня никто не скроется!</p>
-                        </article>
+                    <li class="js-carousel-item flex">
+                        <div class="shadow reply__item flex">
+                            <div class="reply__img"><img src="img/reply1.png" alt=""></div>
+                            <article class="reply__info">
+                                <h4>Aygerim Uspangalieva</h4>
+                                <h6>9 апреля 2015</h6>
+                                <p>Спасибо разработчикам очень удобное приложение отправила всем родным знакомым. Они еще не в понятке)))</p>
+                            </article>
+                        </div>
+                        <div class="shadow reply__item flex">
+                            <div class="reply__img"><img src="img/reply2.png" alt=""></div>
+                            <article class="reply__info">
+                                <h4>Александр Королев</h4>
+                                <h6>20 марта 2015</h6>
+                                <p>Отличная прога, установил всем своим друзьям и теперь в любое время в курсе где они, от меня никто не скроется!</p>
+                            </article>
+                        </div>
+                    </li>
+                    <li class="js-carousel-item flex">
+                        <div class="shadow reply__item flex">
+                            <div class="reply__img"><img src="img/reply1.png" alt=""></div>
+                            <article class="reply__info">
+                                <h4>Aygerim Uspangalieva</h4>
+                                <h6>9 апреля 2015</h6>
+                                <p>Спасибо разработчикам очень удобное приложение отправила всем родным знакомым. Они еще не в понятке)))</p>
+                            </article>
+                        </div>
+                        <div class="shadow reply__item flex">
+                            <div class="reply__img"><img src="img/reply2.png" alt=""></div>
+                            <article class="reply__info">
+                                <h4>Александр Королев</h4>
+                                <h6>20 марта 2015</h6>
+                                <p>Отличная прога, установил всем своим друзьям и теперь в любое время в курсе где они, от меня никто не скроется!</p>
+                            </article>
+                        </div>
+                    </li>
+                    <li class="js-carousel-item flex">
+                        <div class="shadow reply__item flex">
+                            <div class="reply__img"><img src="img/reply1.png" alt=""></div>
+                            <article class="reply__info">
+                                <h4>Aygerim Uspangalieva</h4>
+                                <h6>9 апреля 2015</h6>
+                                <p>Спасибо разработчикам очень удобное приложение отправила всем родным знакомым. Они еще не в понятке)))</p>
+                            </article>
+                        </div>
+                        <div class="shadow reply__item flex">
+                            <div class="reply__img"><img src="img/reply2.png" alt=""></div>
+                            <article class="reply__info">
+                                <h4>Александр Королев</h4>
+                                <h6>20 марта 2015</h6>
+                                <p>Отличная прога, установил всем своим друзьям и теперь в любое время в курсе где они, от меня никто не скроется!</p>
+                            </article>
+                        </div>
                     </li>
                 </ul>
             </div>
             <ul class="carousel__control flex flex_center">
-                <li class="carousel__button active"></li>
-                <li class="carousel__button"></li>
-                <li class="carousel__button"></li>
-                <li class="carousel__button"></li>
+                <li data-slide="0" class="js-carousel-button carousel__button active"></li>
+                <li data-slide="1" class="js-carousel-button carousel__button"></li>
+                <li data-slide="2" class="js-carousel-button carousel__button"></li>
+                <li data-slide="3" class="js-carousel-button carousel__button"></li>
             </ul>
         </div>
     </section>
@@ -132,11 +192,12 @@
             </div>
             <div class="footer__right">
                 <nav class="flex">
-                    <a href="index.html">Главная</a>
-                    <a href="download.html">Скачать</a>
-                    <a href="features.html">Функции</a>
-                    <a href="faq.html">FAQ</a>
-                    <a class="active" href="contacts.html">Контакты</a>
+                <a href="index.html">Главная</a>
+                <a href="download.html">Скачать</a>
+                <a href="functions.html">Функции</a>
+                <a href="agreement.html">Оферта</a>
+                <a href="faq.html">FAQ</a>
+                <a class="active" href="contacts.html">Контакты</a>
                 </nav>
                 <p>кросс-платформенное приложение для смартфонов,
                     <br> позволяющее вам обмениваться своим
@@ -147,6 +208,12 @@
             <p>© ТОО «Таптим» 2015</p>
         </div>
     </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/sweetalert.min.js"></script>
+    <script src="js/touchswipe.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/carousel.js"></script>
 </body>
 
 </html>
