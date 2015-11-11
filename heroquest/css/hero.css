@@ -1,0 +1,130 @@
+.hero{
+	height: 980px;
+	background-image: url('../img/hero.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-top: 15px;
+}
+.hero_single{
+	height: 225px;
+	background-image: none;
+	
+}
+.hero__top{
+	position: relative;
+	text-align: center;
+}
+.logo{
+	margin: 0 auto;
+}
+.share{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.share a {
+    width: 35px;
+    height: 35px;
+    line-height: 33px;
+    margin-right: 15px;
+    border-radius: 50%;
+    border: 1px solid #242ea9;
+    display: inline-block;
+    text-align: center;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.share a:hover {
+    background: #242ea9;
+}
+.lang__wrap{
+	margin-left: 10px;
+	width: 150px;
+	height: 35px;
+	border: 1px solid #c6216f;
+	position: absolute;
+	right: 0;
+	top: 0;
+	overflow: hidden;
+	background-color: #09101f;
+}
+.lang{
+	position: absolute;
+	color: #33446a;
+	font-size: 1.6em;
+	top: 0;
+	width: 80px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	
+}
+.lang:first-child{
+	left: 0;
+}
+.lang:last-child{
+	right: 0;
+}
+.lang.active{
+	z-index: 5;
+	color: #fff;
+	background-color: #152446;
+}
+.lang:hover{
+	color: #fff;
+}
+.hero__bottom,.hero__article{
+	color: #fff;
+	text-align: center;
+}
+.hero__article{
+	margin-top: 140px;
+	margin-bottom: 280px;
+}
+.hero__subheading{
+	font-size: 2.3em;
+	font-weight: 300;
+	margin: 10px 0 30px;
+}
+.hero__bottom{
+
+}
+.hero__text{
+	display: block;
+	font-size: 1.6em;
+	font-weight: 300;
+	margin-bottom: 10px;
+}
+.hero__scroll{
+	background-image: url('../img/hero-scroll.png');
+	background-repeat: no-repeat;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	background-position: center center;
+	width: 36px;
+	height: 36px;
+	text-align: center;
+	line-height: 35px;
+	display: inline-block;
+	   -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.hero__scroll:hover{
+	background-image: url('../img/hero-scroll-hover.png');
+}
