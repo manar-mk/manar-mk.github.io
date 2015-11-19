@@ -7,6 +7,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,100italic,300italic,400italic,500,500italic,700italic,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/fancybox.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/hero.css">
@@ -18,6 +19,7 @@
     <link rel="stylesheet" href="css/faq.css">
     <link rel="stylesheet" href="css/functions.css">
     <link rel="stylesheet" href="css/agreement.css">
+    <link rel="stylesheet" href="css/modal.css">
 </head>
 
 <body>
@@ -35,24 +37,25 @@
             </div>
         </section>
     </header>
-    <section class="functions functions_green">
+    <section class="js-functions functions functions_green">
         <section class="container">
             <h2 class="color_white">Возможности</h2>
             <div class="tabs__wrap shadow_big">
+                <div class="tabs__preload"></div>
                 <div class="flex flex_stretch">
-                    <div data-tab="tab0" class="js-tabs-button tabs__nav tabs__nav_active flex flex_start">
+                    <div data-tab="tab0" data-hash="#" data-color="green" class="js-tabs-button tabs__nav tabs__nav_active flex flex_start">
                         <span class="tabs__icon"></span>
                         <span class="tabs__text color_green">Определение местоположения</span>
                     </div>
-                    <div data-tab="tab1" class="js-tabs-button tabs__nav flex flex_start">
+                    <div data-tab="tab1" data-hash="#events" data-color="red" class="js-tabs-button tabs__nav flex flex_start">
                         <span class="tabs__icon"></span>
                         <span class="tabs__text color_red">Уведомления по событию</span>
                     </div>
-                    <div data-tab="tab2" class="js-tabs-button tabs__nav flex flex_start">
+                    <div data-tab="tab2" data-hash="#parents" data-color="violet" class="js-tabs-button tabs__nav flex flex_start">
                         <span class="tabs__icon"></span>
                         <span class="tabs__text color_violet">Родительский контроль</span>
                     </div>
-                    <div data-tab="tab3" class="js-tabs-button tabs__nav flex flex_start">
+                    <div data-tab="tab3" data-hash="#corporate" data-color="orange" class="js-tabs-button tabs__nav flex flex_start">
                         <span class="tabs__icon"></span>
                         <span class="tabs__text color_orange">Корпоративным клиентам</span>
                     </div>
@@ -161,10 +164,10 @@
                         <article class="description__article">
                             <img src="img/description.jpg" alt="">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, officiis modi praesentium ipsam, beatae asperiores velit harum quod earum! Temporibus fuga doloremque dolore vel eaque. Dolor explicabo officia cupiditate reiciendis, deleniti ipsum hic alias, iure, repellendus beatae mollitia tenetur quibusdam optio magni ullam quia temporibus odit illum obcaecati. Deserunt, nesciunt.</p>
-                            <a href="download.html" class="button button_violet">Купить</a>
+                            <a href="#buy" class="js-scroll button button_violet">Купить</a>
                         </article>
                     </div>
-                    <div class="buy">
+                    <div id="buy" class="buy">
                         <h2 class="functions__title color_violet">Купить</h2>
                         <ul class="flex buy__list">
                             <li class="buy__item">
@@ -174,7 +177,7 @@
                                     <span class="buy__month">месяц</span>
                                 </div>
                                 <div class="buy__bottom">
-                                    <a href="" class="button button_green">
+                                    <a href="#violetModal" class="js-fancybox button button_green">
                                         Купить
                                     </a>
                                 </div>
@@ -186,7 +189,7 @@
                                     <span class="buy__month">месяца</span>
                                 </div>
                                 <div class="buy__bottom">
-                                    <a href="" class="button button_green">
+                                    <a href="#violetModal" class="js-fancybox button button_green">
                                         Купить
                                     </a>
                                 </div>
@@ -199,7 +202,7 @@
                                     <span class="buy__month">месяцев</span>
                                 </div>
                                 <div class="buy__bottom">
-                                    <a href="" class="button button_orange">
+                                    <a href="#violetModal" class="js-fancybox button button_orange">
                                         Купить
                                     </a>
                                 </div>
@@ -211,7 +214,7 @@
                                     <span class="buy__month">месяцев</span>
                                 </div>
                                 <div class="buy__bottom">
-                                    <a href="" class="button button_green">
+                                    <a href="#violetModal" class="js-fancybox button button_green">
                                         Купить
                                     </a>
                                 </div>
@@ -261,12 +264,12 @@
     <footer class="shadow_big">
         <div class="container flex flex_top">
             <div class="footer__left">
-                <a href="" class="footer__logo">
+                <a href="index.html" class="footer__logo">
                     <img src="img/footer-logo.png" alt="">
                 </a>
                 <div class="footer__download flex">
                     <a href="" class="footer__button"><img src="img/footer-apple.png" alt=""></a>
-                    <a href="" class="footer__button"><img src="img/footer-play.png" alt=""></a>
+                    <a target="_blank" href="https://play.google.com/store/apps/details?id=kz.taptim.interfaces" class="footer__button"><img src="img/footer-play.png" alt=""></a>
                 </div>
             </div>
             <div class="footer__right">
@@ -287,9 +290,35 @@
             <p>© ТОО «Таптим» 2015</p>
         </div>
     </footer>
+    <section class="modals">
+        <div id="violetModal" class="modal modal_violet">
+            <div class="modal__top">
+                    <h2 class="color_white">Купить</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <form class="contacts__form" action="">
+                <div class="contacts__fieldset flex flex_top flex_column-reverse">
+                    <div class="modal__sum">2590тг</div>
+                    <label>Сумма к оплате:</label>
+                </div>
+                <div class="contacts__fieldset flex flex_top flex_column-reverse">
+                    <input id="phone" type="text" required placeholder="+7 707 123 4567">
+                    <label for="phone">Ваш телефон:</label>
+                </div>
+                <div class="contacts__fieldset flex flex_top flex_column-reverse">
+                    <input id="email" type="email" required placeholder="example@taptim.kz">
+                    <label for="email">Ваше email:</label>
+                </div>
+                <div class="contacts__fieldset flex flex_top flex_column-reverse">
+                    <input type="submit" class="button button_violet shadow" value="Купить">
+                </div>
+            </form>
+        </div>
+    </section>
     <script src="js/jquery.min.js"></script>
     <script src="js/sweetalert.min.js"></script>
     <script src="js/touchswipe.min.js"></script>
+    <script src="js/fancybox.js"></script>
     <script src="js/main.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/carousel.js"></script>
