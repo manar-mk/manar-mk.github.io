@@ -83,7 +83,8 @@
 .modal_violet .contacts__form input[type="text"]:focus+label,
 .modal_violet .contacts__form input[type="email"]:focus+label,
 .modal_violet .contacts__form textarea:focus+label,
-.modal__sum + label {
+.modal__sum + label,
+.radio__label {
     color: #fff !important;
 }
 .fancybox-close{
@@ -93,4 +94,28 @@
 	right: 15px;
 	width: 30px;
 	height: 30px;
+}
+.radio input{
+    display: none;
+}.radio__label{
+    margin-top: 10px;
+}
+.radio__wrap{
+    width: 100%;
+    padding-top: 20px;
+}
+.radio input+label{
+    cursor: pointer;
+    padding: 0 20px;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+    border: 1px solid #fff;
+}
+.radio input+label img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+.radio input:checked+label{
+    opacity: 1;
 }

@@ -274,12 +274,12 @@
             </div>
             <div class="footer__right">
                 <nav class="flex">
-                <a href="index.html">Главная</a>
-                <a href="download.html">Скачать</a>
-                <a class="active" href="functions.html">Функции</a>
-                <a href="agreement.html">Оферта</a>
-                <a href="faq.html">FAQ</a>
-                <a href="contacts.html">Контакты</a>
+                    <a href="index.html">Главная</a>
+                    <a href="download.html">Скачать</a>
+                    <a class="active" href="functions.html">Функции</a>
+                    <a href="agreement.html">Оферта</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="contacts.html">Контакты</a>
                 </nav>
                 <p>кросс-платформенное приложение для смартфонов,
                     <br> позволяющее вам обмениваться своим
@@ -293,8 +293,8 @@
     <section class="modals">
         <div id="violetModal" class="modal modal_violet">
             <div class="modal__top">
-                    <h2 class="color_white">Купить</h2>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                <h2 class="color_white">Купить</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
             </div>
             <form class="contacts__form" action="">
                 <div class="contacts__fieldset flex flex_top flex_column-reverse">
@@ -307,7 +307,30 @@
                 </div>
                 <div class="contacts__fieldset flex flex_top flex_column-reverse">
                     <input id="email" type="email" required placeholder="example@taptim.kz">
-                    <label for="email">Ваше email:</label>
+                    <label for="email">Ваш email:</label>
+                </div>
+                <div class="contacts__fieldset flex flex_column flex_top">
+                    <label class="radio__label">Платежная система:</label>
+                    <div class="radio__wrap flex">
+                        <div class="radio">
+                            <input id="qiwi" type="radio" name="payment">
+                            <label for="qiwi">
+                                <img src="img/payment-1.png" alt="">
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <input id="yandex" type="radio" name="payment">
+                            <label for="yandex">
+                                <img src="img/payment-2.png" alt="">
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <input id="kassa24" type="radio" name="payment">
+                            <label for="kassa24">
+                                <img src="img/payment-3.png" alt="">
+                            </label>
+                        </div>
+                    </div>
                 </div>
                 <div class="contacts__fieldset flex flex_top flex_column-reverse">
                     <input type="submit" class="button button_violet shadow" value="Купить">
