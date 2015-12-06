@@ -95,14 +95,21 @@
 	width: 30px;
 	height: 30px;
 }
+.radio{
+    display: inline-block;
+    width: 115px;
+    margin: 5px;
+}
 .radio input{
     display: none;
-}.radio__label{
+}
+.radio__label{
     margin-top: 10px;
 }
 .radio__wrap{
     width: 100%;
     padding-top: 20px;
+    text-align: center;
 }
 .radio input+label{
     cursor: pointer;
