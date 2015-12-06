@@ -161,3 +161,9 @@
     color: #086eaf;
     font-family: 'Roboto', sans-serif;
 }
+@media (max-width: 640px) {
+.contacts__info {
+    margin: 10px auto;
+    max-width: 100%;
+}
+}

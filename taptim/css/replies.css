@@ -3,7 +3,7 @@
 	background-image: url('../img/replies.png');
 	background-repeat: no-repeat;
 	background-position: top center;
-	padding-top: 60px;
+	padding-top: 50px;
 }
 .reply__list{
 	list-style: none;
@@ -75,4 +75,36 @@
 	-o-transition: all 0.4s ease-in-out;
 	transition: all 0.4s ease-in-out;
 	
+}
+@media (max-width: 1200px) {
+    .reply__item{
+        width: 46%;
+        height: auto;
+        padding: 35px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .reply__img{
+    	margin: 0px auto 10px;
+    }
+    .reply__info{
+    	padding: 0;
+    }
+    .replies{
+		padding-bottom: 50px;
+    	height: auto;
+    }
+}
+@media (max-width: 640px) {
+	.carousel__item{
+		display: block;
+	}
+	.reply__item{
+		margin: 10px;
+	}
+	.reply__item,.reply__info {
+		width: 100%;
+	}
 }

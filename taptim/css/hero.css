@@ -79,3 +79,24 @@
 	right: 15px;
 	top: 40px;
 }
+@media (max-width: 1200px) {
+    .hero__download{
+        margin: 20px;
+        margin-top: 0;
+    }
+}
+@media (max-width: 960px) {
+    .hero__container{
+    	justify-content: center;
+    	text-align: center;
+    	
+    }
+    .hero{
+    	background-position: left center
+    }
+}
+@media (max-width: 640px) {
+	.hero__article{
+		width: 100%;
+	}
+}

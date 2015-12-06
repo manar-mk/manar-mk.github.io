@@ -71,3 +71,20 @@ footer nav a.active{
 .footer__copy p{
 	text-align: center;
 }
+@media (max-width: 1200px) {
+	.footer__left{
+		width: auto;
+	}
+	.footer__right{
+		width: auto;
+	}
+}
+@media (max-width: 860px) {
+.footer__container,.footer__download,.footer__right p{
+	display: block;
+	text-align: center;
+}
+.footer__button{
+	margin: 10px;
+}
+}

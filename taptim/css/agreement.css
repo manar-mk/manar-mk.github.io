@@ -18,6 +18,14 @@
 	color: #4d4d4d;
 	margin: 10px 0;
 }
+.agreement__content a{
+	text-decoration: underline;
+	color: #0072bc;
+	transition: all 0.3s ease-in-out;
+}
+.agreement__content a:hover{
+	color: #ff9800;
+}
 .agreement__content h4{
 	font-size: 2em;
 	font-weight: 500;

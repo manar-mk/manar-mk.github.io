@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Taptim - ваш социальный геолокационный сервис </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,100italic,300italic,400italic,500,500italic,700italic,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -26,7 +27,7 @@
     <header class="shadow">
         <section class="container header__container flex">
             <a href="index.html" class="header__logo"><img src="img/logo.png" alt=""></a>
-            <nav class="flex flex_stretch flex_end">
+            <nav class="flex flex_stretch flex_end js-nav">
                 <a href="index.html">Главная</a>
                 <a href="download.html">Скачать</a>
                 <a class="active" href="functions.html">Функции</a>
@@ -34,6 +35,7 @@
                 <a href="faq.html">FAQ</a>
                 <a href="contacts.html">Контакты</a>
             </nav>
+            <span class="nav__trigger js-nav-trigger m-show"></span>
             </div>
         </section>
     </header>
@@ -63,35 +65,67 @@
                 <div id="tab0" class="js-tab tabs__item tabs__item_active">
                     <div class="instruction__wrap">
                         <h2 class="functions__title color_green">Инструкция</h2>
-                        <ul class="flex flex_top instruction">
+                        <ul class="flex flex_top instruction m-hide">
                             <li class="instruction__item">
                                 <img src="img/f11.jpg" alt="">
                                 <h5 class="instruction__heading color_green">1. Выбор контакта</h5>
                                 <p class="instruction__text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, sed, totam.
+                                    В меню “Контакты” вы можете просмотреть список контактов, синхронизированных с телефона.
                                 </p>
                             </li>
                             <li class="instruction__item">
                                 <img src="img/f12.jpg" alt="">
                                 <h5 class="instruction__heading color_green">2. Пригласить друзей</h5>
                                 <p class="instruction__text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, sed, totam.
+                                    Для тех контактов у кого приложение не установлено, вы можете выслать приглашение по “WHATSAPP” или через “SMS”.
                                 </p>
                             </li>
                             <li class="instruction__item">
                                 <img src="img/f13.jpg" alt="">
                                 <h5 class="instruction__heading color_green">3. Посмотреть на карте</h5>
                                 <p class="instruction__text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, sed, totam.
+                                    У вас также есть возможность просмотреть друзей на карте. Для этого перейдите в меню “Карта”.
                                 </p>
                             </li>
                         </ul>
+                        <div class="m-show">
+                            <div class="slider__wrap slider__wrap_functions">
+                                <ul class="slider flex js-slider">
+                                    <li class="js-slider-item slider__item instruction__item ">
+                                        <img src="img/f11.jpg" alt="">
+                                        <h5 class="instruction__heading color_green">1. Выбор контакта</h5>
+                                        <p class="instruction__text">
+                                            В меню “Контакты” вы можете просмотреть список контактов, синхронизированных с телефона.
+                                        </p>
+                                    </li>
+                                    <li class="js-slider-item slider__item instruction__item ">
+                                        <img src="img/f12.jpg" alt="">
+                                        <h5 class="instruction__heading color_green">2. Пригласить друзей</h5>
+                                        <p class="instruction__text">
+                                            Для тех контактов у кого приложение не установлено, вы можете выслать приглашение по “WHATSAPP” или через “SMS”.
+                                        </p>
+                                    </li>
+                                    <li class="js-slider-item slider__item instruction__item ">
+                                        <img src="img/f13.jpg" alt="">
+                                        <h5 class="instruction__heading color_green">3. Посмотреть на карте</h5>
+                                        <p class="instruction__text">
+                                            У вас также есть возможность просмотреть друзей на карте. Для этого перейдите в меню “Карта”.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="slider__control flex flex_center">
+                                <li data-slide="0" class="js-slider-button slider__button active"></li>
+                                <li data-slide="1" class="js-slider-button slider__button"></li>
+                                <li data-slide="2" class="js-slider-button slider__button"></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="description">
                         <h2 class="functions__title color_green">Описание</h2>
                         <article class="description__article">
                             <img src="img/description.jpg" alt="">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, officiis modi praesentium ipsam, beatae asperiores velit harum quod earum! Temporibus fuga doloremque dolore vel eaque. Dolor explicabo officia cupiditate reiciendis, deleniti ipsum hic alias, iure, repellendus beatae mollitia tenetur quibusdam optio magni ullam quia temporibus odit illum obcaecati. Deserunt, nesciunt.</p>
+                            <p>Taptim — геолокационный сервис по поиску контактов на карте.Просто установите приложение Taptim и оно покажет местоположение вашего контакта (ребенка, коллеги и пр) на карте, при условии данный контакт так же использует приложение. В расширенной версии родительский контроль дает возможность узнать где находится ребенок, а так же услышать что происходит рядом с ним. (Достаточно лишь установить приложение и закрепить родительский контроль за ребенком)</p>
                             <a href="download.html" class="button button_green">Скачать</a>
                         </article>
                     </div>
@@ -99,35 +133,67 @@
                 <div id="tab1" class="js-tab tabs__item">
                     <div class="instruction__wrap">
                         <h2 class="functions__title color_red">Инструкция</h2>
-                        <ul class="flex flex_top instruction">
+                        <ul class="flex flex_top instruction m-hide">
                             <li class="instruction__item">
                                 <img src="img/f21.jpg" alt="">
                                 <h5 class="instruction__heading color_red">1. События</h5>
                                 <p class="instruction__text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, sed, totam.
+                                    В меню “События” вы можете видеть список всех ваших событий.
                                 </p>
                             </li>
                             <li class="instruction__item">
                                 <img src="img/f22.jpg" alt="">
                                 <h5 class="instruction__heading color_red">2. Создание</h5>
                                 <p class="instruction__text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, sed, totam.
+                                    Вы также можете создавать события и приглашать друзей из списка контактов на него
                                 </p>
                             </li>
                             <li class="instruction__item">
-                                <img src="img/f23.jpg" alt="">
+                                <img src="img/f24.jpg" alt="">
                                 <h5 class="instruction__heading color_red">3. Посмотреть на карте</h5>
                                 <p class="instruction__text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, sed, totam.
+                                    Вы можете просматривать события на карте
                                 </p>
                             </li>
                         </ul>
+                        <div class="m-show">
+                            <div class="slider__wrap slider__wrap_functions">
+                                <ul class="slider flex js-slider">
+                                    <li class="js-slider-item slider__item instruction__item ">
+                                        <img src="img/f21.jpg" alt="">
+                                        <h5 class="instruction__heading color_red">1. События</h5>
+                                        <p class="instruction__text">
+                                            В меню “События” вы можете видеть список всех ваших событий.
+                                        </p>
+                                    </li>
+                                    <li class="js-slider-item slider__item instruction__item ">
+                                        <img src="img/f22.jpg" alt="">
+                                        <h5 class="instruction__heading color_red">2. Создание</h5>
+                                        <p class="instruction__text">
+                                            Вы также можете создавать события и приглашать друзей из списка контактов на него
+                                        </p>
+                                    </li>
+                                    <li class="js-slider-item slider__item instruction__item ">
+                                        <img src="img/f24.jpg" alt="">
+                                        <h5 class="instruction__heading color_red">3. Посмотреть на карте</h5>
+                                        <p class="instruction__text">
+                                            Вы можете просматривать события на карте
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="slider__control flex flex_center">
+                                <li data-slide="0" class="js-slider-button slider__button active"></li>
+                                <li data-slide="1" class="js-slider-button slider__button"></li>
+                                <li data-slide="2" class="js-slider-button slider__button"></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="description">
                         <h2 class="functions__title color_red">Описание</h2>
                         <article class="description__article">
                             <img src="img/description.jpg" alt="">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, officiis modi praesentium ipsam, beatae asperiores velit harum quod earum! Temporibus fuga doloremque dolore vel eaque. Dolor explicabo officia cupiditate reiciendis, deleniti ipsum hic alias, iure, repellendus beatae mollitia tenetur quibusdam optio magni ullam quia temporibus odit illum obcaecati. Deserunt, nesciunt.</p>
+                            <p>Функция событие позволяет вам создать мероприятие, определить ему время и место, а также добавить причастных к этому событию людей. Функция работы как в качестве напоминание, так и в качестве уведомление, о прибытие людей на место события.</p>
                             <a href="download.html" class="button button_red">Скачать</a>
                         </article>
                     </div>
@@ -135,35 +201,67 @@
                 <div id="tab2" class="js-tab tabs__item">
                     <div class="instruction__wrap">
                         <h2 class="functions__title color_violet">Инструкция</h2>
-                        <ul class="flex flex_top instruction">
+                        <ul class="flex flex_top instruction m-hide">
                             <li class="instruction__item">
-                                <img src="img/f31.jpg" alt="">
-                                <h5 class="instruction__heading color_violet">1. Родители</h5>
+                                <img src="img/f32.jpg" alt="">
+                                <h5 class="instruction__heading color_violet">1. Дети</h5>
                                 <p class="instruction__text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, sed, totam.
+                                    Для добавление Вашего ребенка к функции родительский контроль нажмите кнопку “Добавить”.
                                 </p>
                             </li>
                             <li class="instruction__item">
-                                <img src="img/f32.jpg" alt="">
-                                <h5 class="instruction__heading color_violet">2. Выбор</h5>
+                                <img src="img/f31.jpg" alt="">
+                                <h5 class="instruction__heading color_violet">2. Родители</h5>
                                 <p class="instruction__text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, sed, totam.
+                                    Во вкладке “Родители” вы можете разрешать и запрещать функцию родительского контроля.
                                 </p>
                             </li>
                             <li class="instruction__item">
                                 <img src="img/f33.jpg" alt="">
                                 <h5 class="instruction__heading color_violet">3. Прослушать</h5>
                                 <p class="instruction__text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, sed, totam.
+                                    Чтобы прослушать вашего ребенка, нажмите на значок микрофона. После дождитесь уведомления ,о том что запись завершена.
                                 </p>
                             </li>
                         </ul>
+                        <div class="m-show">
+                            <div class="slider__wrap slider__wrap_functions">
+                                <ul class="slider flex js-slider">
+                                    <li class="js-slider-item slider__item instruction__item ">
+                                        <img src="img/f32.jpg" alt="">
+                                <h5 class="instruction__heading color_violet">1. Дети</h5>
+                                <p class="instruction__text">
+                                    Для добавление Вашего ребенка к функции родительский контроль нажмите кнопку “Добавить”.
+                                </p>
+                                    </li>
+                                    <li class="js-slider-item slider__item instruction__item ">
+                                         <img src="img/f31.jpg" alt="">
+                                <h5 class="instruction__heading color_violet">2. Родители</h5>
+                                <p class="instruction__text">
+                                    Во вкладке “Родители” вы можете разрешать и запрещать функцию родительского контроля.
+                                </p>
+                                    </li>
+                                    <li class="js-slider-item slider__item instruction__item ">
+                                        <img src="img/f33.jpg" alt="">
+                                <h5 class="instruction__heading color_violet">3. Прослушать</h5>
+                                <p class="instruction__text">
+                                    Чтобы прослушать вашего ребенка, нажмите на значок микрофона. После дождитесь уведомления ,о том что запись завершена.
+                                </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="slider__control flex flex_center">
+                                <li data-slide="0" class="js-slider-button slider__button active"></li>
+                                <li data-slide="1" class="js-slider-button slider__button"></li>
+                                <li data-slide="2" class="js-slider-button slider__button"></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="description">
                         <h2 class="functions__title color_violet">Описание</h2>
                         <article class="description__article">
                             <img src="img/description.jpg" alt="">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, officiis modi praesentium ipsam, beatae asperiores velit harum quod earum! Temporibus fuga doloremque dolore vel eaque. Dolor explicabo officia cupiditate reiciendis, deleniti ipsum hic alias, iure, repellendus beatae mollitia tenetur quibusdam optio magni ullam quia temporibus odit illum obcaecati. Deserunt, nesciunt.</p>
+                            <p>Функция позволяет подключить ваших детей и прослушать в нужный момент что происходит рядом с ними. Реализуется эта функция за счет включения микрофона на телефоне ребенка и данная запись передается родителю.</p>
                             <a href="#buy" class="js-scroll button button_violet">Купить</a>
                         </article>
                     </div>
@@ -223,7 +321,7 @@
                     </div>
                 </div>
                 <div id="tab3" class="js-tab tabs__item">
-                    <div class="instruction__wrap">
+                    <!-- <div class="instruction__wrap">
                         <h2 class="functions__title color_orange">Инструкция</h2>
                         <ul class="flex flex_top instruction">
                             <li class="instruction__item">
@@ -248,12 +346,18 @@
                                 </p>
                             </li>
                         </ul>
-                    </div>
+                    </div> -->
                     <div class="description">
                         <h2 class="functions__title color_orange">Описание</h2>
                         <article class="description__article">
                             <img src="img/description.jpg" alt="">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, officiis modi praesentium ipsam, beatae asperiores velit harum quod earum! Temporibus fuga doloremque dolore vel eaque. Dolor explicabo officia cupiditate reiciendis, deleniti ipsum hic alias, iure, repellendus beatae mollitia tenetur quibusdam optio magni ullam quia temporibus odit illum obcaecati. Deserunt, nesciunt.</p>
+                            <p>Приложение Taptim предназначено для просмотра место нахождения других пользователей данного приложения. Приложение имеет доступ к списку контактов пользователя, после синхронизации показывает какой контакт пользуется приложением Taptim и где он находится на данный момент. Местонахождение будут показаны на карте.</p>
+                            <p><strong>Для нашим корпоративным клиентам мы предлагаем такие возможности как:</strong>
+                                <br>• просмотреть где сейчас находится сотрудник;
+                                <br>• передача аудиозаписей в режим “live”;
+                                <br>• если ваша фирма занимается в сфере доставки, то просмотреть следует ли маршруту ваши подчиненные;
+                                <br>• получать уведомление о прибытие ваших сотрудников на место работы;
+                            </p>
                             <a href="download.html" class="button button_orange">Купить</a>
                         </article>
                     </div>
@@ -262,7 +366,7 @@
         </section>
     </section>
     <footer class="shadow_big">
-        <div class="container flex flex_top">
+        <div class="container flex flex_top footer__container">
             <div class="footer__left">
                 <a href="index.html" class="footer__logo">
                     <img src="img/footer-logo.png" alt="">
@@ -273,10 +377,10 @@
                 </div>
             </div>
             <div class="footer__right">
-                <nav class="flex">
-                    <a href="index.html">Главная</a>
+                <nav class="flex m-hide">
+                    <a class="active" href="index.html">Главная</a>
                     <a href="download.html">Скачать</a>
-                    <a class="active" href="functions.html">Функции</a>
+                    <a href="functions.html">Функции</a>
                     <a href="agreement.html">Оферта</a>
                     <a href="faq.html">FAQ</a>
                     <a href="contacts.html">Контакты</a>
