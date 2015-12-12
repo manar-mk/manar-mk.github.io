@@ -96,4 +96,7 @@
 		display: block;
 		margin: 20px auto;
 	}
+	.answer__button{
+		margin: 15px;
+	}
 }

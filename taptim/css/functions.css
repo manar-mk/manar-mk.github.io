@@ -115,6 +115,7 @@
 }
 .description img{
 	float: left;
+	max-width: 100%;
 	margin-right: 50px;
 	margin-bottom: 50px;
 }
@@ -219,14 +220,90 @@
 		font-size: 1.4em;
 	}
 	.buy__list{
-		display: block;
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
 	}
 	.buy__item{
-		width: 220px;
-		margin: 20px auto;
+		width: 48%;
 	}
-	.buy__item_choosen{
-		margin: 40px auto;
+	.buy__price{
+		padding: 15px 0;
+		font-size: 3em;
+	}
+	.buy__num{
+		font-size: 3em;
+	}
+	.buy__month{
+		font-size: 2em;
+	}
+	.buy__period{
+		padding: 15px 0;
+	}
+	.buy__item_choosen,.buy__item{
+		margin: 10px 0 0;
+		-webkit-transform: none;
+		-moz-transform: none;
+		-ms-transform: none;
+		-o-transform: none;
+		transform: none;
+	}
+	.instruction__item{
+		position: relative;
+		overflow: hidden;
+	}
+	.buy__label{
+		top: 45px;
+	}
+	.instruction__description{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		padding: 0px 20px 30px 20px;
+		background-color: #fff;
+		border: 1px solid #eee;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-ms-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+		max-height: 100%;
+	}
+	.instruction__description-close{
+	    background-image: url('../img/desc-close.png');
+	    -webkit-background-size: 100%;
+	    background-size: 100%;
+	    width: 15px;
+	    height: 15px;
+	    display: block;
+	    position: absolute;
+	    top: 10px;
+	    right: 10px;
+	    cursor: pointer;
+	    		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-ms-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+	}
+	.instruction__description_hide{
+		max-height: 35px;
+		padding: 0 20px;
+	}
+	.instruction__description_hide .instruction__description-close{
+	    background-image: url('../img/desc-open.png');
+	}
+	.instruction__heading{
+		margin-top: 20px;
+	}
+	.instruction__description_hide
+	.instruction__heading{
+		margin-top: 40px;
+	}
+	.instruction__wrap{
+		padding: 20px 30px;
 	}
 }
 

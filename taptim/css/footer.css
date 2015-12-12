@@ -88,3 +88,11 @@ footer nav a.active{
 	margin: 10px;
 }
 }
+@media (max-width: 640px) {
+	footer{
+		padding-top: 0;
+	}
+	.footer__copy{
+		margin-top: 0;
+	}
+}

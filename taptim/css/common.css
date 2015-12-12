@@ -275,6 +275,9 @@ strong {
 .m-show {
     display: none;
 }
+.xs-show {
+    display: none;
+}
 
 ::-moz-selection {
     background: #0072bc;
@@ -323,7 +326,10 @@ strong {
 }
 
 @media (max-width: 1200px) {
-    body,
+    html,body{
+        display: block;
+    }
+    html,body,
     .container {
         width: 100%;
         -webkit-box-sizing: border-box;
@@ -359,5 +365,20 @@ strong {
 @media (max-width: 860px) {
     .s-hide{
         display: none;
+    }
+}
+@media (max-width: 640px) {
+    .xs-hide{
+        display: none;
+    }
+    .xs-show{
+        display: block;
+    }
+    h2{
+        font-size: 2.75em;
+        margin-bottom: 20px;
+    }
+    body{
+        padding-top: 60px;
     }
 }

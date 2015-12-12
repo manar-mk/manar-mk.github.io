@@ -8,6 +8,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,100italic,300italic,400italic,500,500italic,700italic,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/sweetalert.css">
     <link rel="stylesheet" href="css/fancybox.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/header.css">
@@ -20,10 +21,28 @@
     <link rel="stylesheet" href="css/faq.css">
     <link rel="stylesheet" href="css/functions.css">
     <link rel="stylesheet" href="css/agreement.css">
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
-     <header class="shadow">
+    <header class="shadow">
         <section class="container header__container flex">
             <a href="index.html" class="header__logo"><img src="img/logo.png" alt=""></a>
             <nav class="flex flex_stretch flex_end js-nav">
@@ -32,7 +51,7 @@
                 <a href="functions.html">Функции</a>
                 <a href="agreement.html">Оферта</a>
                 <a href="faq.html">FAQ</a>
-                <a  class="active" href="contacts.html">Контакты</a>
+                <a class="active" href="contacts.html">Контакты</a>
             </nav>
             <span class="nav__trigger js-nav-trigger m-show"></span>
             </div>
@@ -95,6 +114,8 @@
             </form>
         </section>
     </section>
+    <section class="xs-hide">
+        
     <section class="replies shadow_big">
         <div class="container">
             <h2 class="color_white">Отзывы пользователей</h2>
@@ -163,8 +184,11 @@
             </ul>
         </div>
     </section>
- <footer class="shadow_big">
-        <div class="container flex flex_top footer__container">
+    </section>
+    
+       <footer class="shadow_big">
+        <div class="xs-hide">
+            <div class="container flex flex_top footer__container">
             <div class="footer__left">
                 <a href="index.html" class="footer__logo">
                     <img src="img/footer-logo.png" alt="">
@@ -176,16 +200,17 @@
             </div>
             <div class="footer__right">
                 <nav class="flex m-hide">
-                <a class="active" href="index.html">Главная</a>
-                <a href="download.html">Скачать</a>
-                <a href="functions.html">Функции</a>
-                <a href="agreement.html">Оферта</a>
-                <a href="faq.html">FAQ</a>
-                <a href="contacts.html">Контакты</a>
+                    <a class="active" href="index.html">Главная</a>
+                    <a href="download.html">Скачать</a>
+                    <a href="functions.html">Функции</a>
+                    <a href="agreement.html">Оферта</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="contacts.html">Контакты</a>
                 </nav>
                 <p>кросс-платформенное приложение для смартфонов,
                     <br> позволяющее вам обмениваться своим
                     <br>месторасположением в автоматическом режиме</p>
+            </div>
             </div>
         </div>
         <div class="footer__copy">

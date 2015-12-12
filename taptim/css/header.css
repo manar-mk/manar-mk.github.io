@@ -14,8 +14,10 @@ header {
     max-width: 100%;
 }
 .nav__trigger{
-	width: 50px;
-	height: 50px;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+	width: 30px;
+	height: 30px;
 	background-image: url('../img/menu.png');
 	background-repeat: no-repeat;
 	background-position: center;
@@ -96,6 +98,7 @@ header nav a.active:after {
 		opacity: 1;
 		display: block;
 		background-color: #fff;
+        padding: 20px 0px 20px 40px;
 	}
 	header nav a.active{
 		color: #fff;
@@ -113,9 +116,25 @@ header nav a.active:after {
 	header nav a.active:after{
 		display: none;
 	}
+
 }
 @media (max-width: 860px) {
     header nav {
-    	width: 60%;
-	}
+        width: 60%;
+    }
+}
+@media (max-width: 640px) {
+    header{
+        height: 60px;
+    }
+    .header__logo{
+        width: 100px;
+    }
+    header nav{
+        top: 60px;
+    }
+    .nav__trigger{
+        width: 25px;
+        height: 25px;
+    }
 }

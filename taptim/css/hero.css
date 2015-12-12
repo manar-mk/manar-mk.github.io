@@ -99,4 +99,8 @@
 	.hero__article{
 		width: 100%;
 	}
+	.hero{
+		height: auto;
+		padding: 50px 0;
+	}
 }
