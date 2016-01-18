@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Taptim</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-paper.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <span class="navbar-brand" href="#">Taptim</span>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="login.html">Выход <span class="sr-only">(current)</span></a></li>
+                    </ul>
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Пользователи <span class="sr-only">(current)</span></a></li>
+                        <li class="active"><a href="stats.html">Статистика</a></li>
+                        <li><a href="maps.html">Карта</a></li>
+                        <li><a href="dots.html">Точки</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </header>
+    <section class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        Выберите город:
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <select class="form-control" id="sel1">
+                                <option>Алматы (с 9:00 до 18:00)</option>
+                                <option>Астана (с 10:00 до 19:00)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-primary users-list">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item active">Курманов Манар</a>
+                        <a href="#" class="list-group-item">Аскаров Айдын</a>
+                        <a href="#" class="list-group-item">Тимур Туспаев</a>
+                        <a href="#" class="list-group-item">Аскаров Айдын</a>
+                        <a href="#" class="list-group-item">Тимур Туспаев</a>
+                        <a href="#" class="list-group-item">Аскаров Айдын</a>
+                        <a href="#" class="list-group-item">Тимур Туспаев</a>
+                        <a href="#" class="list-group-item">Аскаров Айдын</a>
+                        <a href="#" class="list-group-item">Тимур Туспаев</a>
+                        <a href="#" class="list-group-item">Аскаров Айдын</a>
+                        <a href="#" class="list-group-item">Тимур Туспаев</a>
+                        <a href="#" class="list-group-item">Аскаров Айдын</a>
+                        <a href="#" class="list-group-item">Тимур Туспаев</a>
+                        <a href="#" class="list-group-item">Аскаров Айдын</a>
+                        <a href="#" class="list-group-item">Тимур Туспаев</a>
+                        <a href="#" class="list-group-item">Аскаров Айдын</a>
+                        <a href="#" class="list-group-item">Тимур Туспаев</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="panel">
+                    <div class="panel-heading users-top">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="media">
+                                    <div class="media-left users-avatar">
+                                        <a href="#">
+                                            <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTI0M2IxN2FjNiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1MjQzYjE3YWM2Ij48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxNC41IiB5PSIzNi41Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true">
+                                        </a>
+                                    </div>
+                                    <div class="media-body users-info">
+                                        <h4 class="media-heading">Манар Курманов <br>
+                                        <small>+7 708 199 14 18</small></h4>
+                                    </div>
+                                </div>
+                                </h4>
+                            </div>
+                            <div class="col-md-5">
+                                <label class="control-label">Выберите период:</label>
+                                <div class="form-inline">
+                                    <input type="text" value="10/01/2015" class="form-control date-input">
+                                    <input type="text" value="15/01/2015" class="form-control date-input">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class=" panel panel-primary">
+                            <div class="panel-heading">Расстояние</div>
+                            <div class="stats">
+                                <div class="stats-round"><h5>250 км</h5></div>
+                                <h6>Общее</h6>
+                            </div>
+                            <div class="stats">
+                                <div class="stats-round"><h5>~25 км</h5></div>
+                                <h6>Среднее за день</h6>
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="col-md-6">
+                        <div class=" panel panel-primary">
+                            <div class="panel-heading">Скорость</div>
+                            <div class="stats">
+                                <div class="stats-round"><h5>140 км/ч</h5></div>
+                                <h6>Максимальная</h6>
+                            </div>
+                            <div class="stats">
+                                <div class="stats-round"><h5>~40 км/ч</h5></div>
+                                <h6>Средняя за день</h6>
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="col-md-9">
+                        <div class=" panel panel-primary">
+                            <div class="panel-heading">Простои</div>
+                            <div class="stats">
+                                <div class="stats-round"><h5>25 ч 45мин</h5></div>
+                                <h6>Общее время</h6>
+                            </div>
+                            <div class="stats">
+                                <div class="stats-round"><h5>40</h5></div>
+                                <h6>Общее кол-во</h6>
+                            </div>
+                            <div class="stats">
+                                <div class="stats-round"><h5>5ч 15мин</h5></div>
+                                <h6>Среднее время одного простоя</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Taptim</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-paper.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <span class="navbar-brand" href="#">Taptim</span>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="login.html">Выход <span class="sr-only">(current)</span></a></li>
+                    </ul>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Пользователи <span class="sr-only">(current)</span></a></li>
+                        <li><a href="stats.html">Статистика</a></li>
+                        <li><a href="maps.html">Карта</a></li>
+                        <li><a href="dots.html">Точки</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </header>
+    <section class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading city-link" role="button" data-toggle="collapse" href="#city-1" aria-expanded="false" aria-controls="city-1">
+                        Алматы (с 9:00 до 18:00)
+                    </div>
+                    <div class="panel-body collapse in" id="city-1">
+                        <form action="">
+                            <div class="form-group">
+                                <label for="city-1-name">Название</label>
+                                <input type="text" class="form-control" id="city-1-name" placeholder="Название" value="Алматы">
+                            </div>
+                            <div class="form-group">
+                                <label for="city-1-login">Логин</label>
+                                <input type="text" class="form-control" id="city-1-login" placeholder="Логин" value="taptim-almaty">
+                            </div>
+                            <div class="form-group">
+                                <label for="city-1-password">Пароль</label>
+                                <input type="password" class="form-control" id="city-1-password" placeholder="Пароль" value="taptim-almaty">
+                            </div>
+                            <div class="form-group">
+                                <label for="city-1-time">Время работы</label>
+                                <br>
+                                <label for="city-1-time">c</label>
+                                <input type="text" class="form-control work-time" id="city-1-time" placeholder="00:00" value="09:00">
+                                <label for="city-1-time">по</label>
+                                <input type="text" class="form-control work-time" id="city-1-time" placeholder="00:00" value="18:00">
+                            </div>
+                            <div class="form-group work-submit">
+                                <button type="submit" class="btn btn-primary btn-long">Сохранить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading city-link" role="button" data-toggle="collapse" href="#city-2" aria-expanded="false" aria-controls="city-2">
+                        Астана (с 10:00 до 19:00)
+                    </div>
+                    <div class="panel-body collapse" id="city-2">
+                        <form action="">
+                            <div class="form-group">
+                                <label for="city-2-name">Название</label>
+                                <input type="text" class="form-control" id="city-2-name" placeholder="Название" value="Астана">
+                            </div>
+                            <div class="form-group">
+                                <label for="city-2-login">Логин</label>
+                                <input type="text" class="form-control" id="city-2-login" placeholder="Логин" value="taptim-astana">
+                            </div>
+                            <div class="form-group">
+                                <label for="city-2-password">Пароль</label>
+                                <input type="password" class="form-control" id="city-2-password" placeholder="Пароль" value="taptim-astana">
+                            </div>
+                            <div class="form-group">
+                                <label for="city-2-time">Время работы</label>
+                                <br>
+                                <label for="city-2-time">c</label>
+                                <input type="text" class="form-control work-time" id="city-2-time" placeholder="00:00" value="10:00">
+                                <label for="city-2-time">по</label>
+                                <input type="text" class="form-control work-time" id="city-2-time" placeholder="00:00" value="19:00">
+                            </div>
+                            <div class="form-group work-submit">
+                                <button type="submit" class="btn btn-primary btn-long">Сохранить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-8">
+                        <form class="form" role="search">
+                            <input type="text" class="form-control search-input" placeholder="Поиск">
+                            <button type="submit" class="btn btn-primary search-submit">Искать</button>
+                        </form>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="" class="btn btn-success users-add">добавить пользователя</a>
+                    </div>
+                </div>
+                <div class="users-add">
+                </div>
+                <div class="panel panel-primary">
+                    <table class="table table-striped table-hover ">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Имя</th>
+                                <th>Номер</th>
+                                <th>Действия</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Айдын Аскаров</td>
+                                <td>+7 707 123 4567</td>
+                                <td>
+                                    <a href="" class="btn btn-sm btn-action btn-success">изменить</a>
+                                    <a href="" class="btn btn-sm btn-action btn-danger">удалить</a>
+                                    <a href="" class="btn btn-sm btn-action btn-info">статистика</a>
+                                    <a href="" class="btn btn-sm btn-action btn-warning">карта</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Айдын Аскаров</td>
+                                <td>+7 707 123 4567</td>
+                                <td>
+                                    <a href="" class="btn btn-sm btn-action btn-success">изменить</a>
+                                    <a href="" class="btn btn-sm btn-action btn-danger">удалить</a>
+                                    <a href="" class="btn btn-sm btn-action btn-info">статистика</a>
+                                    <a href="" class="btn btn-sm btn-action btn-warning">карта</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Айдын Аскаров</td>
+                                <td>+7 707 123 4567</td>
+                                <td>
+                                    <a href="" class="btn btn-sm btn-action btn-success">изменить</a>
+                                    <a href="" class="btn btn-sm btn-action btn-danger">удалить</a>
+                                    <a href="" class="btn btn-sm btn-action btn-info">статистика</a>
+                                    <a href="" class="btn btn-sm btn-action btn-warning">карта</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Айдын Аскаров</td>
+                                <td>+7 707 123 4567</td>
+                                <td>
+                                    <a href="" class="btn btn-sm btn-action btn-success">изменить</a>
+                                    <a href="" class="btn btn-sm btn-action btn-danger">удалить</a>
+                                    <a href="" class="btn btn-sm btn-action btn-info">статистика</a>
+                                    <a href="" class="btn btn-sm btn-action btn-warning">карта</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Айдын Аскаров</td>
+                                <td>+7 707 123 4567</td>
+                                <td>
+                                    <a href="" class="btn btn-sm btn-action btn-success">изменить</a>
+                                    <a href="" class="btn btn-sm btn-action btn-danger">удалить</a>
+                                    <a href="" class="btn btn-sm btn-action btn-info">статистика</a>
+                                    <a href="" class="btn btn-sm btn-action btn-warning">карта</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Айдын Аскаров</td>
+                                <td>+7 707 123 4567</td>
+                                <td>
+                                    <a href="" class="btn btn-sm btn-action btn-success">изменить</a>
+                                    <a href="" class="btn btn-sm btn-action btn-danger">удалить</a>
+                                    <a href="" class="btn btn-sm btn-action btn-info">статистика</a>
+                                    <a href="" class="btn btn-sm btn-action btn-warning">карта</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Айдын Аскаров</td>
+                                <td>+7 707 123 4567</td>
+                                <td>
+                                    <a href="" class="btn btn-sm btn-action btn-success">изменить</a>
+                                    <a href="" class="btn btn-sm btn-action btn-danger">удалить</a>
+                                    <a href="" class="btn btn-sm btn-action btn-info">статистика</a>
+                                    <a href="" class="btn btn-sm btn-action btn-warning">карта</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Айдын Аскаров</td>
+                                <td>+7 707 123 4567</td>
+                                <td>
+                                    <a href="" class="btn btn-sm btn-action btn-success">изменить</a>
+                                    <a href="" class="btn btn-sm btn-action btn-danger">удалить</a>
+                                    <a href="" class="btn btn-sm btn-action btn-info">статистика</a>
+                                    <a href="" class="btn btn-sm btn-action btn-warning">карта</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>Айдын Аскаров</td>
+                                <td>+7 707 123 4567</td>
+                                <td>
+                                    <a href="" class="btn btn-sm btn-action btn-success">изменить</a>
+                                    <a href="" class="btn btn-sm btn-action btn-danger">удалить</a>
+                                    <a href="" class="btn btn-sm btn-action btn-info">статистика</a>
+                                    <a href="" class="btn btn-sm btn-action btn-warning">карта</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>Айдын Аскаров</td>
+                                <td>+7 707 123 4567</td>
+                                <td>
+                                    <a href="" class="btn btn-sm btn-action btn-success">изменить</a>
+                                    <a href="" class="btn btn-sm btn-action btn-danger">удалить</a>
+                                    <a href="" class="btn btn-sm btn-action btn-info">статистика</a>
+                                    <a href="" class="btn btn-sm btn-action btn-warning">карта</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>Айдын Аскаров</td>
+                                <td>+7 707 123 4567</td>
+                                <td>
+                                    <a href="" class="btn btn-sm btn-action btn-success">изменить</a>
+                                    <a href="" class="btn btn-sm btn-action btn-danger">удалить</a>
+                                    <a href="" class="btn btn-sm btn-action btn-info">статистика</a>
+                                    <a href="" class="btn btn-sm btn-action btn-warning">карта</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

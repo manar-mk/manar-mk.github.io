@@ -1,0 +1,105 @@
+.title{
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	float: none;
+}
+.login-heading{
+	color: #fff;
+	text-align: center;
+}
+.login-submit{
+	text-align: center;
+}
+.btn-long{
+	padding-left: 35px;
+	padding-right: 35px;
+}
+.navbar-brand{
+	color: #ffffff !important;
+}
+.users-list{
+	overflow-y: scroll;
+	max-height: 400px;
+}
+.date-input{
+	width: 100px !important;
+}
+.date-input + .date-input{
+	margin-left: 20px;
+}
+.users-top{
+	padding: 20px 30px;
+}
+.users-avatar{
+	padding-right: 25px;
+}
+.users-info{
+	padding-top: 5px;
+}
+.users-add{
+	width: 100%;
+	margin-bottom: 15px;
+}
+.stats{
+	display: inline-block;
+	margin: 20px;
+	text-align: center;
+	width: 120px;
+	vertical-align: top;
+}
+.stats-round{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	display: -webkit-inline-flex;
+	display: -moz-inline-flex;
+	display: -ms-inline-flex;
+	display: -o-inline-flex;
+	display: inline-flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	border: 2px solid #2196f3;
+	line-height: 90px;
+	padding: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.stats-round h5{
+	font-size: 16px;
+	color: #2196f3;
+	display: inline-block;
+	vertical-align: middle;
+}
+.city-link{
+	font-size: 16px;
+	color: #fff;
+}
+.city-link:focus,
+.city-link:hover{
+	color: #fff;
+	text-decoration: none;
+		outline: 0;
+}
+.work-time{
+	width: 60px;
+	text-align: center;
+	display: inline-block;
+	margin:0 10px;
+}
+.work-submit{
+	text-align: center;
+	padding-top: 10px;
+}
+.search-input{
+	display: inline-block;
+	width: 80%;
+}
+.search-submit{
+	vertical-align: top;
+}
+.btn-action{
+	margin: 0 3px;
+}
