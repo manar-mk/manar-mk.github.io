@@ -6,6 +6,7 @@
     <title>Taptim</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-paper.min.css">
+    <link href='https://api.mapbox.com/mapbox.js/v2.2.4/mapbox.css' rel='stylesheet' />
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -26,6 +27,8 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
+                    <li><span class="navbar-brand navbar-company" href="#">Mashfrog Kazakhstan</span></li>
+
                         <li><a href="login.html">Выход <span class="sr-only">(current)</span></a></li>
                     </ul>
                     <ul class="nav navbar-nav">
@@ -41,14 +44,175 @@
         </nav>
     </header>
     <section class="container">
-        <div class="jumbotron">
-          <h1>В разработке</h1>
-          <p>Этой страницы еще нет, но скоро сделаем</p>
-          <p><a class="btn btn-primary btn-lg btn-long" href="index.html" role="button">На главную</a></p>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        Выберите город:
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <select class="form-control" id="sel1">
+                                <option>Алматы (с 9:00 до 18:00)</option>
+                                <option>Астана (с 10:00 до 19:00)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-primary users-list">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item active">Курманов Манар</a>
+                        <a href="#" class="list-group-item">Аскаров Айдын</a>
+                        <a href="#" class="list-group-item">Тимур Туспаев</a>
+                        <a href="#" class="list-group-item">Аскаров Айдын</a>
+                        <a href="#" class="list-group-item">Тимур Туспаев</a>
+                        <a href="#" class="list-group-item">Аскаров Айдын</a>
+                        <a href="#" class="list-group-item">Тимур Туспаев</a>
+                        <a href="#" class="list-group-item">Аскаров Айдын</a>
+                        <a href="#" class="list-group-item">Тимур Туспаев</a>
+                        <a href="#" class="list-group-item">Аскаров Айдын</a>
+                        <a href="#" class="list-group-item">Тимур Туспаев</a>
+                        <a href="#" class="list-group-item">Аскаров Айдын</a>
+                        <a href="#" class="list-group-item">Тимур Туспаев</a>
+                        <a href="#" class="list-group-item">Аскаров Айдын</a>
+                        <a href="#" class="list-group-item">Тимур Туспаев</a>
+                        <a href="#" class="list-group-item">Аскаров Айдын</a>
+                        <a href="#" class="list-group-item">Тимур Туспаев</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#route" aria-controls="route" role="tab" data-toggle="tab">Маршрут</a></li>
+                            <li role="presentation"><a href="#now" aria-controls="now" role="tab" data-toggle="tab">Сейчас</a></li>
+                            <li role="presentation"><a href="#history" aria-controls="history" role="tab" data-toggle="tab">История</a></li>
+                        </ul>
+                    </div>
+                    <div class="panel-body">
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="route">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <div class="media">
+                                            <div class="media-left users-avatar">
+                                                <a href="#">
+                                                    <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTI0M2IxN2FjNiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1MjQzYjE3YWM2Ij48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxNC41IiB5PSIzNi41Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true">
+                                                </a>
+                                            </div>
+                                            <div class="media-body users-info">
+                                                <h4 class="media-heading">Манар Курманов <br>
+                                        <small>+7 708 199 14 18</small></h4>
+                                            </div>
+                                        </div>
+                                        </h4>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-md-5">
+                                    <div class="address-list">
+                                        <div class="list-group">
+                                            <a href="#" class="list-group-item active">Точка 1</a>
+                                            <a href="#" class="list-group-item">Точка 2</a>
+                                            <a href="#" class="list-group-item">Точка 3</a>
+                                            <a href="#" class="list-group-item">Точка 4</a>
+                                            <a href="#" class="list-group-item">Точка 5</a>
+                                            <a href="#" class="list-group-item">Точка 6</a>
+                                            <a href="#" class="list-group-item">Точка 7</a>
+                                            <a href="#" class="list-group-item">Точка 8</a>
+                                        </div>
+                                    </div>
+                                    <div class="dot-add">
+                                    <a href="" class="btn btn-success btn-long">Добавить точку</a>
+                                    </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div id="map1" class="map"></div>
+                                        <div class="form-inline form-time">
+                                            <div class="form-group">
+                                                <label for="">Время прибытия:</label>
+                                                <input type="text" value="12:40" class="form-control time-input">
+                                                <label for="">+-:</label>
+                                                <input type="number" value="10" step="1" class="form-control time-input">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Время разгрузки:</label>
+                                                <input type="number" value="10" step="1" class="form-control time-input">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="now">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <div class="media">
+                                            <div class="media-left users-avatar">
+                                                <a href="#">
+                                                    <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTI0M2IxN2FjNiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1MjQzYjE3YWM2Ij48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxNC41IiB5PSIzNi41Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true">
+                                                </a>
+                                            </div>
+                                            <div class="media-body users-info">
+                                                <h4 class="media-heading">Манар Курманов <br>
+                                        <small>+7 708 199 14 18</small></h4>
+                                            </div>
+                                        </div>
+                                        </h4>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div id="map2" class="map"></div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="history">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <div class="media">
+                                            <div class="media-left users-avatar">
+                                                <a href="#">
+                                                    <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTI0M2IxN2FjNiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1MjQzYjE3YWM2Ij48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxNC41IiB5PSIzNi41Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true">
+                                                </a>
+                                            </div>
+                                            <div class="media-body users-info">
+                                                <h4 class="media-heading">Манар Курманов <br>
+                                        <small>+7 708 199 14 18</small></h4>
+                                            </div>
+                                        </div>
+                                        </h4>
+                                    </div>
+                                    <div class="col-md-3 pull-right">
+                                        <label class="control-label">Выберите день:</label>
+                                        <div class="form-inline">
+                                            <input type="text" value="15/01/2015" class="form-control date-input">
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div id="map3" class="map"></div>
+                                <form action="">
+                                    <div class="form-group">
+                                        <input type="range">
+                                    </div>
+                                    <div class="playback">
+                                        <a href="" class="btn btn-default">Пред. точка</a>
+                                        <a href="" class="btn btn-default">Воспроизведение</a>
+                                        <a href="" class="btn btn-default">След. точка</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src='https://api.mapbox.com/mapbox.js/v2.2.4/mapbox.js'></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
 </body>
 
 </html>

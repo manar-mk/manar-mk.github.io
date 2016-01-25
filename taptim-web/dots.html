@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Taptim</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-paper.min.css">
+    <link href='https://api.mapbox.com/mapbox.js/v2.2.4/mapbox.css' rel='stylesheet' />
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -26,13 +28,14 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
+                        <li><span class="navbar-brand navbar-company" href="#">Mashfrog Kazakhstan</span></li>
                         <li><a href="login.html">Выход <span class="sr-only">(current)</span></a></li>
                     </ul>
                     <ul class="nav navbar-nav">
                         <li><a href="index.html">Пользователи <span class="sr-only">(current)</span></a></li>
                         <li><a href="stats.html">Статистика</a></li>
                         <li><a href="maps.html">Карта</a></li>
-                        <li  class="active"><a href="dots.html">Точки</a></li>
+                        <li class="active"><a href="dots.html">Точки</a></li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -41,14 +44,175 @@
         </nav>
     </header>
     <section class="container">
-        <div class="jumbotron">
-          <h1>В разработке</h1>
-          <p>Этой страницы еще нет, но скоро сделаем</p>
-          <p><a class="btn btn-primary btn-lg btn-long" href="index.html" role="button">На главную</a></p>
+        <div class="row">
+            <div class="col-md-9">
+                <form class="form" role="search">
+                    <input type="text" class="form-control search-input" placeholder="Поиск">
+                    <button type="submit" class="btn btn-primary search-submit">Искать</button>
+                </form>
+            </div>
+            <div class="col-md-3">
+                <a href="" class="btn btn-success users-add">добавить точку</a>
+            </div>
+        </div>
+        <div class="panel">
+            <!-- Nav tabs -->
+            <div class="panel-heading">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#list" aria-controls="list" role="tab" data-toggle="tab">Списком</a></li>
+                    <li role="presentation"><a href="#onmap" aria-controls="onmap" role="tab" data-toggle="tab">На карте</a></li>
+                </ul>
+            </div>
+            <!-- Tab panes -->
+            <div class="panel-body">
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="list">
+                        <table class="table table-striped table-hover ">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Название</th>
+                                    <th>Адрес</th>
+                                    <th>Описание</th>
+                                    <th>Действия</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Магазин "Айжан"</td>
+                                    <td>ул. Жарокова 93</td>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing.</td>
+                                    <td>
+                                        <a href="" class="btn btn-sm btn-action btn-success">изменить</a>
+                                        <a href="" class="btn btn-sm btn-action btn-danger">удалить</a>
+                                        <a href="" class="btn btn-sm btn-action btn-warning">показать на карте</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Магазин "Айжан"</td>
+                                    <td>ул. Жарокова 93</td>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing.</td>
+                                    <td>
+                                        <a href="" class="btn btn-sm btn-action btn-success">изменить</a>
+                                        <a href="" class="btn btn-sm btn-action btn-danger">удалить</a>
+                                        <a href="" class="btn btn-sm btn-action btn-warning">показать на карте</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Магазин "Айжан"</td>
+                                    <td>ул. Жарокова 93</td>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing.</td>
+                                    <td>
+                                        <a href="" class="btn btn-sm btn-action btn-success">изменить</a>
+                                        <a href="" class="btn btn-sm btn-action btn-danger">удалить</a>
+                                        <a href="" class="btn btn-sm btn-action btn-warning">показать на карте</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Магазин "Айжан"</td>
+                                    <td>ул. Жарокова 93</td>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing.</td>
+                                    <td>
+                                        <a href="" class="btn btn-sm btn-action btn-success">изменить</a>
+                                        <a href="" class="btn btn-sm btn-action btn-danger">удалить</a>
+                                        <a href="" class="btn btn-sm btn-action btn-warning">показать на карте</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Магазин "Айжан"</td>
+                                    <td>ул. Жарокова 93</td>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing.</td>
+                                    <td>
+                                        <a href="" class="btn btn-sm btn-action btn-success">изменить</a>
+                                        <a href="" class="btn btn-sm btn-action btn-danger">удалить</a>
+                                        <a href="" class="btn btn-sm btn-action btn-warning">показать на карте</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Магазин "Айжан"</td>
+                                    <td>ул. Жарокова 93</td>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing.</td>
+                                    <td>
+                                        <a href="" class="btn btn-sm btn-action btn-success">изменить</a>
+                                        <a href="" class="btn btn-sm btn-action btn-danger">удалить</a>
+                                        <a href="" class="btn btn-sm btn-action btn-warning">показать на карте</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>Магазин "Айжан"</td>
+                                    <td>ул. Жарокова 93</td>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing.</td>
+                                    <td>
+                                        <a href="" class="btn btn-sm btn-action btn-success">изменить</a>
+                                        <a href="" class="btn btn-sm btn-action btn-danger">удалить</a>
+                                        <a href="" class="btn btn-sm btn-action btn-warning">показать на карте</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>Магазин "Айжан"</td>
+                                    <td>ул. Жарокова 93</td>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing.</td>
+                                    <td>
+                                        <a href="" class="btn btn-sm btn-action btn-success">изменить</a>
+                                        <a href="" class="btn btn-sm btn-action btn-danger">удалить</a>
+                                        <a href="" class="btn btn-sm btn-action btn-warning">показать на карте</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>Магазин "Айжан"</td>
+                                    <td>ул. Жарокова 93</td>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing.</td>
+                                    <td>
+                                        <a href="" class="btn btn-sm btn-action btn-success">изменить</a>
+                                        <a href="" class="btn btn-sm btn-action btn-danger">удалить</a>
+                                        <a href="" class="btn btn-sm btn-action btn-warning">показать на карте</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td>Магазин "Айжан"</td>
+                                    <td>ул. Жарокова 93</td>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing.</td>
+                                    <td>
+                                        <a href="" class="btn btn-sm btn-action btn-success">изменить</a>
+                                        <a href="" class="btn btn-sm btn-action btn-danger">удалить</a>
+                                        <a href="" class="btn btn-sm btn-action btn-warning">показать на карте</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>12</td>
+                                    <td>Магазин "Айжан"</td>
+                                    <td>ул. Жарокова 93</td>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing.</td>
+                                    <td>
+                                        <a href="" class="btn btn-sm btn-action btn-success">изменить</a>
+                                        <a href="" class="btn btn-sm btn-action btn-danger">удалить</a>
+                                        <a href="" class="btn btn-sm btn-action btn-warning">показать на карте</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="onmap">
+                        <div id="map" class="map"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src='https://api.mapbox.com/mapbox.js/v2.2.4/mapbox.js'></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
 </body>
 
 </html>

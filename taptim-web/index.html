@@ -6,6 +6,7 @@
     <title>Taptim</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-paper.min.css">
+    <link href='https://api.mapbox.com/mapbox.js/v2.2.4/mapbox.css' rel='stylesheet' />
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -26,6 +27,7 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
+                        <li><span class="navbar-brand navbar-company" href="#">Mashfrog Kazakhstan</span></li>
                         <li><a href="login.html">Выход <span class="sr-only">(current)</span></a></li>
                     </ul>
                     <ul class="nav navbar-nav">
@@ -69,8 +71,48 @@
                                 <label for="city-1-time">по</label>
                                 <input type="text" class="form-control work-time" id="city-1-time" placeholder="00:00" value="18:00">
                             </div>
+                            <label for="city-1-time">Дни недели</label>
+                            <div class="form-group form-inline ">
+                                <div class="checkbox users-checkbox">
+                                    <label>
+                                        <input type="checkbox"> Пн.
+                                    </label>
+                                </div>
+                                <div class="checkbox users-checkbox">
+                                    <label>
+                                        <input type="checkbox"> Вт.
+                                    </label>
+                                </div>
+                                <div class="checkbox users-checkbox">
+                                    <label>
+                                        <input type="checkbox"> Ср.
+                                    </label>
+                                </div>
+                                <div class="checkbox users-checkbox">
+                                    <label>
+                                        <input type="checkbox"> Чт.
+                                    </label>
+                                </div>
+                                <div class="checkbox users-checkbox">
+                                    <label>
+                                        <input type="checkbox"> Пт.
+                                    </label>
+                                </div>
+                                <br>
+                                <div class="checkbox users-checkbox">
+                                    <label>
+                                        <input type="checkbox"> Сб.
+                                    </label>
+                                </div>
+                                <div class="checkbox users-checkbox">
+                                    <label>
+                                        <input type="checkbox"> Вс.
+                                    </label>
+                                </div>
+                            </div>
                             <div class="form-group work-submit">
-                                <button type="submit" class="btn btn-primary btn-long">Сохранить</button>
+                                <button type="submit" class="btn btn-success btn-long">Изменить</button>
+                                <button type="submit" class="btn btn-danger btn-long">Удалить</button>
                             </div>
                         </form>
                     </div>
@@ -101,12 +143,53 @@
                                 <label for="city-2-time">по</label>
                                 <input type="text" class="form-control work-time" id="city-2-time" placeholder="00:00" value="19:00">
                             </div>
+                            <label for="city-1-time">Дни недели</label>
+                            <div class="form-group form-inline ">
+                                <div class="checkbox users-checkbox">
+                                    <label>
+                                        <input type="checkbox"> Пн.
+                                    </label>
+                                </div>
+                                <div class="checkbox users-checkbox">
+                                    <label>
+                                        <input type="checkbox"> Вт.
+                                    </label>
+                                </div>
+                                <div class="checkbox users-checkbox">
+                                    <label>
+                                        <input type="checkbox"> Ср.
+                                    </label>
+                                </div>
+                                <div class="checkbox users-checkbox">
+                                    <label>
+                                        <input type="checkbox"> Чт.
+                                    </label>
+                                </div>
+                                <div class="checkbox users-checkbox">
+                                    <label>
+                                        <input type="checkbox"> Пт.
+                                    </label>
+                                </div>
+                                <br>
+                                <div class="checkbox users-checkbox">
+                                    <label>
+                                        <input type="checkbox"> Сб.
+                                    </label>
+                                </div>
+                                <div class="checkbox users-checkbox">
+                                    <label>
+                                        <input type="checkbox"> Вс.
+                                    </label>
+                                </div>
+                            </div>
                             <div class="form-group work-submit">
-                                <button type="submit" class="btn btn-primary btn-long">Сохранить</button>
+                                <button type="submit" class="btn btn-success btn-long">Изменить</button>
+                                <button type="submit" class="btn btn-danger btn-long">Удалить</button>
                             </div>
                         </form>
                     </div>
                 </div>
+                <a href="" class="btn btn-success users-add">Добавить департамент</a>
             </div>
             <div class="col-md-8">
                 <div class="row">
@@ -119,8 +202,6 @@
                     <div class="col-md-4">
                         <a href="" class="btn btn-success users-add">добавить пользователя</a>
                     </div>
-                </div>
-                <div class="users-add">
                 </div>
                 <div class="panel panel-primary">
                     <table class="table table-striped table-hover ">
@@ -260,8 +341,10 @@
             </div>
         </div>
     </section>
-    <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src='https://api.mapbox.com/mapbox.js/v2.2.4/mapbox.js'></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
 </body>
 
 </html>
