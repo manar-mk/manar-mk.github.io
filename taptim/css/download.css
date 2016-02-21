@@ -1,0 +1,147 @@
+.download-general{
+	height: 550px;
+	background-image: url('../img/download-general.jpg');	
+	background-repeat: no-repeat;
+	background-position: top center; 
+	color: #01579b;
+}
+.download-general article{
+	width: 600px;
+	text-align: center;
+}
+.download-general article h2{
+	margin-bottom: 30px;
+}
+.download-general article p{
+	font-size: 1.8em;
+	line-height: 1.4;
+	font-weight: 300;
+	margin-bottom: 30px;
+}
+.download-android{
+	height: 680px;
+	background-image: url('../img/download-android.jpg');	
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-position: top center; 
+}
+.download-ios{
+	height: 700px;
+	background-image: url('../img/download-ios.jpg');	
+	background-repeat: no-repeat;
+	background-position: top center; 
+}
+.download-web{
+	height: 530px;
+	background-image: url('../img/download-web.jpg');	
+    background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: top center; 
+}
+.download__phone{
+	width: 330px;
+	text-align: center;
+}
+.download__info{
+	margin-top: 40px;
+	width: 730px;
+	background-color: #fff;
+	padding: 30px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.download__info_small{
+	width: 540px;
+	margin-top: 0px;	
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.download__info h2{
+	margin-bottom: 25px;
+}
+.download__info_small h2{
+	text-align: left;
+	margin-bottom: 15px;
+}
+.download__info p {
+	font-size: 1.8em;
+	color: #4d4d4d;
+	font-weight: 300;
+	line-height: 1.4;
+	width: 400px;
+	max-width: 100%;
+	padding: 7px 30px 30px 0;
+}
+.qr__button{
+	width: 180px;
+	margin-left: 7px;
+	height: 55px;
+	display: block;
+	border-radius: 5px;
+	line-height: 55px;
+	text-align: center;
+	margin-top: 20px;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	
+} 
+.qr__button img{
+	vertical-align: middle;
+}
+.qr__button_android{
+	background-color: #66bb6a;
+}
+.qr__button_android:hover{
+	background-color: #29892c;
+}
+.qr__button_ios{
+	background-color: #0072bc;
+}
+.qr__button_ios:hover{
+	background-color: #00338b;
+}
+@media (max-width: 1200px) {
+	.qr__wrap{
+		-webkit-flex-direction: column-reverse;
+		-moz-flex-direction: column-reverse;
+		-ms-flex-direction: column-reverse;
+		-o-flex-direction: column-reverse;
+		flex-direction: column-reverse;
+	}
+	.download__info{
+		margin: 0 auto;
+	}
+	.download-android,.download-ios,.download-web{
+		height: auto;
+		padding: 20px 0;
+	}
+}
+@media (max-width: 860px) {
+
+	.download__info,.download__info_small{
+		width: 100%;
+		text-align: center;
+	}
+	.download__info_small h2{
+		text-align: center;
+	}
+	.qr{
+		margin: 0 auto;
+	}
+}
+@media (max-width: 640px) {
+	.download__info_small{
+		padding: 30px;
+	}
+	.download-general article{
+		width: 100%;
+	}
+	.download-general{
+		height: auto;
+		padding: 40px 0;
+	}
+}

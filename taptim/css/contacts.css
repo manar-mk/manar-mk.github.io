@@ -1,0 +1,177 @@
+.contacts-map {
+    height: 600px;
+    background-image: url('../img/contacts-map.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.contacts {
+    height: 640px;
+    background-image: url('../img/contacts.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.contacts__info {
+    width: 460px;
+    background-color: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 35px;
+}
+
+.contacts__wrap {
+    margin-bottom: 30px;
+}
+
+.contacts__item {
+    margin: 15px 0;
+}
+
+.contacts__icon {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+.contacts__item p {
+    font-size: 1.8em;
+    color: #4d4d4d;
+    line-height: 1.4;
+    min-height: 40px;
+}
+
+.contacts__item p a:after {
+    content: '';
+    background-color: #4d4d4d;
+    width: 0%;
+    display: block;
+    height: 1px;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.contacts__item p a:hover:after {
+    width: 100%;
+}
+
+.contacts__form {
+    width: 380px;
+    max-width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.contacts__form h2 {
+    margin-bottom: 30px;
+}
+
+.contacts__form p {
+    color: #fff;
+    text-align: center;
+    font-size: 1.8em;
+    line-height: 1.4;
+}
+
+.contacts__fieldset {
+    margin: 20px 0;
+}
+
+.contacts__form label {
+    font-size: 1.4em;
+    display: block;
+    opacity: .5;
+    font-family: 'Roboto', sans-serif;
+    color: #01579b;
+        -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.contacts__form input[type="submit"]{
+    font-family: 'Roboto', sans-serif;
+    margin: 20px auto;
+}
+.contacts__form input[type="text"],
+.contacts__form input[type="email"],
+.contacts__form textarea {
+    padding: 8px 0;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    font-size: 1.8em;
+    font-weight: 400;
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    border-bottom: 2px solid #1e9cdd;
+    resize:vertical;
+    max-height: 200px;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    color: #01579b;
+}
+.contacts__form input[type="text"]:focus,
+.contacts__form input[type="email"]:focus,
+.contacts__form textarea:focus {
+    border-color: #01579b;
+    color: #fff;
+}
+.contacts__form input[type="text"]:focus+label,
+.contacts__form input[type="email"]:focus+label,
+.contacts__form textarea:focus+label {
+    color: #fff;
+}
+
+.contacts__form input[type="text"]::-webkit-input-placeholder,
+.contacts__form input[type="email"]::-webkit-input-placeholder,
+.contacts__form textarea::-webkit-input-placeholder {
+    color: #086eaf;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contacts__form input[type="text"]:-moz-placeholder,
+.contacts__form input[type="email"]:-moz-placeholder,
+.contacts__form textarea:-moz-placeholder {
+    /* Firefox 18- */
+    color: #086eaf;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contacts__form input[type="text"]::-moz-placeholder,
+.contacts__form input[type="email"]::-moz-placeholder,
+.contacts__form textarea::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #086eaf;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contacts__form input[type="text"]:-ms-input-placeholder,
+.contacts__form input[type="email"]:-ms-input-placeholder,
+.contacts__form textarea:-ms-input-placeholder {
+    color: #086eaf;
+    font-family: 'Roboto', sans-serif;
+}
+@media (max-width: 640px) {
+.contacts__info {
+    margin: 10px auto;
+    max-width: 100%;
+}
+.contacts,.contacts-map{
+    height: auto;
+    padding: 30px 0;
+}
+}

@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Taptim - ваш социальный геолокационный сервис </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,100italic,300italic,400italic,500,500italic,700italic,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/sweetalert.css">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/features.css">
+    <link rel="stylesheet" href="css/replies.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/download.css">
+    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/functions.css">
+    <link rel="stylesheet" href="css/agreement.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <header class="shadow">
+        <section class="container header__container flex">
+            <a href="index.html" class="header__logo"><img src="img/logo.png" alt=""></a>
+            <nav class="flex flex_stretch flex_end js-nav">
+                <a href="index.html">Главная</a>
+                <a href="download.html">Скачать</a>
+                <a class="active" href="functions.html">Функции</a>
+                <a href="services.html">Услуги</a>
+                <a href="agreement.html">Оферта</a>
+                <a href="faq.html">FAQ</a>
+                <a href="contacts.html">Контакты</a>
+            </nav>
+            <span class="nav__trigger js-nav-trigger m-show"></span>
+            </div>
+        </section>
+    </header>
+    <section class="js-functions functions functions_green">
+        <section class="container">
+            <h2 class="color_white">Возможности</h2>
+            <div class="tabs__wrap shadow_big">
+                <div class="tabs__preload"></div>
+                <div class="flex flex_stretch">
+                    <div data-tab="tab0" data-hash="#" data-color="green" class="js-tabs-button tabs__nav tabs__nav_active flex flex_start">
+                        <span class="tabs__icon"></span>
+                        <span class="tabs__text color_green">Определение местоположения</span>
+                    </div>
+                    <div data-tab="tab1" data-hash="#events" data-color="red" class="js-tabs-button tabs__nav flex flex_start">
+                        <span class="tabs__icon"></span>
+                        <span class="tabs__text color_red">Уведомления по событию</span>
+                    </div>
+                    <div data-tab="tab2" data-hash="#parents" data-color="violet" class="js-tabs-button tabs__nav flex flex_start">
+                        <span class="tabs__icon"></span>
+                        <span class="tabs__text color_violet">Родительский контроль</span>
+                    </div>
+                    <div data-tab="tab3" data-hash="#corporate" data-color="orange" class="js-tabs-button tabs__nav flex flex_start">
+                        <span class="tabs__icon"></span>
+                        <span class="tabs__text color_orange">Корпоративным клиентам</span>
+                    </div>
+                </div>
+                <div id="tab0" class="js-tab tabs__item tabs__item_active">
+                    <div class="instruction__wrap">
+                        <h2 class="functions__title color_green">Инструкция</h2>
+                        <ul class="flex flex_top instruction m-hide">
+                            <li class="instruction__item">
+                                <img src="img/f11.jpg" alt="">
+                                <h5 class="instruction__heading color_green">1. Выбор контакта</h5>
+                                <p class="instruction__text">
+                                    В меню “Контакты” вы можете просмотреть список контактов, синхронизированных с телефона.
+                                </p>
+                            </li>
+                            <li class="instruction__item">
+                                <img src="img/f12.jpg" alt="">
+                                <h5 class="instruction__heading color_green">2. Пригласить друзей</h5>
+                                <p class="instruction__text">
+                                    Для тех контактов у кого приложение не установлено, вы можете выслать приглашение по “WHATSAPP” или через “SMS”.
+                                </p>
+                            </li>
+                            <li class="instruction__item">
+                                <img src="img/f13.jpg" alt="">
+                                <h5 class="instruction__heading color_green">3. Посмотреть на карте</h5>
+                                <p class="instruction__text">
+                                    У вас также есть возможность просмотреть друзей на карте. Для этого перейдите в меню “Карта”.
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="m-show">
+                            <div class="slider__wrap slider__wrap_functions">
+                                <ul data-id="0" class="slider flex js-slider">
+                                    <li data-slider="0" class="js-slider-item slider__item instruction__item ">
+                                        <img src="img/f11.jpg" alt="">
+                                        <div class="instruction__description">
+                                            <span class="instruction__description-close js-description-trigger"></span>
+                                            <h5 class="instruction__heading color_green">1. Выбор контакта</h5>
+                                            <p class="instruction__text">
+                                                В меню “Контакты” вы можете просмотреть список контактов, синхронизированных с телефона.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li data-slider="0" class="js-slider-item slider__item instruction__item ">
+                                        <img src="img/f12.jpg" alt="">
+                                        <div class="instruction__description">
+                                            <span class="instruction__description-close js-description-trigger"></span>
+                                            <h5 class="instruction__heading color_green">2. Пригласить друзей</h5>
+                                            <p class="instruction__text">
+                                                Для тех контактов у кого приложение не установлено, вы можете выслать приглашение по “WHATSAPP” или через “SMS”.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li data-slider="0" class="js-slider-item slider__item instruction__item ">
+                                        <img src="img/f13.jpg" alt="">
+                                        <div class="instruction__description">
+                                            <span class="instruction__description-close js-description-trigger"></span>
+                                            <h5 class="instruction__heading color_green">3. Посмотреть на карте</h5>
+                                            <p class="instruction__text">
+                                                У вас также есть возможность просмотреть друзей на карте. Для этого перейдите в меню “Карта”.
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="slider__control flex flex_center">
+                                <li data-slider="0" data-slide="0" class="js-slider-button slider__button active"></li>
+                                <li data-slider="0" data-slide="1" class="js-slider-button slider__button"></li>
+                                <li data-slider="0" data-slide="2" class="js-slider-button slider__button"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <h2 class="functions__title color_green">Описание</h2>
+                        <article class="description__article">
+                            <img src="img/description.jpg" alt="">
+                            <p>Taptim — геолокационный сервис по поиску контактов на карте.Просто установите приложение Taptim и оно покажет местоположение вашего контакта (ребенка, коллеги и пр) на карте, при условии данный контакт так же использует приложение. В расширенной версии родительский контроль дает возможность узнать где находится ребенок, а так же услышать что происходит рядом с ним. (Достаточно лишь установить приложение и закрепить родительский контроль за ребенком)</p>
+                            <a href="download.html" class="button button_green">Скачать</a>
+                        </article>
+                    </div>
+                </div>
+                <div id="tab1" class="js-tab tabs__item">
+                    <div class="instruction__wrap">
+                        <h2 class="functions__title color_red">Инструкция</h2>
+                        <ul class="flex flex_top instruction m-hide">
+                            <li class="instruction__item">
+                                <img src="img/f21.jpg" alt="">
+                                <h5 class="instruction__heading color_red">1. События</h5>
+                                <p class="instruction__text">
+                                    В меню “События” вы можете видеть список всех ваших событий.
+                                </p>
+                            </li>
+                            <li class="instruction__item">
+                                <img src="img/f22.jpg" alt="">
+                                <h5 class="instruction__heading color_red">2. Создание</h5>
+                                <p class="instruction__text">
+                                    Вы также можете создавать события и приглашать друзей из списка контактов на него
+                                </p>
+                            </li>
+                            <li class="instruction__item">
+                                <img src="img/f24.jpg" alt="">
+                                <h5 class="instruction__heading color_red">3. Посмотреть на карте</h5>
+                                <p class="instruction__text">
+                                    Вы можете просматривать события на карте
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="m-show">
+                            <div class="slider__wrap slider__wrap_functions">
+                                <ul data-id="1" class="slider flex js-slider">
+                                    <li data-slider="1" class="js-slider-item slider__item instruction__item ">
+                                        <img src="img/f21.jpg" alt="">
+                                        <div class="instruction__description">
+                                            <span class="instruction__description-close js-description-trigger"></span>
+                                            <h5 class="instruction__heading color_red">1. События</h5>
+                                            <p class="instruction__text">
+                                                В меню “События” вы можете видеть список всех ваших событий.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li data-slider="1" class="js-slider-item slider__item instruction__item ">
+                                        <img src="img/f22.jpg" alt="">
+                                        <div class="instruction__description">
+                                            <span class="instruction__description-close js-description-trigger"></span>
+                                            <h5 class="instruction__heading color_red">2. Создание</h5>
+                                            <p class="instruction__text">
+                                                Вы также можете создавать события и приглашать друзей из списка контактов на него
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li data-slider="1" class="js-slider-item slider__item instruction__item ">
+                                        <img src="img/f24.jpg" alt="">
+                                        <div class="instruction__description">
+                                            <span class="instruction__description-close js-description-trigger"></span>
+                                            <h5 class="instruction__heading color_red">3. Посмотреть на карте</h5>
+                                            <p class="instruction__text">
+                                                Вы можете просматривать события на карте
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="slider__control flex flex_center">
+                                <li data-slider="1" data-slide="0" class="js-slider-button slider__button active"></li>
+                                <li data-slider="1" data-slide="1" class="js-slider-button slider__button"></li>
+                                <li data-slider="1" data-slide="2" class="js-slider-button slider__button"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <h2 class="functions__title color_red">Описание</h2>
+                        <article class="description__article">
+                            <img src="img/description.jpg" alt="">
+                            <p>Функция событие позволяет вам создать мероприятие, определить ему время и место, а также добавить причастных к этому событию людей. Функция работы как в качестве напоминание, так и в качестве уведомление, о прибытие людей на место события.</p>
+                            <a href="download.html" class="button button_red">Скачать</a>
+                        </article>
+                    </div>
+                </div>
+                <div id="tab2" class="js-tab tabs__item">
+                    <div class="instruction__wrap">
+                        <h2 class="functions__title color_violet">Инструкция</h2>
+                        <ul class="flex flex_top instruction m-hide">
+                            <li class="instruction__item">
+                                <img src="img/f32.jpg" alt="">
+                                <h5 class="instruction__heading color_violet">1. Дети</h5>
+                                <p class="instruction__text">
+                                    Для добавление Вашего ребенка к функции родительский контроль нажмите кнопку “Добавить”.
+                                </p>
+                            </li>
+                            <li class="instruction__item">
+                                <img src="img/f31.jpg" alt="">
+                                <h5 class="instruction__heading color_violet">2. Родители</h5>
+                                <p class="instruction__text">
+                                    Во вкладке “Родители” вы можете разрешать и запрещать функцию родительского контроля.
+                                </p>
+                            </li>
+                            <li class="instruction__item">
+                                <img src="img/f33.jpg" alt="">
+                                <h5 class="instruction__heading color_violet">3. Прослушать</h5>
+                                <p class="instruction__text">
+                                    Чтобы прослушать вашего ребенка, нажмите на значок микрофона. После дождитесь уведомления ,о том что запись завершена.
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="m-show">
+                            <div class="slider__wrap slider__wrap_functions">
+                                <ul data-id="2" class="slider flex js-slider">
+                                    <li data-slider="2" class="js-slider-item slider__item instruction__item ">
+                                        <img src="img/f32.jpg" alt="">
+                                        <div class="instruction__description">
+                                            <span class="instruction__description-close js-description-trigger"></span>
+                                            <h5 class="instruction__heading color_violet">1. Дети</h5>
+                                            <p class="instruction__text">
+                                                Для добавление Вашего ребенка к функции родительский контроль нажмите кнопку “Добавить”.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li data-slider="2" class="js-slider-item slider__item instruction__item ">
+                                        <img src="img/f31.jpg" alt="">
+                                        <div class="instruction__description">
+                                            <span class="instruction__description-close js-description-trigger"></span>
+                                            <h5 class="instruction__heading color_violet">2. Родители</h5>
+                                            <p class="instruction__text">
+                                                Во вкладке “Родители” вы можете разрешать и запрещать функцию родительского контроля.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li data-slider="2" class="js-slider-item slider__item instruction__item ">
+                                        <img src="img/f33.jpg" alt="">
+                                        <div class="instruction__description">
+                                            <span class="instruction__description-close js-description-trigger"></span>
+                                            <h5 class="instruction__heading color_violet">3. Прослушать</h5>
+                                            <p class="instruction__text">
+                                                Чтобы прослушать вашего ребенка, нажмите на значок микрофона. После дождитесь уведомления ,о том что запись завершена.
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="slider__control flex flex_center">
+                                <li data-slider="2" data-slide="0" class="js-slider-button slider__button active"></li>
+                                <li data-slider="2" data-slide="1" class="js-slider-button slider__button"></li>
+                                <li data-slider="2" data-slide="2" class="js-slider-button slider__button"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <h2 class="functions__title color_violet">Описание</h2>
+                        <article class="description__article">
+                            <img src="img/description.jpg" alt="">
+                            <p>Функция позволяет подключить ваших детей и прослушать в нужный момент что происходит рядом с ними. Реализуется эта функция за счет включения микрофона на телефоне ребенка и данная запись передается родителю.</p>
+                            <a href="#buy" class="js-scroll button button_violet">Купить</a>
+                        </article>
+                    </div>
+                    <div id="buy" class="buy">
+                        <h2 class="functions__title color_violet">Купить</h2>
+                        <ul class="flex buy__list">
+                            <li href="#violetModal" class="js-fancybox buy__item">
+                                <div class="buy__price">499тг.</div>
+                                <div class="buy__period color_blue">
+                                    <span class="buy__num">1</span>
+                                    <span class="buy__month">месяц</span>
+                                </div>
+                                <div class="buy__bottom xs-hide">
+                                    <a href="#violetModal" class="js-fancybox button button_green">
+                                        Купить
+                                    </a>
+                                </div>
+                            </li>
+                            <li href="#violetModal" class="js-fancybox buy__item">
+                                <div class="buy__price">1290тг.</div>
+                                <div class="buy__period color_blue">
+                                    <span class="buy__num">3</span>
+                                    <span class="buy__month">месяца</span>
+                                </div>
+                                <div class="buy__bottom  xs-hide">
+                                    <a href="#violetModal" class="js-fancybox button button_green">
+                                        Купить
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="buy__item buy__item_choosen">
+                                <span class="buy__label color_white shadow">лучший выбор</span>
+                                <div class="buy__price">2590тг.</div>
+                                <div class="buy__period color_blue">
+                                    <span class="buy__num">6</span>
+                                    <span class="buy__month">месяцев</span>
+                                </div>
+                                <div class="buy__bottom  xs-hide">
+                                    <a href="#violetModal" class="js-fancybox button button_orange">
+                                        Купить
+                                    </a>
+                                </div>
+                            </li>
+                            <li href="#violetModal" class="js-fancybox buy__item">
+                                <div class="buy__price">4890тг.</div>
+                                <div class="buy__period color_blue">
+                                    <span class="buy__num">12</span>
+                                    <span class="buy__month">месяцев</span>
+                                </div>
+                                <div class="buy__bottom  xs-hide">
+                                    <a href="#violetModal" class="js-fancybox button button_green">
+                                        Купить
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="tab3" class="js-tab tabs__item">
+                    <!-- <div class="instruction__wrap">
+                        <h2 class="functions__title color_orange">Инструкция</h2>
+                        <ul class="flex flex_top instruction">
+                            <li class="instruction__item">
+                                <img src="img/f31.jpg" alt="">
+                                <h5 class="instruction__heading color_orange">1. Родители</h5>
+                                <p class="instruction__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, sed, totam.
+                                </p>
+                            </li>
+                            <li class="instruction__item">
+                                <img src="img/f32.jpg" alt="">
+                                <h5 class="instruction__heading color_orange">2. Выбор</h5>
+                                <p class="instruction__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, sed, totam.
+                                </p>
+                            </li>
+                            <li class="instruction__item">
+                                <img src="img/f33.jpg" alt="">
+                                <h5 class="instruction__heading color_orange">3. Прослушать</h5>
+                                <p class="instruction__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, sed, totam.
+                                </p>
+                            </li>
+                        </ul>
+                    </div> -->
+                    <div class="description">
+                        <h2 class="functions__title color_orange">Описание</h2>
+                        <article class="description__article">
+                            <img src="img/description.jpg" alt="">
+                            <p>Приложение Taptim предназначено для просмотра место нахождения других пользователей данного приложения. Приложение имеет доступ к списку контактов пользователя, после синхронизации показывает какой контакт пользуется приложением Taptim и где он находится на данный момент. Местонахождение будут показаны на карте.</p>
+                            <p><strong>Для нашим корпоративным клиентам мы предлагаем такие возможности как:</strong>
+                                <br>• просмотреть где сейчас находится сотрудник;
+                                <br>• передача аудиозаписей в режим “live”;
+                                <br>• если ваша фирма занимается в сфере доставки, то просмотреть следует ли маршруту ваши подчиненные;
+                                <br>• получать уведомление о прибытие ваших сотрудников на место работы;
+                            </p>
+                            <a href="download.html" class="button button_orange">Купить</a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <footer class="shadow_big">
+        <div class="xs-hide">
+            <div class="container flex flex_top footer__container">
+                <div class="footer__left">
+                    <a href="index.html" class="footer__logo">
+                        <img src="img/footer-logo.png" alt="">
+                    </a>
+                    <div class="footer__download flex">
+                        <a href="" class="footer__button"><img src="img/footer-apple.png" alt=""></a>
+                        <a target="_blank" href="https://play.google.com/store/apps/details?id=kz.taptim.interfaces" class="footer__button"><img src="img/footer-play.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="footer__right">
+                    <nav class="flex m-hide">
+                        <a class="active" href="index.html">Главная</a>
+                        <a href="download.html">Скачать</a>
+                        <a href="functions.html">Функции</a>
+                        <a href="services.html">Услуги</a>
+                        <a href="agreement.html">Оферта</a>
+                        <a href="faq.html">FAQ</a>
+                        <a href="contacts.html">Контакты</a>
+                    </nav>
+                    <p>кросс-платформенное приложение для смартфонов,
+                        <br> позволяющее вам обмениваться своим
+                        <br>месторасположением в автоматическом режиме</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copy">
+            <p>© ТОО «Таптим» 2015</p>
+        </div>
+    </footer>
+    <section class="modals">
+        <div id="violetModal" class="modal modal_violet">
+            <div class="modal__top xs-hide">
+                <h2 class="color_white">Купить</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <form class="contacts__form js-form" action="">
+                <div class="contacts__fieldset flex flex_top flex_column-reverse">
+                    <div class="modal__sum">2590тг</div>
+                    <label>Сумма к оплате:</label>
+                </div>
+                <div class="contacts__fieldset flex flex_top flex_column-reverse">
+                    <input id="phone" type="text" required placeholder="+7 707 123 4567">
+                    <label for="phone">Ваш телефон:</label>
+                </div>
+                <div class="contacts__fieldset flex flex_top flex_column-reverse">
+                    <input id="email" type="email" required placeholder="example@taptim.kz">
+                    <label for="email">Ваш email:</label>
+                </div>
+                <!-- <div class="contacts__fieldset flex flex_column flex_top">
+                    <label class="radio__label">Платежная система:</label>
+                    <div class="radio__wrap flex flex_wrap flex_center">
+                        <div class="radio">
+                            <input id="ATF24KZT" type="radio" name="payment">
+                            <label for="ATF24KZT">
+                                <img src="img/payment-1.png" alt="">
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <input id="QIWITERMINALKZT" type="radio" name="payment">
+                            <label for="QIWITERMINALKZT">
+                                <img src="img/payment-2.png" alt="">
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <input id="QIWIWALLETKZT" type="radio" name="payment">
+                            <label for="QIWIWALLETKZT">
+                                <img src="img/payment-3.png" alt="">
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <input id="KASSA24" type="radio" name="payment">
+                            <label for="KASSA24">
+                                <img src="img/payment-4.png" alt="">
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <input id="EPAYKZT" type="radio" name="payment">
+                            <label for="EPAYKZT">
+                                <img src="img/payment-5.png" alt="">
+                            </label>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="contacts__fieldset flex flex_top flex_column-reverse">
+                    <input type="submit" class="button button_violet shadow" value="Купить">
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/sweetalert.min.js"></script>
+    <script src="js/touchswipe.min.js"></script>
+    <script src="js/fancybox.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/tabs.js"></script>
+</body>
+
+</html>
