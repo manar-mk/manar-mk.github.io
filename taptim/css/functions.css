@@ -4,6 +4,12 @@
 	background-position: top center;
 	padding: 50px 0 100px;
 }
+.buy_bg{
+	background-image: url('../img/hero.jpg');
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-position: top center;
+}
 .functions_green{
 	background-image: url('../img/functions_green.jpg');
 }
@@ -95,10 +101,11 @@
 }
 .instruction__item{
 	width: 270px;
+	text-align: center;
 }
 .instruction__item img{
 	max-width: 100%;
-	border: 1px solid #e0e0e0;
+	max-height: 520px;
 }
 .instruction__heading{
 	margin: 20px 0 10px;
@@ -131,6 +138,7 @@
 	list-style: none;
 }
 .buy__item{
+	background-color: #fff;
 	overflow: hidden;
 	position: relative;
 	text-align: center;
