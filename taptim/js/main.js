@@ -8,6 +8,9 @@ $(document).ready(function() {
         padding: 0
     });
 
+    // $('.js-family-button').css({
+    //     right: getFamilyButtonPosition()
+    // }); 
     function scrollPage(section) {
         $("html, body").animate({
             scrollTop: $(section).offset().top - 130
@@ -47,4 +50,10 @@ $(document).ready(function() {
     $('.js-description-trigger').click(function(event) {
         $(this).parent().toggleClass('instruction__description_hide');
     });
+    function getFamilyButtonPosition() {
+        var containerWidth = $('.container').width();
+        var windowWidth = $(window).width();
+        var result = (windowWidth - containerWidth)/2;
+        return  result;
+    }
 });

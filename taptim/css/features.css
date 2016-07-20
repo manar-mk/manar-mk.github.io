@@ -1,5 +1,4 @@
 .features{
-	height: 1060px;
 	background-image: url('../img/features.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
@@ -7,7 +6,11 @@
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	padding-top: 100px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.features__list{
+	width: 100%;
 }
 .features__phone{
 	width: 380px;
@@ -51,12 +54,12 @@
 	max-width: 100%;
 }
 .features__img{
-	width: 145px;
+	width: 200px;
 	text-align: center;
 }
 .features__item{
-	height: 180px;
-	width: 710px;
+	width: 49%;
+	height: 200px;
 	background-color: #fff;
 	margin-bottom: 20px;
 }

@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/functions.css">
     <link rel="stylesheet" href="css/agreement.css">
     <link rel="stylesheet" href="css/share.css">
+    <link rel="stylesheet" href="css/modal.css">
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
@@ -41,13 +42,16 @@
 </head>
 
 <body>
+    <a href="#buy" class="shadow hero__download parents__button js-scroll">
+        <img src="img/buy-icon.png" alt="">
+        <span class="parents__button_heading">Оплатить Родительский контроль</span>
+    </a>
     <header class="shadow">
         <section class="container header__container flex">
             <a href="index.html" class="header__logo"><img src="img/logo.png" alt=""></a>
             <nav class="flex flex_stretch flex_end js-nav">
                 <a class="active" href="index.html">Главная</a>
                 <a href="download.html">Скачать</a>
-                <a href="functions.html">Функции</a>
                 <a href="services.html">Услуги</a>
                 <a href="agreement.html">Оферта</a>
                 <a href="faq.html">FAQ</a>
@@ -58,93 +62,203 @@
         </section>
     </header>
     <div class="share">
-        <a href="#" class="goodshare" data-image="img/logo.png" data-type="vk"><i class="icon-vk"></i></a> 
-        <a href="#" class="goodshare" data-image="img/logo.png" data-type="fb"><i class="icon-facebook"></i></a> 
-        <a href="#" class="goodshare" data-image="img/logo.png" data-type="tw"><i class="icon-twitter"></i></a> 
+        <a href="#" class="goodshare" data-image="img/logo.png" data-type="vk"><i class="icon-vk"></i></a>
+        <a href="#" class="goodshare" data-image="img/logo.png" data-type="fb"><i class="icon-facebook"></i></a>
+        <a href="#" class="goodshare" data-image="img/logo.png" data-type="tw"><i class="icon-twitter"></i></a>
     </div>
-    <section class="hero">
+    <section class="hero shadow_big">
         <section class="container hero__container flex">
             <article class="hero__article">
                 <h1>Taptim</h1>
-                <h3>социальный геолокационный сервис </h3>
+                <h3>семейный геолокационный сервис </h3>
                 <div class="xs-hide">
-                    <p>кросс-платформенное мобильное приложение,
-                        <br>которое позволит вам видеть местонахождение ваших
-                        <br>друзей в режиме реального времени</p>
+                    <p>
+                        кросс-платформенное мобильное приложение,
+                        <br> которое позволит вам видеть местонахождение членов вашей
+                        <br> семьи в режиме реального времени
+                    </p>
                 </div>
                 <div class="hero__buttons">
                     <a href="" class="hero__download hero__download_apple"><img src="img/apple.png" alt=""></a>
                     <a href="" class="hero__download hero__download_play"><img src="img/play.png" alt=""></a>
                 </div>
-                    <a href="functions.html#parents-pay" class="hero__download parents__button">
-                        Оплатить <span class="parents__button_heading">Родительский контроль</span>
-                    </a>
             </article>
-            <div class="hero__phones m-hide">
-                <img src="img/phone1.png" alt="" id="phone1">
-                <img src="img/phone2.png" alt="" id="phone2">
+        </section>
+    </section>
+    <section class="guide functions_violet">
+        <section class="container">
+            <div class="instruction__wrap">
+                <h2 class="functions__title color_white">Инструкция</h2>
+                <ul class="flex flex_top instruction m-hide">
+                    <li class="instruction__item">
+                        <img src="img/guide1.png" alt="">
+                        <h5 class="instruction__heading">Шаг первый</h5>
+                        <p class="instruction__text">
+                            Включаем приложение на телефоне родителя
+                        </p>
+                    </li>
+                    <li class="instruction__item">
+                        <img src="img/guide2.png" alt="">
+                        <h5 class="instruction__heading">Шаг второй</h5>
+                        <p class="instruction__text">
+                            Выбираем ребенка в разделе “Дети” и отправляем запрос
+                        </p>
+                    </li>
+                    <li class="instruction__item">
+                        <img src="img/guide3.png" alt="">
+                        <h5 class="instruction__heading ">Шаг третий</h5>
+                        <p class="instruction__text">
+                            В телефоне ребенка открываем приложение Tapt.im и принимаем запрос от родителя
+                        </p>
+                    </li>
+                </ul>
+                <div class="guide__success shadow color_violet">
+                    <img class="guide__img" src="img/guide4.png" alt="">
+                    <h3>Готово!</h3>
+                    <p>Теперь связь с вашим ребенком у вас постоянная.
+                        <br> Вы можете посмотреть где он находится а так же услышать что происходит вокруг</p>
+                    <div class="hero__buttons">
+                        <a href="" class="hero__download hero__download_apple"><img src="img/apple.png" alt=""></a>
+                        <a href="" class="hero__download hero__download_play"><img src="img/play.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="m-show">
+                    <div class="slider__wrap slider__wrap_functions">
+                        <ul data-id="2" class="slider flex js-slider">
+                            <li data-slider="2" class="js-slider-item slider__item instruction__item ">
+                                <img src="img/guide1.png" alt="">
+                                <div class="instruction__description">
+                                    <span class="instruction__description-close js-description-trigger"></span>
+                                    <h5 class="instruction__heading color_violet">Шаг первый</h5>
+                                    <p class="instruction__text">
+                                        Включаем приложение на телефоне родителя
+                                    </p>
+                                </div>
+                            </li>
+                            <li data-slider="2" class="js-slider-item slider__item instruction__item ">
+                                <img src="img/guide2.png" alt="">
+                                <div class="instruction__description">
+                                    <span class="instruction__description-close js-description-trigger"></span>
+                                    <h5 class="instruction__heading color_violet">Шаг второй</h5>
+                                    <p class="instruction__text">
+                                        Выбираем ребенка в разделе “Дети” и отправляем запрос
+                                    </p>
+                                </div>
+                            </li>
+                            <li data-slider="2" class="js-slider-item slider__item instruction__item ">
+                                <img src="img/guide3.png" alt="">
+                                <div class="instruction__description">
+                                    <span class="instruction__description-close js-description-trigger"></span>
+                                    <h5 class="instruction__heading color_violet">Шаг третий</h5>
+                                    <p class="instruction__text">
+                                        В телефоне ребенка открываем приложение Tapt.im и принимаем запрос от родителя
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="slider__control flex flex_center">
+                        <li data-slider="2" data-slide="0" class="js-slider-button slider__button active"></li>
+                        <li data-slider="2" data-slide="1" class="js-slider-button slider__button"></li>
+                        <li data-slider="2" data-slide="2" class="js-slider-button slider__button"></li>
+                    </ul>
+                </div>
             </div>
         </section>
     </section>
     <section class="features">
         <div class="container">
-            <h2>ВОЗМОЖНОСТИ</h2>
+            <h2>Наши преимущества</h2>
             <div class="flex">
-                <div class="features__left l-hide">
-                    <div class="features__phone">
-                        <div class="slider__wrap">
-                            <ul data-id="0" class="slider flex js-slider">
-                                <li data-slider="0" class="js-slider-item slider__item"><img src="img/slide1.jpg" alt=""></li>
-                                <li data-slider="0" class="js-slider-item slider__item"><img src="img/slide2.jpg" alt=""></li>
-                                <li data-slider="0" class="js-slider-item slider__item"><img src="img/slide3.jpg" alt=""></li>
-                                <li data-slider="0" class="js-slider-item slider__item"><img src="img/slide4.jpg" alt=""></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <ul class="slider__control flex flex_center">
-                        <li data-slide="0" data-slider="0" class="js-slider-button slider__button active"></li>
-                        <li data-slide="1" data-slider="0" class="js-slider-button slider__button"></li>
-                        <li data-slide="2" data-slider="0" class="js-slider-button slider__button"></li>
-                        <li data-slide="3" data-slider="0" class="js-slider-button slider__button"></li>
-                    </ul>
-                </div>
-                <ul class="features__list">
-                    <li class="features__item shadow flex">
-                        <div class="features__img"><img src="img/feature1.png" alt=""></div>
+                <ul class="features__list flex flex_wrap">
+                     <li class="features__item shadow flex">
+                        <div class="features__img"><img src="img/guide-plus1.png" alt=""></div>
                         <article class="features__article">
-                            <h4 class="features__title color_green">Определение местоположения</h4>
-                            <p class="xs-hide">Приложение определяет местоположение друзей из записной книжки и показывает на карте в режиме реального времени</p>
-                            <a href="functions.html" class="shadow button button_green">Подробнее</a>
+                            <h4 class="features__title color_red">Никаких гаджетов</h4>
+                            <p class="xs-hide">Не требует дополнительных затрат на приобретение и обслуживание отдельного устройства</p>
                         </article>
                     </li>
                     <li class="features__item shadow flex">
-                        <div class="features__img"><img src="img/feature2.png" alt=""></div>
+                        <div class="features__img"><img src="img/guide-plus2.png" alt=""></div>
                         <article class="features__article">
-                            <h4 class="features__title color_red">Уведомления по событию</h4>
-                            <p class="xs-hide">Создавая места встреч и события вы получаете возможность получить уведомления по их прибытию на назначенное место</p>
-                            <a href="functions.html#events" class="shadow button button_red">Подробнее</a>
+                            <h4 class="features__title color_green">Пробуйте бесплатно</h4>
+                            <p class="xs-hide">Мы предлагаем бесплатное использование в течении первого месяца</p>
+                        </article>
+                    </li>
+                   
+                    <li class="features__item shadow flex">
+                        <div class="features__img"><img src="img/guide-plus3.png" alt=""></div>
+                        <article class="features__article">
+                            <h4 class="features__title color_violet">Неограниченное кол-во детей</h4>
+                            <p class="xs-hide">Вне зависимости от тарифа вы можете добавлять кол-во детей без каких либо лимитов </p>
                         </article>
                     </li>
                     <li class="features__item shadow flex">
-                        <div class="features__img"><img src="img/feature3.png" alt=""></div>
+                        <div class="features__img"><img src="img/guide-plus4.png" alt=""></div>
                         <article class="features__article">
-                            <h4 class="features__title color_violet">Родительский контроль</h4>
-                            <p class="xs-hide">Функция позволит Вам преодолеть недоступности связи в не территории дома</p>
-                            <a href="functions.html#parents" class="shadow button button_violet button_violet_reverse">Подробнее</a>
-                            <a href="functions.html#parents-pay" class="shadow button button_violet ">Оплатить</a>
-                        </article>
-                    </li>
-                    <li class="features__item shadow flex">
-                        <div class="features__img"><img src="img/feature4.png" alt=""></div>
-                        <article class="features__article">
-                            <h4 class="features__title color_orange">Корпоративным клиентам</h4>
-                            <p class="xs-hide">Простой способ следить за своим бизнесом что позволить избежать утечки</p>
-                            <a href="functions.html#corporate" class="shadow button button_orange">Подробнее</a>
+                            <h4 class="features__title color_orange">Минимальное энергопотребление</h4>
+                            <p class="xs-hide">Несмотря на функциональность приложение потребляет минимальное кол-во батареи</p>
                         </article>
                     </li>
                 </ul>
             </div>
         </div>
+    </section>
+    <section class="buy_bg">
+        <div id="buy" class="buy">
+                        <h2 class="functions__title color_white">Оплатить</h2>
+                        <ul class="flex buy__list">
+                            <li href="#violetModal" class="js-fancybox buy__item">
+                                <div class="buy__price">499тг.</div>
+                                <div class="buy__period color_blue">
+                                    <span class="buy__num">1</span>
+                                    <span class="buy__month">месяц</span>
+                                </div>
+                                <div class="buy__bottom xs-hide">
+                                    <a href="#violetModal" class="js-fancybox button button_green">
+                                        Купить
+                                    </a>
+                                </div>
+                            </li>
+                            <li href="#violetModal" class="js-fancybox buy__item">
+                                <div class="buy__price">1290тг.</div>
+                                <div class="buy__period color_blue">
+                                    <span class="buy__num">3</span>
+                                    <span class="buy__month">месяца</span>
+                                </div>
+                                <div class="buy__bottom  xs-hide">
+                                    <a href="#violetModal" class="js-fancybox button button_green">
+                                        Купить
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="buy__item buy__item_choosen">
+                                <span class="buy__label color_white shadow">лучший выбор</span>
+                                <div class="buy__price">2590тг.</div>
+                                <div class="buy__period color_blue">
+                                    <span class="buy__num">6</span>
+                                    <span class="buy__month">месяцев</span>
+                                </div>
+                                <div class="buy__bottom  xs-hide">
+                                    <a href="#violetModal" class="js-fancybox button button_orange">
+                                        Купить
+                                    </a>
+                                </div>
+                            </li>
+                            <li href="#violetModal" class="js-fancybox buy__item">
+                                <div class="buy__price">4890тг.</div>
+                                <div class="buy__period color_blue">
+                                    <span class="buy__num">12</span>
+                                    <span class="buy__month">месяцев</span>
+                                </div>
+                                <div class="buy__bottom  xs-hide">
+                                    <a href="#violetModal" class="js-fancybox button button_green">
+                                        Купить
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
     </section>
     <section class="replies shadow_big">
         <div class="container">
@@ -287,35 +401,94 @@
     <footer class="shadow_big">
         <div class="xs-hide">
             <div class="container flex flex_top footer__container">
-            <div class="footer__left">
-                <a href="index.html" class="footer__logo">
-                    <img src="img/footer-logo.png" alt="">
-                </a>
-                <div class="footer__download flex">
-                    <a href="" class="footer__button"><img src="img/footer-apple.png" alt=""></a>
-                    <a target="_blank" href="https://play.google.com/store/apps/details?id=kz.taptim.interfaces" class="footer__button"><img src="img/footer-play.png" alt=""></a>
+                <div class="footer__left">
+                    <a href="index.html" class="footer__logo">
+                        <img src="img/footer-logo.png" alt="">
+                    </a>
+                    <div class="footer__download flex">
+                        <a href="" class="footer__button"><img src="img/footer-apple.png" alt=""></a>
+                        <a target="_blank" href="https://play.google.com/store/apps/details?id=kz.taptim.interfaces" class="footer__button"><img src="img/footer-play.png" alt=""></a>
+                    </div>
                 </div>
-            </div>
-            <div class="footer__right">
-                <nav class="flex m-hide">
-                    <a class="active" href="index.html">Главная</a>
-                    <a href="download.html">Скачать</a>
-                    <a href="functions.html">Функции</a>
-                    <a href="services.html">Услуги</a>
-                    <a href="agreement.html">Оферта</a>
-                    <a href="faq.html">FAQ</a>
-                    <a href="contacts.html">Контакты</a>
-                </nav>
-                <p>кросс-платформенное приложение для смартфонов,
-                    <br> позволяющее вам обмениваться своим
-                    <br>месторасположением в автоматическом режиме</p>
-            </div>
+                <div class="footer__right">
+                    <nav class="flex m-hide">
+                        <a class="active" href="index.html">Главная</a>
+                        <a href="download.html">Скачать</a>
+                        <a href="services.html">Услуги</a>
+                        <a href="agreement.html">Оферта</a>
+                        <a href="faq.html">FAQ</a>
+                        <a href="contacts.html">Контакты</a>
+                    </nav>
+                    <p>кросс-платформенное приложение для смартфонов,
+                        <br> позволяющее вам обмениваться своим
+                        <br>месторасположением в автоматическом режиме</p>
+                </div>
             </div>
         </div>
         <div class="footer__copy">
             <p>© ТОО «Таптим» 2015</p>
         </div>
     </footer>
+    <section class="modals">
+        <div id="violetModal" class="modal modal_violet">
+            <div class="modal__top xs-hide">
+                <h2 class="color_white">Купить</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <form class="contacts__form js-form" action="">
+                <div class="contacts__fieldset flex flex_top flex_column-reverse">
+                    <div class="modal__sum">2590тг</div>
+                    <label>Сумма к оплате:</label>
+                </div>
+                <div class="contacts__fieldset flex flex_top flex_column-reverse">
+                    <input id="phone" type="text" required placeholder="+7 707 123 4567">
+                    <label for="phone">Ваш телефон:</label>
+                </div>
+                <div class="contacts__fieldset flex flex_top flex_column-reverse">
+                    <input id="email" type="email" required placeholder="example@taptim.kz">
+                    <label for="email">Ваш email:</label>
+                </div>
+                <!-- <div class="contacts__fieldset flex flex_column flex_top">
+                    <label class="radio__label">Платежная система:</label>
+                    <div class="radio__wrap flex flex_wrap flex_center">
+                        <div class="radio">
+                            <input id="ATF24KZT" type="radio" name="payment">
+                            <label for="ATF24KZT">
+                                <img src="img/payment-1.png" alt="">
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <input id="QIWITERMINALKZT" type="radio" name="payment">
+                            <label for="QIWITERMINALKZT">
+                                <img src="img/payment-2.png" alt="">
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <input id="QIWIWALLETKZT" type="radio" name="payment">
+                            <label for="QIWIWALLETKZT">
+                                <img src="img/payment-3.png" alt="">
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <input id="KASSA24" type="radio" name="payment">
+                            <label for="KASSA24">
+                                <img src="img/payment-4.png" alt="">
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <input id="EPAYKZT" type="radio" name="payment">
+                            <label for="EPAYKZT">
+                                <img src="img/payment-5.png" alt="">
+                            </label>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="contacts__fieldset flex flex_top flex_column-reverse">
+                    <input type="submit" class="button button_violet shadow" value="Купить">
+                </div>
+            </form>
+        </div>
+    </section>
     <script src="js/jquery.min.js"></script>
     <script src="js/goodshare.min.js"></script>
     <script src="js/sweetalert.min.js"></script>

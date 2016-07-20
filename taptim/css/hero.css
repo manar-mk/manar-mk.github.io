@@ -1,9 +1,10 @@
 .hero{
 	height: 620px;
-	background-image: url('../img/hero.jpg');	
+	background-image: url('../img/family-bg.jpg');	
 	background-repeat: no-repeat;
 	background-position: top center; 
-	color: #fff;
+	background-attachment: fixed;
+	color: #0072bc;
 }
 .hero__container{
 	height: 100%;
@@ -26,7 +27,7 @@
 }
 .hero__article p{
 	line-height: 1.2;
-	font-weight: 100;
+	font-weight: 300;
 	padding: 30px 0;
 	font-size: 1.8em;
 }
@@ -80,31 +81,70 @@
 	top: 40px;
 }
 .parents__button{
-	margin: 20px 0;
-	background-image: url('../img/parents-button-icon.png');
-	background-repeat: no-repeat;
-	background-position: 6% 50%;
-	padding: 10px 30px 10px 60px;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	text-align: center;
+	position: fixed;
+	display: -webkit-inline-flex;
+	display: -moz-inline-flex;
+	display: -ms-inline-flex;
+	display: -o-inline-flex;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	color: #fff;
-	font-weight: 200;
-	background-color: #7b1fa2;
-	text-align: left;
-	width: auto;
+	background-color: #39b54a;
 	line-height: 1.4;
-	font-size: 1.5em;
+	font-size: 1.7em;
 	font-weight: 400;
+	bottom: 20px;
+	right: 20px;
+	z-index: 9999;
+}
+.parents__button img{
+	max-width: 40px;
+	padding-bottom: 8px;
 }
 .parents__button_heading{
-	display: block;
 	font-weight: 400;
+	display: block;
 }
 .parents__button:hover{
+	background-color: #0d8015;
+}
+.guide{
+	color: #fff;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-position: top center;
+}
+.guide__success{
+	margin-top: 30px;
+	overflow: hidden;
 	background-color: #fff;
-	color: #7b1fa2;
-	background-image: url('../img/parents-button-icon-reverse.png');
+	padding: 40px;
+}
+.guide__success h3{
+	font-size: 2.8em;
+	text-transform: uppercase;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+.guide__success p{
+	font-size: 1.8em;
+	font-weight: 300;
+	margin-bottom: 40px;
+}
+.guide__img{
+	max-height: 400px;
+	float: left;
+	margin-right: 50px;
 }
 @media (max-width: 1200px) {
     .hero__download{
