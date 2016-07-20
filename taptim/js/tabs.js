@@ -13,31 +13,42 @@ $(document).ready(function() {
         $('.js-functions').removeClass('functions_violet');
         $('.js-functions').addClass('functions_' + $(this).data('color'))
         location.hash = $(this).data('hash');
+        if($(this).data('name') == 'value'){
+            scrollPage('#buy');
+        }
     });
-
+    function scrollPage(section) {
+        $("html, body").animate({
+            scrollTop: $(section).offset().top - 130
+        });
+    }
     switch (location.hash) {
         case '#events':
             tabButton.eq(1).trigger('click');
             break;
         case '#parents-error':
             swal({
-                title: "Извините!",
-                text:"Произошла ошибка, попробуйте еще раз",
-                type:"error"
-            },
-            function () {
-           		tabButton.eq(2).trigger('click');
-            });
+                    title: "Извините!",
+                    text: "Произошла ошибка, попробуйте еще раз",
+                    type: "error"
+                },
+                function() {
+                    tabButton.eq(2).trigger('click');
+                });
             break;
         case '#parents-success':
             swal({
-                title: "Спасибо!",
-                text:"Ваш платеж принят",
-                type:"success"
-            },
-            function () {
-           		tabButton.eq(2).trigger('click');
-            });
+                    title: "Спасибо!",
+                    text: "Ваш платеж принят",
+                    type: "success"
+                },
+                function() {
+                    tabButton.eq(2).trigger('click');
+                });
+            break;
+        case '#parents-pay':
+            tabButton.eq(2).data('name', 'value');
+            tabButton.eq(2).trigger('click');
             break;
         case '#parents':
             tabButton.eq(2).trigger('click');

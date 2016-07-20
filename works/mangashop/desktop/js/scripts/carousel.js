@@ -30,8 +30,14 @@ $(document).ready(function() {
     if (carouselCount1 > 4) {
         carousel1.width((carouselCount1 - 4) * carouselWidth + carousel1.width() + 20);
     }
+    else{
+        carousel1.children('li').last().css( "margin-right", "0" );
+    }
     if (carouselCount2 > 4) {
         carousel2.width((carouselCount2 - 4) * carouselWidth + carousel2.width() + 20);
+    }
+    else{
+        carousel2.children('li').last().css( "margin-right", "0" );
     }
 
     $('.js-carousel-button').click(function(event) {
