@@ -1,0 +1,31 @@
+{
+  "name": "manar-mk.github.io",
+  "version": "1.0.0",
+  "description": "Manar Kurmanov - personal website",
+  "main": "js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manar-mk/manar-mk.github.io.git"
+  },
+  "keywords": [
+    "manar.kz",
+    "manar",
+    "kurmanov",
+    "front-end",
+    "developer"
+  ],
+  "author": "Manar Kurmanov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manar-mk/manar-mk.github.io/issues"
+  },
+  "homepage": "http://manar.kz",
+  "devDependencies": {
+    "css-loader": "^0.26.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^2.2.1"
+  }
+}

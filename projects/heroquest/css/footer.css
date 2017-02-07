@@ -1,0 +1,40 @@
+footer{
+	background-color: #050a14;
+	padding: 40px 60px;
+}
+footer nav{
+	width: 300px;
+}
+footer nav a{
+	width: 50%;
+	display: block;
+	color: #5e6e8e;
+	font-size: 1.6em;
+	line-height: 1.8;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}	
+footer nav a.active,
+footer nav a:hover{
+	color: #fff;
+}
+.footer__left{
+	width: 50%;
+}
+.footer__right{
+	width: 330px;
+}
+.footer__contacts-item{
+	color: #656c77;
+	font-size: 1.6em;
+	margin-bottom: 10px;
+}
+.footer__contacts-item_address{
+	margin-top: 15px;
+}
+.footer__contacts-item a:hover{
+	text-decoration: underline;
+}

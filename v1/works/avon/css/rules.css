@@ -1,0 +1,61 @@
+.rules,.checkout,.cabinet,.results,.inner {
+    text-align: center;
+    background: url('../img/snow.png') repeat-x top center;
+    min-height: 500px;
+}
+
+.checkout .check{
+    padding-top: 20px;
+}
+.breadcrumbs {
+    text-align: left;
+    font-size: 1.4em;
+    padding: 30px 0;
+}
+
+.breadcrumbs > a {
+    color: #35a5e5;
+    text-decoration: none;
+}
+.breadcrumbs > a:last-child{
+    color: #4e4e4e;    
+}
+.breadcrumbs > a:last-child::after{
+    display: none;
+}
+.breadcrumbs > a::after{
+    content: ' / ';
+}
+.breadcrumbs > a:hover{
+    text-decoration: underline;
+}
+
+.participate {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.participate__button {
+    width: 620px;
+    line-height: 40px;
+    height: 65px;
+    font-size: 2.6em;
+    display: block;
+    margin: 20px auto;
+}
+
+.useful {
+        text-align: center;
+    color: #fff;
+    padding: 45px 0;
+    background-image: url('../img/pattern_snow.png');
+}
+
+.useful__button {
+    margin-top: 50px;
+    width: 510px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0;
+    font-size: 2em;
+}

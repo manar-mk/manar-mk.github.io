@@ -1,0 +1,20 @@
+.b-bottom{
+	height: 230px;
+	background: url('../img/bottom.jpg');
+	text-align: center;
+	box-sizing: border-box;
+	padding: 15px 0;
+}
+.b-bottom form{
+	width: 505px;
+	margin: 0 auto;
+}
+.b-bottom h3{
+	padding-bottom: 20px;
+} 
+.b-bottom fieldset{
+	width: 240px;
+}
+.b-bottom .center{
+	margin: 0 auto;
+}

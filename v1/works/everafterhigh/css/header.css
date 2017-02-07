@@ -1,0 +1,65 @@
+header{
+    font-family: 'Victoriana';
+	width: 100%;
+	background-image: url('../img/header.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 60px;
+	position: fixed;
+	z-index: 100;
+}
+header::after{
+	position: absolute;
+	bottom: 0;
+	content: '';
+	width: 100%;
+	background-image: url('../img/studded-border.jpg');
+	background-repeat: repeat-x;
+	height: 16px;
+}
+.b-countdown{
+	width: 460px;
+	line-height: 45px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 2.5em;
+}
+.countdown__number{
+	color: #ed444e;
+}
+nav{
+    font-family: 'Victoriana';
+	width: 1200px;
+	margin: 0 auto;
+	background-image: url('../img/nav.png');
+	background-repeat: no-repeat;
+	background-position: -20% -15px;
+	position: relative;
+	height: 215px;
+	z-index: 75;
+}
+.b-logo{
+	display: inline-block;
+	position: relative;
+	left: 60px;
+		-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.b-logo:hover{
+	-webkit-transform: scale(1.1);
+	   -moz-transform: scale(1.1);
+	    -ms-transform: scale(1.1);
+	     -o-transform: scale(1.1);
+	        transform: scale(1.1);
+}
+.b-nav{
+	position: absolute;
+	right: 120px;
+	top: 35px;
+	width: 840px;
+}
+.nav__item{
+	font-size: 1.6em;
+	padding: 10px 20px 8px;
+}

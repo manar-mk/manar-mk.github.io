@@ -1,0 +1,11 @@
+footer{
+	padding: 35px 0;
+	border-top: 2px solid #dbdbdb;
+	color: #4f4f4f;	
+}
+.footer__button{
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	margin-left: 10px;
+}

@@ -1,0 +1,58 @@
+.modals {
+    display: none;
+}
+.modal {
+    padding-top: 10px;
+    width: 400px;
+}
+.modal__heading {
+	color: #2a85da;
+    text-transform: none;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.modal__heading_red{
+	color: #ff3f92;
+}
+
+.modal__submit{
+	font-size: 2em;
+	margin: 10px 0;
+}
+.modal__form > fieldset {
+	margin: 10px 0;
+} 
+.modal__form input[type="text"], 
+.modal__form input[type="email"], 
+.modal__form input[type="password"] {
+    font-size: 1.4em;
+    font-family: 'Roboto', sans-serif;
+    margin: 5px 0;
+    border-width: 1px;
+    text-align: left;
+    height: 40px;
+    padding-left: 10px;
+    text-transform: none;
+}
+.modal__label {
+    font-size: 1.6em;
+    color: #505050;
+}
+.modal__text {
+	font-size: 1.4em;
+    color: #505050;
+}
+.modal__text_center{
+	display: block;
+	text-align: center;
+}
+.modal__link{
+	color: #2a85da;
+	margin-bottom: 15px;	
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.modal__link:hover{
+	color: #ff3f92;
+}

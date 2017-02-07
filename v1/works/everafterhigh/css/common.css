@@ -1,0 +1,215 @@
+@font-face {
+    font-family: 'Victoriana';
+    src: url('../fonts/victoriana.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Avdira';
+    src: url("../fonts/Avdira_R.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+	font-size: 10px;
+	color: #222;
+	font-family: 'Avdira', sans-serif;
+}
+main{
+	padding-top: 60px;
+	background-image: url('../img/content.jpg');
+	background-repeat: no-repeat;
+	background-position:  center top;
+	padding-bottom: 15px;
+}
+h1,h2,h3,h4,h5{font-family: 'Victoriana';font-weight: normal;}
+h1{
+    font-family: 'Victoriana';
+    font-size: 4em;
+    text-align: center;
+    font-weight: normal;
+
+}
+h2{
+    font-family: 'Victoriana';
+    font-weight: normal;
+	font-size: 2.5em;
+}
+h3{
+	font-size: 3.5em;
+}
+h4{
+	font-size: 3em;
+}
+h5 {
+	font-size: 2em;
+}
+
+.g-red{
+	color: #d9374f;
+}
+.g-violet{
+	color: #671268;
+}
+.b-content{
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
+.g-button{
+	text-decoration: none;
+    font-family: 'Victoriana';
+	color: #fff;
+	text-transform: uppercase;
+	display: inline-block;
+	background-image: url('../img/button.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.g-button:hover{
+	-webkit-transform: scale(1.2);
+	   -moz-transform: scale(1.2);
+	    -ms-transform: scale(1.2);
+	     -o-transform: scale(1.2);
+	        transform: scale(1.2);
+}
+.g-button--gradient{
+	background-image: url('../img/button-gradient.png');
+}
+.g-flex{
+	display: flex;
+	justify-content:space-between;
+}
+.g-flex--top{
+	align-items:flex-start;
+	align-content:initial;
+}
+.g-flex--start{
+	justify-content:flex-start;
+}
+.g-flex--wrap {
+    flex-wrap: wrap;
+}
+.g-flex--center {
+	justify-content:center;
+}
+
+.b-wall{
+	width: 50%;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	z-index: 50;
+	background-image: url('../img/pattern-neutral.gif');
+	-webkit-transition: all 1s linear;
+	-o-transition: all 1s linear;
+	transition: all 1s linear;
+}
+.b-wall--left{
+	left: 0;
+}
+.b-wall--left::after{
+	content: '';
+	position: absolute;
+	right: -25px;
+	width: 40px;
+	top: 0;
+	bottom: 0;
+	background-image: url('../img/border-left.png');
+	background-repeat: repeat-y;
+	background-position: center top;
+}
+.b-wall--right{
+	right: 0;
+}
+.b-wall--right::after{
+	content: '';
+	position: absolute;
+	left: -25px;
+	width: 40px;
+	top: 0;
+	bottom: 0;
+	background-image: url('../img/border-right.png');
+	background-repeat: repeat-y;
+	background-position: center top;
+}
+.b-select{
+	margin-left: 15px;
+	height: 45px;
+	float: right;
+	position: relative;
+	text-align: center;
+	background-image: url('../img/books__read.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 190px;
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+
+.b-select select{
+	height: 40px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	-webkit-appearance: none;
+	width: 220px;
+	padding: 0px 20px 0;
+	background-color: transparent;
+	font-size: 2.4em;
+	color: #fff;
+	border: none;
+	font-family: 'victoriana';
+	display: inline-block;
+}
+.b-select select option{
+	color: #000;
+}
+.b-select select:focus{
+	outline: none;
+	border: none;
+}
+.b-select .select__dropdown{
+	width: 10px;
+	right: 20px;
+	top: 15px;
+	display: inline-block;
+	position: absolute;
+	height: 10px;
+	background-image: url('../img/dropdown.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.select__heading{
+}
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 15px;
+    background-image: url('../img/scroll-base.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+    background-color: transparent;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-image: url('../img/scroll-thumb.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	    background-image: url('../img/scroll-thumb.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+}
